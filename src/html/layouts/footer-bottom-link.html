@@ -1,0 +1,44 @@
+@@if(layouts=='horizontal' || layouts == 'combine'){
+<script src="assets/js/horizontal-menu.js"></script>
+@@if(sublayouts!='layout9'){
+<script>
+    (function () {
+        if ($('#layout-sidenav').hasClass('sidenav-horizontal') || window.layoutHelpers.isSmallScreen()) {
+            return;
+        }
+        try {
+            window.layoutHelpers.setCollapsed(
+                localStorage.getItem('layoutCollapsed') === 'true',
+                false
+            );
+        } catch (e) {}
+    })();
+    $(function () {
+        $('#layout-sidenav').each(function () {
+            new SideNav(this, {
+                orientation: $(this).hasClass('sidenav-horizontal') ? 'horizontal' : 'vertical'
+            });
+        });
+        $('body').on('click', '.layout-sidenav-toggle', function (e) {
+            e.preventDefault();
+            window.layoutHelpers.toggleCollapsed();
+            if (!window.layoutHelpers.isSmallScreen()) {
+                try {
+                    localStorage.setItem('layoutCollapsed', String(window.layoutHelpers.isCollapsed()));
+                } catch (e) {}
+            }
+        });
+    });
+</script>
+}
+<script>
+    $("#pcoded").pcodedmenu({
+        themelayout: 'horizontal',
+        MenuTrigger: 'hover',
+        SubMenuTrigger: 'hover',
+    });
+</script>
+}
+<div class="fixed-button active"><a href="https://codedthemes.com/item/gradient-able-admin-template/" target="_blank"
+        class="btn btn-md btn-success"><i class="feather icon-shopping-cart me-2"></i> Upgrade To
+        Pro</a> </div>
