@@ -1,13 +1,13 @@
 {
-  "name": "Gradient-Able-free-bootstrap-admin-template",
-  "version": "4.0.0",
-  "description": "Gradient able is a admin template made using Bootstrap 4 framework.",
+  "name": "gradient-able-free-bootstrap-admin-template",
+  "version": "5.0.0",
+  "description": "Gradient able is a admin template made using Bootstrap 5 framework with pure javascript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "CodedThemes",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@popperjs/core": "^2.10.2",
     "animate.css": "^3.7.0",
