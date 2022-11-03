@@ -1,6 +1,6 @@
 {
   "name": "gradient-able-free-bootstrap-admin-template",
-  "version": "5.0.0",
+  "version": "1.2.0",
   "description": "Gradient able is a admin template made using Bootstrap 5 framework with pure javascript.",
   "main": "index.js",
   "scripts": {
