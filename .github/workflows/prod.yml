@@ -33,7 +33,8 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           # ARGS: "-rltgoDzvO --delete"
           SOURCE: "dist/"
-          REMOTE_HOST: 192.34.62.123
-          REMOTE_USER: cicd-user
-          TARGET: public_html/demos/admin-templates/gradient-able/bootstrap/free
+          REMOTE_HOST: 217.21.92.35
+          REMOTE_USER: u778408432
+          REMOTE_PORT: "65002"
+          TARGET: domains/codedthemes.com/public_html/demos/admin-templates/gradient-able/bootstrap/free
           EXCLUDE: "/node_modules/"
