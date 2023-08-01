@@ -1,0 +1,85 @@
+.btn-page .btn {
+  margin-right: 8px;
+}
+
+.tab-card {
+  .nav-tabs {
+    margin-bottom: 1rem;
+  }
+
+  .nav-pills {
+    margin-bottom: 1rem;
+
+    .nav-item {
+      text-align: center;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.table {
+  td,
+  th {
+    font-family: $theme-font-family;
+  }
+}
+
+.pcoded-header {
+  .search-bar {
+    display: block;
+  }
+}
+
+.h-list-body .chat-messages .chat-menu-reply > div p,
+.pcoded-header.header-blue a.h-back-user-list {
+  color: $theme-font-color;
+}
+
+.header-chat .h-list-footer .input-group .form-control {
+  height: auto;
+}
+
+.pcoded-navbar.menu-light:not(.theme-horizontal) {
+  .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.active > a,
+  .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.pcoded-trigger > a,
+  .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li:hover > a,
+  .pcoded-inner-navbar > app-nav-group > app-nav-item > li.active > a,
+  .pcoded-inner-navbar > app-nav-group > app-nav-item > li.pcoded-trigger > a,
+  .pcoded-inner-navbar > app-nav-group > app-nav-item > li:hover > a {
+    background: rgba(202, 202, 202, 0.3);
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: $primary-color;
+    }
+  }
+}
+
+.flex {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.fixed-button.active {
+  bottom: 50px;
+  opacity: 1;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: -50px;
+  right: 30px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  z-index: 9;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}

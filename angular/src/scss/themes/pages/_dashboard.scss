@@ -1,0 +1,64 @@
+.order-card {
+  color: #fff;
+
+  i {
+    font-size: 26px;
+  }
+}
+
+.seo-card {
+  .seo-chart {
+    margin-top: 60px;
+  }
+
+  .seo-statustic {
+    position: absolute;
+  }
+}
+
+.feed-blog {
+  border-left: 1px solid #d6d6d6;
+  margin-left: 30px;
+
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 50px;
+
+    h6 {
+      line-height: 1.5;
+      cursor: pointer;
+    }
+
+    .feed-user-img {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      position: absolute;
+      left: -20px;
+      top: -10px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+      }
+    }
+
+    &.active-feed {
+      .feed-user-img:after {
+        border-color: $success-color;
+      }
+    }
+
+    &.diactive-feed {
+      .feed-user-img:after {
+        border-color: $danger-color;
+      }
+    }
+  }
+}

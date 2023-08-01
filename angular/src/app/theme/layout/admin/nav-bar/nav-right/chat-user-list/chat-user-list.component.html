@@ -1,0 +1,17 @@
+<div class="h-list-header">
+  <div class="input-group">
+    <input type="text" id="search-friends" class="form-control" placeholder="Search Friend . . ." [(ngModel)]="searchFriends" />
+  </div>
+</div>
+<div class="h-list-body">
+  <a href="javascript:" class="h-close-text" (click)="this.ChatCollapse.emit()"><i class="feather icon-chevrons-right"></i></a>
+  <div class="main-friend-cont scroll-div">
+    <div class="main-friend-list">
+      <ng-scrollbar style="height: calc(100vh - 85px)" visibility="hover">
+        <ng-container *ngFor="let friends of friendsList">
+          <app-friend (ChatOn)="ChatOn()" [friends]="friends"></app-friend>
+        </ng-container>
+      </ng-scrollbar>
+    </div>
+  </div>
+</div>

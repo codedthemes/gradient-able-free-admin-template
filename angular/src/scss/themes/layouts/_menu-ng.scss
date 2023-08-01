@@ -1,0 +1,451 @@
+// npm menu start
+
+.pcoded-navbar {
+  .pcoded-inner-navbar {
+    li {
+      &.active,
+      &:focus,
+      &:hover {
+        > a {
+          color: #fff;
+        }
+      }
+
+      .pcoded-submenu > app-nav-item > li {
+        &.active,
+        &:focus,
+        &:hover {
+          > a {
+            &:before {
+              background: #fff;
+            }
+          }
+        }
+      }
+
+      &.pcoded-menu-caption:first-child {
+        margin-top: 10px;
+        border-top: 1px solid #344258;
+      }
+    }
+
+    li.pcoded-hasmenu .pcoded-submenu {
+      &:after {
+        height: calc(100% - 30px);
+      }
+
+      li .pcoded-submenu > app-nav-item > li {
+        > a {
+          &:before {
+            left: 65px;
+          }
+        }
+
+        &:after {
+          left: 45px;
+        }
+      }
+
+      li {
+        .pcoded-submenu:after {
+          height: calc(100% - 15px);
+          top: -15px;
+        }
+
+        &.pcoded-trigger,
+        &:hover,
+        .pcoded &.active {
+          > a:before {
+            background-color: $primary-color;
+          }
+        }
+
+        .pcoded-submenu > app-nav-item > li > a {
+          padding: 7px 7px 7px 80px;
+        }
+      }
+    }
+
+    app-nav-group:first-child {
+      > .pcoded-menu-caption {
+        border-top: none;
+        margin-top: 0;
+      }
+    }
+
+    app-nav-group > app-nav-collapse > li,
+    app-nav-group > app-nav-item > li {
+      &.active,
+      &.pcoded-trigger {
+        > a {
+          color: #fff;
+        }
+      }
+
+      &.pcoded-trigger,
+      &:hover,
+      .pcoded &.active {
+        > a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &.navbar-collapsed {
+    .pcoded-inner-navbar {
+      .pcoded-menu-caption {
+        &:after {
+          width: 40px;
+        }
+      }
+
+      > app-nav-group > app-nav-item > li,
+      > app-nav-group > app-nav-collapse > li {
+        > a {
+          padding: 7px 20px;
+          width: $Menu-collapsed-width;
+          transition: all 0.3s ease-in-out;
+
+          > .pcoded-micon + .pcoded-mtext {
+            position: absolute;
+            top: 11px;
+          }
+
+          > .pcoded-mtext {
+            transform: rotateY(-90deg);
+            transform-origin: 0 0;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+        &.pcoded-hasmenu {
+          > a {
+            &:after {
+              right: 12px;
+            }
+          }
+
+          .pcoded-submenu {
+            display: none;
+          }
+        }
+      }
+
+      > app-nav-group > app-nav-item > li,
+      > app-nav-group > app-nav-collapse > li {
+        &.pcoded-trigger {
+          .pcoded-submenu {
+            li {
+              a {
+                color: transparent;
+                white-space: nowrap;
+              }
+            }
+
+            .pcoded-submenu {
+              li {
+                a:before {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .pcoded-inner-navbar {
+        > app-nav-group > app-nav-item > li,
+        > app-nav-group > app-nav-collapse > li {
+          > a {
+            width: 100%;
+
+            > .pcoded-mtext {
+              transform: rotateY(0deg);
+              opacity: 1;
+
+              &:after {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+
+          &.pcoded-hasmenu {
+            > a {
+              &:after {
+                transform: rotateX(0deg);
+              }
+            }
+
+            &.pcoded-trigger {
+              > a {
+                &:after {
+                  transform: rotateX(0deg) rotate(90deg);
+                }
+              }
+            }
+          }
+        }
+
+        > app-nav-group > app-nav-item > li,
+        > app-nav-group > app-nav-collapse > li {
+          &.pcoded-trigger {
+            .pcoded-submenu {
+              li {
+                a {
+                  color: inherit;
+                }
+              }
+
+              .pcoded-submenu {
+                li {
+                  a:before {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .pcoded-header .container > .collapse:not(.show) .me-auto,
+  .pcoded-header > .collapse:not(.show) .me-auto {
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+
+// npm menu end
+//=========================================================================================
+//=========================================================================================
+//                                  Angular
+//=========================================================================================
+//=========================================================================================
+
+app-nav-group {
+  app-nav-collapse {
+    > li {
+      overflow: hidden;
+
+      > a {
+        z-index: 999;
+      }
+    }
+  }
+
+  > app-nav-collapse {
+    > li {
+      overflow: hidden;
+
+      > a {
+        z-index: 999;
+      }
+    }
+  }
+}
+
+.navbar-collapsed:hover .mobile-menu {
+  transform: rotateY(0deg) !important;
+  opacity: 1 !important;
+}
+
+.brand-default .b-brand .b-bg {
+  color: #fff;
+
+  i {
+    color: #fff;
+    background-image: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: unset;
+  }
+}
+
+.pcoded-navbar {
+  &.menu-light {
+    .pcoded-inner-navbar app-nav-item > li.nav-item.active > a,
+    .pcoded-inner-navbar app-nav-item > li.nav-item.pcoded-trigger > a {
+      background: #f1f1f1;
+      color: #000;
+    }
+
+    .pcoded-inner-navbar li.pcoded-menu-caption:first-child {
+      border-top-color: #e2e5e8;
+    }
+  }
+
+  &.navbar-collapsed {
+    .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.pcoded-hasmenu .pcoded-submenu,
+    .pcoded-inner-navbar app-nav-item > li.pcoded-hasmenu .pcoded-submenu {
+      display: block;
+    }
+  }
+
+  .pcoded-inner-navbar {
+    li {
+      &.pcoded-hasmenu {
+        position: relative;
+
+        .pcoded-submenu {
+          opacity: 0;
+          visibility: hidden;
+          transform-origin: 50% 50%;
+          transition:
+            transform 0.3s,
+            opacity 0.3s;
+          transform-style: preserve-3d;
+          transform: rotateX(-90deg);
+          position: absolute;
+          display: block;
+        }
+
+        &.pcoded-trigger {
+          > .pcoded-submenu {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            transform: rotateX(0deg);
+          }
+        }
+      }
+    }
+  }
+
+  &.menupos-fixed {
+    height: 100vh;
+    min-height: 100vh;
+
+    .pcoded-inner-navbar {
+      margin-bottom: $header-height;
+    }
+  }
+}
+
+//============   horizontal menu   =================
+
+.pcoded-navbar {
+  &.menu-light {
+    .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.active > a,
+    .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.active a,
+    .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.pcoded-trigger > a,
+    .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.pcoded-trigger a,
+    .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li:hover a,
+    .pcoded-inner-navbar app-nav-item > li.active a,
+    .pcoded-inner-navbar app-nav-item > li.pcoded-trigger a,
+    .pcoded-inner-navbar app-nav-item > li:hover a {
+      background: transparent;
+    }
+  }
+}
+
+// ====== [ Active Color start ] ========
+
+.pcoded-navbar {
+  @each $value in $color-active-name {
+    $i: index($color-active-name, $value);
+
+    &[class*='menu-item-icon-style'] {
+      .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+        color: $primary-color;
+      }
+    }
+
+    &.active-#{'' + $value} {
+      &[class*='menu-item-icon-style'] {
+        .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+          color: nth($color-active-color, $i);
+        }
+      }
+
+      .pcoded-inner-navbar {
+        > app-nav-group > app-nav-collapse li {
+          &.active,
+          &:focus,
+          &:hover {
+            > a {
+              color: nth($color-active-color, $i);
+            }
+          }
+
+          .pcoded-submenu > app-nav-item li {
+            &.active,
+            &:focus,
+            &:hover {
+              > a {
+                &:before {
+                  background: nth($color-active-color, $i);
+                }
+              }
+            }
+          }
+        }
+
+        > app-nav-group > app-nav-collapse > li {
+          &.active,
+          &.pcoded-trigger {
+            &:after {
+              background-color: nth($color-active-color, $i);
+            }
+
+            > a {
+              background: darken($header-dark-background, 6%);
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &.menu-light {
+        .pcoded-inner-navbar {
+          > li {
+            &.active,
+            &.pcoded-trigger {
+              > a {
+                background: #f1f1f1;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+
+      // horizontal-layout
+      &.theme-horizontal {
+        .pcoded-inner-navbar {
+          > li {
+            &,
+            &.pcoded-hasmenu {
+              &.active,
+              &.pcoded-trigger,
+              &:hover {
+                > a {
+                  background: transparent;
+                }
+              }
+
+              .pcoded-submenu > li {
+                &.active,
+                &.pcoded-trigger,
+                &:hover {
+                  > a {
+                    color: nth($color-active-color, $i);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ====== [ Active Color end ] ========

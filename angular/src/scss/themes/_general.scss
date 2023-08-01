@@ -1,0 +1,277 @@
+/**  =====================
+      Custom css start
+==========================  **/
+body {
+  font-family: $theme-font-family;
+  font-size: $theme-font-size;
+  color: $theme-font-color;
+  font-weight: 400;
+  background: $theme-background;
+  position: relative;
+}
+
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $theme-heading-color;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+.img-radius {
+  border-radius: 50%;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-body {
+  flex: 1;
+}
+
+.page-header {
+  box-shadow: $card-shadow;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 5px;
+
+  h5 {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 600;
+  }
+
+  .page-header-title + .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 0;
+
+    > .breadcrumb-item {
+      line-height: 1;
+
+      a {
+        color: $primary-color;
+
+        font: {
+          weight: 400;
+        }
+      }
+
+      &:last-child a {
+        color: $theme-font-color;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.pcoded-main-container {
+  .page-header {
+    margin-bottom: 30px;
+  }
+}
+
+/* ==========  card css start  =========== */
+
+.anim-rotate {
+  animation: anim-rotate 1s linear infinite;
+}
+
+@keyframes anim-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim-close-card {
+  animation: anim-close-card 1.4s linear;
+}
+
+@keyframes anim-close-card {
+  100% {
+    opacity: 0.3;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+//==========  card css End  ===========
+// ================================    Dropdown Start  ===================== */
+
+.dropdown-menu {
+  padding: 10px 0;
+  font-size: $theme-font-size;
+
+  > li,
+  > .dropdown-item {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0 10px;
+    width: auto;
+    border-radius: 2px;
+
+    > a {
+      padding: 5px;
+      color: $theme-font-color;
+
+      i {
+        font-size: 15px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+      }
+    }
+
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+      box-shadow: 0 0 4px 0 rgba(43, 43, 43, 0.25);
+
+      > a {
+        background: transparent;
+        color: #fff;
+      }
+    }
+  }
+
+  > a {
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+.drp-icon {
+  &:after {
+    display: none;
+  }
+}
+
+/* ================================    Dropdown End  ===================== */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1540px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* ================================    tooltip slider Start  ===================== */
+
+.tooltip {
+  &.in {
+    opacity: 0.9;
+  }
+
+  .tooltip-arrow {
+    position: absolute;
+    width: 0;
+    border-color: transparent;
+  }
+
+  &.top {
+    padding: 5px 0;
+    margin-top: -3px;
+
+    .tooltip-arrow {
+      bottom: 0;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px 5px 0;
+      border-top-color: #000;
+    }
+  }
+}
+
+/* ================================    tooltip slider End  ===================== */
+
+/* ================================    Blockquote Start  ===================== */
+
+.blockquote {
+  border-left: 0.25rem solid $theme-border;
+  padding: 0.5rem 1rem;
+
+  &.text-end {
+    border-left: none;
+    border-right: 0.25rem solid $theme-border;
+  }
+}
+
+/* ================================    Blockquote End  ===================== */
+/* ================================    animation start  ===================== */
+
+.card .animated {
+  animation-duration: 1s;
+  border: 5px solid #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ================================    animation End  ===================== */

@@ -1,0 +1,90 @@
+<body class="@@bodyclass">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar @@menuclass @@if(layouts=='horizontal'){theme-horizontal}">
+		<div
+			class="navbar-wrapper @@if(sublayouts=='v2'){container} @@if(layouts=='horizontal' && rtltheme== 'true'){container}">
+			<div class="navbar-content @@if(layouts=='vertical'){scroll-div} @@if(layouts=='horizontal'){sidenav-horizontal}"
+				@@if(layouts=='horizontal' ){id="layout-sidenav" }>
+				<ul class="nav pcoded-inner-navbar @@if(layouts=='horizontal'){sidenav-inner}">
+					@@include('./menu-list.html')
+				</ul>
+				@@if(layouts!='horizontal'){
+				<div class="card text-center">
+					<div class="card-body px-3">
+						<i class="feather icon-sunset f-40"></i>
+						<h6 class="mt-3">Upgrade to Pro</h6>
+						<p>To get more features and components</p>
+						<a href="https://codedthemes.com/item/gradient-able-admin-template/" target="_blank"
+							class="btn btn-primary btn-sm text-white m-0">Buy now</a>
+					</div>
+				</div>
+				}
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light @@headerclass">
+		@@if(sublayouts=='v2'){<div class="container">}
+			@@if(layouts=='horizontal' && rtltheme== 'true'){<div class="container">}
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#"><span></span></a>
+					<a href="#" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						<img src="assets/images/logo.png" alt="" class="logo">
+						<img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a href="#" class="pop-search"><i class="feather icon-search"></i></a>
+							<div class="search-bar">
+								<input type="text" class="form-control border-0 shadow-none" placeholder="Search here">
+								<button type="button" class="btn-close" aria-label="Close">
+								</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="navbar-nav ms-auto">
+						<li>
+							<div class="dropdown drp-user">
+								<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+									<img src="assets/images/user/avatar-1.jpg" class="img-radius wid-40"
+										alt="User-Profile-Image">
+								</a>
+								<div class="dropdown-menu dropdown-menu-end profile-notification">
+									<div class="pro-head">
+										<img src="assets/images/user/avatar-1.jpg" class="img-radius"
+											alt="User-Profile-Image">
+										<span>John Doe</span>
+									</div>
+									<ul class="pro-body">
+										<li class="bg-transparent mb-2 ms-3"><a target="_blank"
+												href="https://codedthemes.com/item/gradient-able-admin-template/"><span
+													class="badge bg-primary">Upgrade to Pro</span></a></li>
+										<li><a href="user-profile.html" class="dropdown-item"><i
+													class="feather icon-user"></i> Profile</a></li>
+										<li><a href="auth-signin.html" class="dropdown-item"><i
+													class="feather icon-lock"></i> Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				@@if(sublayouts=='v2'){
+			</div>}
+			@@if(layouts=='horizontal' && rtltheme== 'true'){</div>}
+	</header>
+	<!-- [ Header ] end -->

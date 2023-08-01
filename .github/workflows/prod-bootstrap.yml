@@ -1,0 +1,49 @@
+name: Bootstrap deploy
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches:
+      - main
+    paths:
+      - 'bootstrap/**'
+  #pull_request:
+  #  types:
+  #    - closed
+  #  branches:
+  #    - master
+
+jobs:
+  #if_merged:
+  #  if: github.event.pull_request.merged == true
+  Bootstrap-Deploy:
+    name: 🎉 Bootstrap Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+
+      - name: 🔨 Build Project
+        run: |
+          cd bootstrap
+          npm install  
+          gulp build-prod
+
+      - name: 📂 Deploy to Server
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          # ARGS: "-rltgoDzvO --delete"
+          SOURCE: "bootstrap/dist/"
+          REMOTE_HOST: 217.21.92.35
+          REMOTE_USER: u778408432
+          REMOTE_PORT: "65002"
+          TARGET: domains/codedthemes.com/public_html/demos/admin-templates/gradient-able/bootstrap/free
+          EXCLUDE: "/bootstrap/node_modules/"
