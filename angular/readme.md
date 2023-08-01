@@ -1,4 +1,4 @@
-# Gradient Able Angular 9 Free Admin Dashboard
+# Gradient Able Angular 16 Free Admin Dashboard
 
 Gradient Able dashboard template built using Angular 9 with Bootstrap 4 framework, It is a free lite version of [Gradient Able Angular](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) Dashboard Template will complete your admin dashboard needs.
 
