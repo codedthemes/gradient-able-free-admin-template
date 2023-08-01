@@ -1,0 +1,48 @@
+# name: Node - Prod deploy
+
+# # Controls when the action will run.
+# on:
+#   # Triggers the workflow on push or pull request events but only for the master branch
+#   push:
+#     branches:
+#       - master
+#     paths:
+#       - 'react/**'
+#   #pull_request:
+#   #  types:
+#   #    - closed
+#   #  branches:
+#   #    - master
+
+# jobs:
+#   #if_merged:
+#   #  if: github.event.pull_request.merged == true
+#   React-Deploy:
+#     name: 🎉 React Deploy
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: 🚚 Get latest code
+#         uses: actions/checkout@v3
+
+#       - name: Install Node.js 18
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: "18.x"
+
+#       - name: 🔨 Build Project
+#         run: |
+#           cd react
+#           npm install --legacy-peer-deps 
+#           npm run build
+
+#       - name: 📂 Deploy to Server
+#         uses: easingthemes/ssh-deploy@main
+#         env:
+#           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+#           # ARGS: "-rltgoDzvO --delete"
+#           SOURCE: "react/build/"
+#           REMOTE_HOST: 192.34.62.123
+#           REMOTE_USER: ableproadmin
+#           TARGET: public_html/react/free
+#           EXCLUDE: "/react/node_modules/"
