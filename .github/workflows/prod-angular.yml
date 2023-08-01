@@ -33,7 +33,7 @@ jobs:
       - name: 🔨 Build Project
         run: |
           cd angular
-          npm install 
+          npm install --legacy-peer-deps
           npm run build-prod
 
       - name: 📂 Deploy to Server

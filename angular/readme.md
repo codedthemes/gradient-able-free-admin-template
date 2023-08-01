@@ -1,6 +1,6 @@
-# Gradient Able Angular 9 Free Admin Dashboard
+# Gradient Able Angular 16 Free Admin Dashboard
 
-Gradient Able dashboard template built using Angular 9 with Bootstrap 4 framework, It is a free lite version of [Gradient Able Angular](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) Dashboard Template will complete your admin dashboard needs.
+Gradient Able dashboard template built using Angular 16 with Bootstrap 5 framework, It is a free lite version of [Gradient Able Angular](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) Dashboard Template will complete your admin dashboard needs.
 
 Gradient Able Angular Free Admin Template comes with variety of components like Button, Badges, Breadcrumb, Pagination, Collapse, Tabs & Pills, Form Elements, Table, Charts & Authentication Pages.
 
@@ -20,11 +20,11 @@ Check out live preview of Gradient Able Angular Lite version & download it.
 
 #### Preview
 
- - [Demo](http://lite.codedthemes.com/gradient-able/angular/dashboard/analytics)
+ - [Demo](codedthemes.com/public_html/demos/admin-templates/gradient-able/angular/free)
 
 #### Download
 
- - [Download from Github](https://github.com/codedthemes/gradient-able-free-angular-admin-template)
+ - [Download from Github](https://github.com/codedthemes/gradient-able-free-admin-template)
  - [Download from CodedThemes](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) & receive important notification instantly in your maiL.
  
  ## Premium Version Preview & Download
@@ -79,11 +79,11 @@ Gradient Able Lite version documentation cover in its Pro version documentation 
 
 ## Build With
 
- - [Angular CLI](https://github.com/angular/angular-cli) 9.0.4
- - [Latest Bootstrap 4 Stable](https://getbootstrap.com/)
+ - [Angular CLI](https://github.com/angular/angular-cli)
+ - [Latest Bootstrap 5 Stable](https://getbootstrap.com/)
  - [SASS Powered](https://sass-lang.com/)
- - [NodeJs](https://nodejs.org/en/) v12.0.0
- - [NgBootstrap](https://ng-bootstrap.github.io/#/home) 5.0.0
+ - [NodeJs](https://nodejs.org/en/)
+ - [NgBootstrap](https://ng-bootstrap.github.io/#/home)
 
 ## Directory Structure
 ```
@@ -182,7 +182,7 @@ Please generate Github issue if you found bug in any version. We are try to be r
 
 ## License
 
- - Licensed cover under [MIT](https://github.com/codedthemes/gradient-able-free-angular-admin-template/blob/master/LICENSE)
+ - Licensed cover under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/master/LICENSE)
 
 ## Other Dashboard Products
 
