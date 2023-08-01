@@ -1,0 +1,17 @@
+<div class="m-header">
+  <a href="javascript:" class="mobile-menu" id="mobile-collapse" title="Click to Menu Collapse" (click)="navCollapse()"><span></span></a>
+  <a href="javascript:" class="header-mobile-collapse" id="mobile-collapse1" (click)="this.NavCollapsedMob.emit()"
+    ><i class="feather icon-menu"></i
+  ></a>
+  <a [routerLink]="['/dashboard/analytics']" class="b-brand">
+    <img id="main-logo" src="assets/images/logo.png" alt="logo-img" class="logo" />
+    <img src="assets/images/logo-icon.png" alt="logo-icon-img" class="logo-thumb" />
+  </a>
+  <a class="mob-toggler" [ngClass]="{ on: this.menuClass }" href="javascript:" (click)="toggleMobOption()"
+    ><i class="feather icon-more-vertical"></i
+  ></a>
+</div>
+<div class="collapse navbar-collapse" [style.display]="this.collapseStyle">
+  <app-nav-left class="me-auto"></app-nav-left>
+  <app-nav-right class="ms-auto"></app-nav-right>
+</div>

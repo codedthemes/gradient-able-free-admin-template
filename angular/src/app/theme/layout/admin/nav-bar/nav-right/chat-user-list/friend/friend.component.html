@@ -1,0 +1,20 @@
+<div
+  class="media userlist-box ripple"
+  (click)="innerChatToggle(friends)"
+  [attr.data-id]="friends.id"
+  [attr.data-status]="{ online: friends.status, offline: !friends.status }"
+  [attr.data-username]="friends.name"
+>
+  <a class="media-left" href="javascript:"
+    ><img class="media-object img-radius" src="{{ friends.photo }}" alt="{{ friends.name }}" />
+    <div class="live-status" *ngIf="friends.new">{{ friends.new }}</div></a
+  >
+  <div class="media-body">
+    <h6 class="chat-header">
+      {{ friends.name
+      }}<small class="d-block" *ngIf="friends.time" [ngClass]="{ 'text-c-green': friends.status, 'text-c-red': !friends.status }">{{
+        friends.time
+      }}</small>
+    </h6>
+  </div>
+</div>
