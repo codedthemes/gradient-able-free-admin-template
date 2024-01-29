@@ -11,7 +11,6 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 
 // third party
 import { NgScrollbarModule } from 'ngx-scrollbar';
-import { NgClickOutsideDirective } from 'ng-click-outside2';
 import 'hammerjs';
 import 'mousetrap';
 
@@ -28,8 +27,7 @@ import { NgbDropdownModule, NgbNavModule, NgbModule } from '@ng-bootstrap/ng-boo
     NgbDropdownModule,
     NgbNavModule,
     NgbModule,
-    NgScrollbarModule,
-    NgClickOutsideDirective
+    NgScrollbarModule
   ],
   exports: [
     CommonModule,
@@ -42,8 +40,7 @@ import { NgbDropdownModule, NgbNavModule, NgbModule } from '@ng-bootstrap/ng-boo
     NgbModule,
     NgbDropdownModule,
     NgbNavModule,
-    NgScrollbarModule,
-    NgClickOutsideDirective
+    NgScrollbarModule
   ],
   declarations: [DataFilterPipe, SpinnerComponent]
 })

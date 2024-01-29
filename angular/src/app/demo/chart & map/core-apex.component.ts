@@ -1,9 +1,12 @@
+// angular import
 import { Component, OnInit, ViewChild } from '@angular/core';
 
-import { NgApexchartsModule } from 'ng-apexcharts';
+// project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 import { ChartDB } from 'src/app/fack-db/chartData';
 
+// third party import
+import { NgApexchartsModule } from 'ng-apexcharts';
 import {
   ChartComponent,
   ApexAxisChartSeries,

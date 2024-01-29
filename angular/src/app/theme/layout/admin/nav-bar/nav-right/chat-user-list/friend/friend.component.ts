@@ -16,10 +16,12 @@ interface friendsList {
   styleUrls: ['./friend.component.scss']
 })
 export class FriendComponent {
+  // public props
   @Input() friends!: friendsList;
   @Output() ChatOn = new EventEmitter();
 
-  public innerChatToggle(friends: friendsList) {
+  // public method
+  innerChatToggle(friends: friendsList) {
     this.ChatOn.emit(friends.id);
   }
 }

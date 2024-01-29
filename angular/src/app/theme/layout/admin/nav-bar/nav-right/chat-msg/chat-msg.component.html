@@ -38,42 +38,42 @@
                 <p class="chat-time">now</p>
               </div>
             </div>
-            }</ng-scrollbar
-            >
-          } @else {
-            <div class="media chat-messages text-center">
-              <div class="media-body chat-menu-content">
-                <div class="">
-                  <p class="chat-cont">CHAT NOT FOUND</p>
-                </div>
-              </div>
-            </div>
           }
+        </ng-scrollbar>
+      } @else {
+        <div class="media chat-messages text-center">
+          <div class="media-body chat-menu-content">
+            <div class="">
+              <p class="chat-cont">CHAT NOT FOUND</p>
+            </div>
+          </div>
         </div>
-      </div>
+      }
     </div>
-    <div class="h-list-footer">
-      <div class="input-group" (focusout)="this.message_error = false">
-        <input type="file" class="chat-attach" style="display: none" />
-        <a href="javascript:" class="input-group-prepend btn btn-success btn-attach" [ngClass]="{ 'btn-danger': message_error === true }">
-          <i class="feather icon-paperclip"></i>
-        </a>
-        <input
-          type="text"
-          [(ngModel)]="message"
-          name="h-chat-text"
-          class="form-control h-send-chat"
-          placeholder="Write hear . . "
-          (keyup)="sentMsg(1)"
-          (keyup.enter)="sentMsg(0)"
-          />
-          <button
-            type="submit"
-            class="input-group-append btn-send btn btn-primary"
-            [ngClass]="{ 'btn-danger': message_error === true }"
-            (click)="sentMsg(0)"
-            >
-            <i class="feather icon-message-circle"></i>
-          </button>
-        </div>
-      </div>
+  </div>
+</div>
+<div class="h-list-footer">
+  <div class="input-group" (focusout)="this.message_error = false">
+    <input type="file" class="chat-attach" style="display: none" />
+    <a href="javascript:" class="input-group-prepend btn btn-success btn-attach" [ngClass]="{ 'btn-danger': message_error === true }">
+      <i class="feather icon-paperclip"></i>
+    </a>
+    <input
+      type="text"
+      [(ngModel)]="message"
+      name="h-chat-text"
+      class="form-control h-send-chat"
+      placeholder="Write hear . . "
+      (keyup)="sentMsg(1)"
+      (keyup.enter)="sentMsg(0)"
+    />
+    <button
+      type="submit"
+      class="input-group-append btn-send btn btn-primary"
+      [ngClass]="{ 'btn-danger': message_error === true }"
+      (click)="sentMsg(0)"
+    >
+      <i class="feather icon-message-circle"></i>
+    </button>
+  </div>
+</div>

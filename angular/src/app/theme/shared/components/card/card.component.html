@@ -16,12 +16,14 @@
             <ul class="list-unstyled card-option dropdown-menu dropdown-menu-end" ngbDropdownMenu>
               <li class="dropdown-item full-card" (click)="fullCardToggle(toAnimate, '', true)">
                 <a href="javascript:"
-                  ><span><i class="feather" [ngClass]="fullIcon"></i> {{ this.cardClass === 'full-card' ? 'Restore' : 'Maximize' }}</span></a
-                  >
-                </li>
-                <li class="dropdown-item minimize-card" (click)="collapsedCardToggle()">
-                  <a href="javascript:"
-                    ><span
+                  ><span
+                    ><i class="feather" [ngClass]="fullIcon"></i> {{ this.cardClass === 'full-card' ? 'Restore' : 'Maximize' }}</span
+                  ></a
+                >
+              </li>
+              <li class="dropdown-item minimize-card" (click)="collapsedCardToggle()">
+                <a href="javascript:"
+                  ><span
                     ><i class="feather" [ngClass]="collapsedIcon"></i>
                     {{ this.collapsedCard === 'collapsed' ? 'Expand' : 'Collapse' }}
                   </span>

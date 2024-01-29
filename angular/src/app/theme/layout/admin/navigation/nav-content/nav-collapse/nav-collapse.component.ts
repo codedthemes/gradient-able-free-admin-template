@@ -1,7 +1,9 @@
 // Angular Import
 import { Component, Input } from '@angular/core';
-import { NavigationItem } from '../../navigation';
 import { animate, style, transition, trigger } from '@angular/animations';
+
+// project import
+import { NavigationItem } from '../../navigation';
 
 @Component({
   selector: 'app-nav-collapse',
