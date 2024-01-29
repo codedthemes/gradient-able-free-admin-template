@@ -1,11 +1,17 @@
 <ng-scrollbar (clickOutside)="navMob()" style="height: calc(100vh - 56px)">
   <div class="navbar-content">
     <ul class="nav pcoded-inner-navbar" (clickOutside)="fireOutClick()">
-      <ng-container *ngFor="let item of navigations">
-        <app-nav-group *ngIf="item.type === 'group'" [item]="item"></app-nav-group>
-        <app-nav-collapse *ngIf="item.type === 'collapse'" [item]="item"></app-nav-collapse>
-        <app-nav-item *ngIf="item.type === 'item'" [item]="item"></app-nav-item>
-      </ng-container>
+      @for (item of navigations; track item) {
+        @if (item.type === 'group') {
+          <app-nav-group [item]="item"></app-nav-group>
+        }
+        @if (item.type === 'collapse') {
+          <app-nav-collapse [item]="item"></app-nav-collapse>
+        }
+        @if (item.type === 'item') {
+          <app-nav-item [item]="item"></app-nav-item>
+        }
+      }
     </ul>
     <app-card [hidHeader]="true" cardClass="text-center">
       <i class="feather icon-sunset f-40"></i>

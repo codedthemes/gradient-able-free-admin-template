@@ -405,9 +405,6 @@ export class ChartDB {
         data: [25, 12, 19, 32, 25, 24, 10]
       }
     ],
-    title: {
-      text: '100% Stacked Bar'
-    },
     xaxis: {
       categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014]
     },
@@ -933,9 +930,6 @@ export class ChartDB {
       type: 'gradient'
     },
     colors: ['#4099ff', '#0e9e4a', '#FFB64D', '#FF5370'],
-    title: {
-      text: '3D Bubble Chart'
-    },
     xaxis: {
       tickAmount: 12,
       type: 'datetime',
@@ -1221,10 +1215,7 @@ export class ChartDB {
           max: 90
         })
       }
-    ],
-    title: {
-      text: 'HeatMap Chart (Single color)'
-    }
+    ]
   };
   static heatMap2CAC = {
     chart: {
@@ -1328,9 +1319,6 @@ export class ChartDB {
     colors: ['#4099ff', '#00acc1', '#0e9e4a', '#FFB64D', '#FF5370'],
     xaxis: {
       type: 'category'
-    },
-    title: {
-      text: 'Rounded (Range without Shades)'
     }
   };
   static pie1CAC = {
@@ -1518,9 +1506,6 @@ export class ChartDB {
         }
       }
     },
-    title: {
-      text: 'Radar with Polygon Fill'
-    },
     colors: ['#FF5370'],
     markers: {
       size: 4,
@@ -1574,9 +1559,6 @@ export class ChartDB {
         data: [44, 76, 78, 13, 43, 10]
       }
     ],
-    title: {
-      text: 'Radar Chart - Multi Series'
-    },
     colors: ['#4099ff', '#0e9e4a', '#FF5370'],
     stroke: {
       width: 0

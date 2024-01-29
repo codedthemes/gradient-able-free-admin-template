@@ -1,6 +1,5 @@
 // angular import
 import { Component, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
@@ -44,7 +43,7 @@ export type ChartOptions = {
 @Component({
   selector: 'app-dash-analytics',
   standalone: true,
-  imports: [CommonModule, SharedModule, NgApexchartsModule, ProductSaleComponent],
+  imports: [SharedModule, NgApexchartsModule, ProductSaleComponent],
   templateUrl: './dash-analytics.component.html',
   styleUrls: ['./dash-analytics.component.scss']
 })
