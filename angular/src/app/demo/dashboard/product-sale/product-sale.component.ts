@@ -1,6 +1,7 @@
 // angular import
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+// project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 
 interface ProgressBarItem {
@@ -12,7 +13,7 @@ interface ProgressBarItem {
 @Component({
   selector: 'app-product-sale',
   standalone: true,
-  imports: [CommonModule, SharedModule],
+  imports: [SharedModule],
   templateUrl: './product-sale.component.html',
   styleUrls: ['./product-sale.component.scss']
 })

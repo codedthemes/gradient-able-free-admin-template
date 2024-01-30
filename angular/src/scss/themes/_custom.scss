@@ -83,3 +83,15 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
+.page-item .page-link {
+  border-radius: 0px;
+}
+
+#customerChart .apexcharts-tooltip {
+  color: #000000;
+}
+
+#customerChart .apexcharts-tooltip .apexcharts-tooltip-series-group.active {
+  background: #ffffff !important;
+}

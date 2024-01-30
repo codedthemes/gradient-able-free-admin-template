@@ -1,10 +1,12 @@
+// angular import
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
-import { NgApexchartsModule } from 'ng-apexcharts';
+// project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 import { ChartDB } from 'src/app/fack-db/chartData';
 
+// third party import
+import { NgApexchartsModule } from 'ng-apexcharts';
 import {
   ChartComponent,
   ApexAxisChartSeries,
@@ -50,7 +52,7 @@ export type ChartOptions = {
 @Component({
   selector: 'app-core-apex',
   standalone: true,
-  imports: [CommonModule, SharedModule, NgApexchartsModule],
+  imports: [SharedModule, NgApexchartsModule],
   templateUrl: './core-apex.component.html',
   styleUrls: ['./core-apex.component.scss']
 })
@@ -61,8 +63,8 @@ export default class CoreApexComponent implements OnInit {
   lastDate!: number;
   // eslint-disable-next-line
   data: any;
-  intervalSub: string | number | NodeJS.Timer | undefined;
-  intervalMain: string | number | NodeJS.Timer | undefined;
+  intervalSub: any;
+  intervalMain: any;
 
   @ViewChild('chart1') chart!: ChartComponent;
   line1CAC!: Partial<ChartOptions>;

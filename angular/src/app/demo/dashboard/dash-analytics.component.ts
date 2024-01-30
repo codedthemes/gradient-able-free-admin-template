@@ -1,10 +1,9 @@
 // angular import
 import { Component, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
-import { NgApexchartsModule } from 'ng-apexcharts';
+import { ApexTheme, NgApexchartsModule } from 'ng-apexcharts';
 import { ProductSaleComponent } from './product-sale/product-sale.component';
 
 import {
@@ -39,18 +38,20 @@ export type ChartOptions = {
   fill: ApexFill;
   grid: ApexGrid;
   markers: ApexMarkers;
+  theme: ApexTheme;
 };
 
 @Component({
   selector: 'app-dash-analytics',
   standalone: true,
-  imports: [CommonModule, SharedModule, NgApexchartsModule, ProductSaleComponent],
+  imports: [SharedModule, NgApexchartsModule, ProductSaleComponent],
   templateUrl: './dash-analytics.component.html',
   styleUrls: ['./dash-analytics.component.scss']
 })
 export default class DashAnalyticsComponent {
   // public props
   @ViewChild('chart') chart!: ChartComponent;
+  @ViewChild('customerChart') customerChart!: ChartComponent;
   chartOptions!: Partial<ChartOptions>;
   chartOptions_1!: Partial<ChartOptions>;
   chartOptions_2!: Partial<ChartOptions>;
@@ -136,7 +137,7 @@ export default class DashAnalyticsComponent {
         show: false
       },
       tooltip: {
-        theme: 'datk'
+        theme: 'dark'
       },
       grid: {
         padding: {

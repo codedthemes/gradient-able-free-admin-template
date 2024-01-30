@@ -20,10 +20,10 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "skipLibCheck": true,
-    "target": "es2022",  // this will auto target to latest by angular cli
+    "target": "es2022", // this will auto target to latest by angular cli
     "module": "es2020",
     "lib": [
-      "es2022",  // this will auto target to latest by angular cli
+      "es2022", // this will auto target to latest by angular cli
       "dom"
     ]
   },

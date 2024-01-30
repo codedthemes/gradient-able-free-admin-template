@@ -1,5 +1,7 @@
 // Angular Import
 import { Component, EventEmitter, NgIterable, Output } from '@angular/core';
+
+// project import
 import { FriendsList } from 'src/app/fack-db/friends-list';
 
 @Component({
@@ -8,16 +10,14 @@ import { FriendsList } from 'src/app/fack-db/friends-list';
   styleUrls: ['./chat-user-list.component.scss']
 })
 export class ChatUserListComponent {
+  // public props
   @Output() ChatCollapse = new EventEmitter();
   @Output() ChatToggle = new EventEmitter();
   searchFriends!: string;
   // eslint-disable-next-line
-  friendsList: NgIterable<any> | null | undefined;
+  friendsList: any = FriendsList.friends;
 
-  constructor() {
-    this.friendsList = FriendsList.friends;
-  }
-
+  // public method
   ChatOn() {
     this.ChatToggle.emit();
   }

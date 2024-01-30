@@ -1,7 +1,6 @@
 // Angular Import
-import { Component, DoCheck } from '@angular/core';
+import { Component } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
-import { GradientConfig } from 'src/app/app-config';
 
 // bootstrap
 import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
@@ -22,12 +21,11 @@ import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
     ])
   ]
 })
-export class NavRightComponent implements DoCheck {
+export class NavRightComponent {
   // public props
   visibleUserList: boolean;
   chatMessage: boolean;
   friendId!: number;
-  gradientConfig = GradientConfig;
 
   // constructor
   constructor() {
@@ -39,13 +37,5 @@ export class NavRightComponent implements DoCheck {
   onChatToggle(friendID: number) {
     this.friendId = friendID;
     this.chatMessage = !this.chatMessage;
-  }
-
-  ngDoCheck() {
-    if (document.querySelector('body')?.classList.contains('elite-rtl')) {
-      this.gradientConfig.isRtlLayout = true;
-    } else {
-      this.gradientConfig.isRtlLayout = false;
-    }
   }
 }

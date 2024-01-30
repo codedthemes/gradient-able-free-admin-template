@@ -1,0 +1,95 @@
+<ng-scrollbar style="height: 362px" visibility="hover" track="all">
+  <table class="table table-hover m-b-0 mt-3">
+    <thead>
+      <tr>
+        @for (sale of product_sale; track sale) {
+          <th>
+            <span>
+              {{ sale.title }}
+              <a class="help"><i class="feather {{ sale.icon }}  f-16"></i></a>
+            </span>
+          </th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08-11-2016</td>
+        @for (progress of progressBar; track progress) {
+          <td
+            >{{ progress.value }}
+            <div class="mt-1">
+              <ngb-progressbar type="{{ progress.color }}" height="4px" [value]="progress.percentage"></ngb-progressbar>
+            </div>
+          </td>
+        }
+      </tr>
+      <tr>
+        <td>15-10-2016</td>
+        @for (progress of progressBar2; track progress) {
+          <td
+            >{{ progress.value }}
+            <div class="mt-1">
+              <ngb-progressbar type="{{ progress.color }}" height="4px" [value]="progress.percentage"></ngb-progressbar>
+            </div>
+          </td>
+        }
+      </tr>
+      <tr>
+        <td>08-08-2017</td>
+        @for (progress of progressBar3; track progress) {
+          <td
+            >{{ progress.value }}
+            <div class="mt-1">
+              <ngb-progressbar type="{{ progress.color }}" height="4px" [value]="progress.percentage"></ngb-progressbar>
+            </div>
+          </td>
+        }
+      </tr>
+      <tr>
+        <td>11-12-2017</td>
+        @for (progress of progressBar4; track progress) {
+          <td
+            >{{ progress.value }}
+            <div class="mt-1">
+              <ngb-progressbar type="{{ progress.color }}" height="4px" [value]="progress.percentage"></ngb-progressbar>
+            </div>
+          </td>
+        }
+      </tr>
+      <tr>
+        <td>05-06-2015</td>
+        @for (progress of progressBar5; track progress) {
+          <td
+            >{{ progress.value }}
+            <div class="mt-1">
+              <ngb-progressbar type="{{ progress.color }}" height="4px" [value]="progress.percentage"></ngb-progressbar>
+            </div>
+          </td>
+        }
+      </tr>
+      <tr>
+        <td>08-11-2016</td>
+        @for (progress of progressBar6; track progress) {
+          <td
+            >{{ progress.value }}
+            <div class="mt-1">
+              <ngb-progressbar type="{{ progress.color }}" height="4px" [value]="progress.percentage"></ngb-progressbar>
+            </div>
+          </td>
+        }
+      </tr>
+      <tr>
+        <td>15-10-2016</td>
+        @for (progress of progressBar7; track progress) {
+          <td
+            >{{ progress.value }}
+            <div class="mt-1">
+              <ngb-progressbar type="{{ progress.color }}" height="4px" [value]="progress.percentage"></ngb-progressbar>
+            </div>
+          </td>
+        }
+      </tr>
+    </tbody>
+  </table>
+</ng-scrollbar>

@@ -1,16 +1,18 @@
 <div class="row">
   <!-- order-card start -->
-  <div class="col-md-6 col-xl-3" *ngFor="let card of cards">
-    <app-card [hidHeader]="true" cardClass="{{ card.background }} order-card">
-      <h6 class="text-white">{{ card.title }}</h6>
-      <h2 class="text-end text-white"
-        ><i class="feather {{ card.icon }} float-start"></i><span>{{ card.number }}</span>
-      </h2>
-      <p class="m-b-0"
-        >{{ card.text }}<span class="float-end">{{ card.no }}</span></p
-      >
-    </app-card>
-  </div>
+  @for (card of cards; track card) {
+    <div class="col-md-6 col-xl-3">
+      <app-card [hidHeader]="true" cardClass="{{ card.background }} order-card">
+        <h6 class="text-white">{{ card.title }}</h6>
+        <h2 class="text-end text-white"
+          ><i class="feather {{ card.icon }} float-start"></i><span>{{ card.number }}</span>
+        </h2>
+        <p class="m-b-0"
+          >{{ card.text }}<span class="float-end">{{ card.no }}</span></p
+        >
+      </app-card>
+    </div>
+  }
   <!-- order-card end -->
 
   <!-- account-section start -->
@@ -52,8 +54,9 @@
             [colors]="chartOptions_1.colors!"
             [fill]="chartOptions_1.fill!"
             [grid]="chartOptions_1.grid!"
+            [plotOptions]="chartOptions_1.plotOptions!"
+            [tooltip]="chartOptions_1.tooltip!"
           >
-            [plotOptions]="chartOptions_1.plotOptions" [tooltip]="chartOptions_1.tooltip"
           </apx-chart>
           <div class="row mt-3 text-center">
             <div class="col">
@@ -78,19 +81,21 @@
               <span class="text-white">8.2%<i class="feather icon-trending-up ms-1"></i></span>
             </div>
           </div>
-          <apx-chart
-            [series]="chartOptions_2.series!"
-            [chart]="chartOptions_2.chart!"
-            [stroke]="chartOptions_2.stroke!"
-            [dataLabels]="chartOptions_2.dataLabels!"
-            [labels]="chartOptions_2.labels!"
-            [legend]="chartOptions_2.legend!"
-            [colors]="chartOptions_2.colors!"
-            [fill]="chartOptions_2.fill!"
-            [grid]="chartOptions_2.grid!"
-          >
-            [plotOptions]="chartOptions_2.plotOptions" [tooltip]="chartOptions_2.tooltip" ></apx-chart
-          >
+          <div id="customerChart">
+            <apx-chart
+              [series]="chartOptions_2.series!"
+              [chart]="chartOptions_2.chart!"
+              [stroke]="chartOptions_2.stroke!"
+              [dataLabels]="chartOptions_2.dataLabels!"
+              [labels]="chartOptions_2.labels!"
+              [legend]="chartOptions_2.legend!"
+              [colors]="chartOptions_2.colors!"
+              [fill]="chartOptions_2.fill!"
+              [grid]="chartOptions_2.grid!"
+              [plotOptions]="chartOptions_2.plotOptions!"
+              [tooltip]="chartOptions_2.tooltip!"
+            ></apx-chart>
+          </div>
           <div class="row mt-3 text-center">
             <div class="col">
               <h3 class="m-0 text-white"><i class="fas fa-circle f-10 m-r-5 text-white"></i>674</h3>
@@ -185,17 +190,19 @@
           </div>
           <h6><span class="badge bg-danger">File</span> Eddie uploaded new files: <small class="text-muted ms-1">2 hours ago</small></h6>
           <p class="m-b-15 m-t-15"
-            >hii <b> @everone</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            >hii <b> &#64;everone</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s.</p
           >
           <div class="row">
-            <div class="col-auto text-center" *ngFor="let image of images">
-              <img src="{{ image.src }}" alt="img" class="img-fluid wid-100" />
-              <h6 class="m-t-15 m-b-0">{{ image.title }}</h6>
-              <p class="text-muted m-b-0"
-                ><small>{{ image.size }}</small></p
-              >
-            </div>
+            @for (image of images; track image) {
+              <div class="col-auto text-center">
+                <img src="{{ image.src }}" alt="img" class="img-fluid wid-100" />
+                <h6 class="m-t-15 m-b-0">{{ image.title }}</h6>
+                <p class="text-muted m-b-0"
+                  ><small>{{ image.size }}</small></p
+                >
+              </div>
+            }
           </div>
         </li>
         <li class="diactive-feed">
@@ -216,7 +223,7 @@
             <small class="text-muted">6 hours ago</small>
           </h6>
           <p class="m-b-15 m-t-15"
-            >hii <b> @everone</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            >hii <b> &#64;everone</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s.</p
           >
         </li>
