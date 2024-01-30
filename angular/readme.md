@@ -116,7 +116,7 @@ To report a bug, please submit an [issue](https://github.com/codedthemes/gradien
 
 ## More Premium Angular Dashboard Templates
 
-- [mantis Angular Pro](https://codedthemes.com/item/mantis-angular-admin-template/)
+- [Mantis Angular Pro](https://codedthemes.com/item/mantis-angular-admin-template/)
 - [Datta Able Angular Pro](https://codedthemes.com/item/datta-able-angular/)
 - [Next Angular Pro](https://codedthemes.com/item/next-angular-admin-template/)
 - [Berry Angular Pro](https://codedthemes.com/item/berry-angular-admin-dashboard-template/)
