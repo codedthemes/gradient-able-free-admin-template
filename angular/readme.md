@@ -73,13 +73,13 @@ git clone https://github.com/codedthemes/gradient-able-free-admin-template.git
 2. Install packages
 
 ```
-npm i --legacy-peer-deps
+yarn
 ```
 
 3. Run project
 
 ```
-npm run start
+yarn start
 ```
 
 ## Documentation
