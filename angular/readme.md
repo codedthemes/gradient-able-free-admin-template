@@ -7,6 +7,8 @@ Gradient Able is a free angular admin dashboard template built with Angular and 
 
 :star: :star: :star: Do not forget to star (Top right of this page) it if you like the theme :star: :star: :star:
 
+![IMG_8566.jpg](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-ANGULAR-REPO%20-%20Gradient.jpg)
+
 [Pro version](https://codedthemes.com/demos/admin-templates/gradient-able/angular/default) of Gradient Able Angular Dashboard template contains features like TypeScript, Apps, Authentication Methods (i.e. JWT), Advance Components, Form Plugins, Layouts, Widgets, and many more.
 
 | [Gradient Able Free](https://codedthemes.com/demos/admin-templates/gradient-able/angular/free/) | [Gradient Able](https://codedthemes.com/item/gradient-able-angular-admin-template/)            |
