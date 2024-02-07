@@ -103,7 +103,7 @@ To report a bug, please submit an [issue](https://github.com/codedthemes/gradien
 
 ## License
 
-- Licensed cover under [MIT](https://github.com/codedthemes/datta-able-bootstrap-dashboard/blob/master/LICENSE)
+- Licensed cover under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/angular/LICENSE)
 
 ## Gradient Able - React version
 
