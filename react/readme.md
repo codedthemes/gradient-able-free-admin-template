@@ -1,4 +1,4 @@
-# Gradient Able React Free Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20Gradient%20Able%20-%20The%20professional%20Bootstrap%20designed%20React%20Admin%20Dashboard%20Template%20&url=https://codedthemes.com/demos/admin-templates/gradient-able/react/default&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
+# Gradient Able React Free Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20Gradient%20Able%20-%20The%20Professional%20Bootstrap%20Designed%20React%20Admin%20Dashboard%20Template%20&url=https://codedthemes.com/demos/admin-templates/gradient-able/react/default&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/react/LICENSE)
@@ -17,9 +17,9 @@ It is modern concept dashboard design with eye catchy colors. Wish you happy to 
 
 ![Gradient Able React Free Admin Template Preview Image](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-REACT-REPO%20-%20Gradient%20Able.jpg)
 
-The [Pro version](https://codedthemes.com/demos/admin-templates/gradient-able/react/default) of Datta able react template includes features such as TypeScript, apps, authentication methods (i.e. JWT, Auth0, Firebase), advance components, form plugins, layouts, widgets, and more.
+The [Pro version](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium) of Gradient able react template includes features such as javascript, apps, authentication methods (i.e. JWT, Auth0, Firebase), advance components, form plugins, layouts, widgets, and more.
 
-| [Gradient Able Free](https://codedthemes.com/item/gradient-able-reactjs-free-admin-template) | [Gradient Able](https://codedthemes.com/demos/admin-templates/gradient-able/react/default)            |
+| [Gradient Able Free](https://codedthemes.com/item/gradient-able-reactjs-free-admin-template) | [Gradient Able](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)            |
 | -------------------------------------------------------     | :------------------------------------------------------------------------------- |
 | **7** Demo pages                                            | **85+** Demo pages                                                               |
 | -                                                           | ✓ Multi-Dashboard                                                                 |
@@ -28,7 +28,7 @@ The [Pro version](https://codedthemes.com/demos/admin-templates/gradient-able/re
 | -                                                           | ✓ Multiple color options                                                         |
 | -                                                           | ✓ RTL                                                                            |
 | -                                                           | ✓ JWT, Firebase, Auth0, AWS authentication                                       |
-| ✓ MIT License                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/)                |
+| ✓ MIT License                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)                |
 
 ## Why Gradient Able?
 
@@ -60,7 +60,7 @@ Gradient Able offers everything needed to build an advanced dashboard applicatio
 
 #### Purchase
 
-- [Buy now](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/)
+- [Buy now](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
 
 ## Table of contents
 
@@ -128,7 +128,7 @@ Please generate a [GitHub issue](https://github.com/codedthemes/gradient-able-fr
 
 ## More premium React Material Admin Dashboard Templates
 
-- [Materially](https://codedthemes.com/item/materially-reactjs-admin-dashboard/)
+- [Materially](https://codedthemes.com/item/materially-reactjs-admin-dashboard/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
 - [Berry](https://mui.com/store/items/berry-react-material-admin/)
 
 ## Follow us
