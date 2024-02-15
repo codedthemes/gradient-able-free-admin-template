@@ -1,35 +1,44 @@
-var gulp = require("gulp"), // main
-  sass = require("gulp-sass"), // scss compiler
-  uglify = require("gulp-uglify"), // minify js files
-  cssmin = require("gulp-cssmin"), // minify css files
-  merge = require("merge-stream"), // mearge two task
-  babel = require("gulp-babel"), // convert next generation JavaScript, today.
-  npmlodash = require("lodash"), // perfoming oops in gulp
-  smushit = require("gulp-smushit"), // image optimizer
-  autoprefixer = require("gulp-autoprefixer"), // css propertys autoprefixer
-  cssbeautify = require("gulp-cssbeautify"), // css cssbeautify
-  fileinclude = require("gulp-file-include"), // include html files
-  browsersync = require("browser-sync"), // browser reload
-  htmlmin = require("gulp-htmlmin"); // html minify
 
-const layout = {
-  layouts: "vertical", // vertical / horizontal
-  sublayouts: "",
-  darktheme: "false", // true / false
-  rtltheme: "false", // true / false
-  bodyclass: "",
-  menuclass: "menupos-fixed menu-light",
-  headerclass: "headerpos-fixed header-blue",
-};
+var gulp = require("gulp");
+var sass = require('gulp-sass')(require('sass'));
+var del = require('del');
+var sourcemaps = require("gulp-sourcemaps");
+var uglify = require("gulp-uglify");
+var sourcemaps = require("gulp-sourcemaps");
+var cssmin = require("gulp-cssmin");
+var merge = require("merge-stream");
+var babel = require("gulp-babel");
+var npmlodash = require("lodash");
+var smushit = require("gulp-smushit");
+var autoprefixer = require("gulp-autoprefixer");
+var cssbeautify = require("gulp-cssbeautify");
+var fileinclude = require("gulp-file-include");
+var browsersync = require("browser-sync");
+
+// =======================================================
+// -----------   Gradient Able Theme Configuration  -----------
+// =======================================================
+
+const caption_show = 'true'; // [ false , true ]
+const dark_navbar = 'false'; // [ false , true ]
+const preset_theme = 'preset-1'; // [ preset-1 to preset-10 ]
+const header_theme = 'header-1'; // [ preset-1 to preset-12 ]
+const dark_layout = 'false'; // [ false , true , default ]
+const rtl_layout = 'false'; // [ false , true ]
+const box_container = 'false'; // [ false , true ]
+const version = 'v2.0';
+
+// =======================================================
 
 //  [ scss compiler ] start
 gulp.task("sass", function () {
   // main style css
   return gulp
     .src("src/assets/scss/*.scss")
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(cssbeautify())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("dist/assets/css"));
 });
 //  [ scss compiler ] end
@@ -39,16 +48,17 @@ gulp.task("build", function () {
   var required_libs = {
     js: [
       "node_modules/bootstrap/dist/js/bootstrap.min.js",
-      "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
-      "node_modules/apexcharts/dist/apexcharts.min.js",
-      "node_modules/gmaps/gmaps.min.js",
       "node_modules/@popperjs/core/dist/umd/popper.min.js",
-      "node_modules/clipboard/dist/clipboard.min.js",
+      "node_modules/simplebar/dist/simplebar.min.js",
+      "node_modules/feather-icons/dist/feather.min.js",
+      "node_modules/apexcharts/dist/apexcharts.min.js",
+      "node_modules/jsvectormap/dist/js/jsvectormap.min.js",
+      "node_modules/jsvectormap/dist/maps/world.js",
+      "node_modules/jsvectormap/dist/maps/world-merc.js"
     ],
     css: [
       "node_modules/bootstrap/dist/css/bootstrap.min.css",
-      "node_modules/animate.css/animate.min.css",
-      "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+      "node_modules/jsvectormap/dist/css/jsvectormap.min.css"
     ],
   };
   npmlodash(required_libs).forEach(function (assets, type) {
@@ -61,15 +71,44 @@ gulp.task("build", function () {
   var cpyassets = gulp
     .src(["src/assets/**/*.*", "!src/assets/scss/**/*.*"])
     .pipe(gulp.dest("dist/assets"));
-  return merge(cpyassets);
+      return merge(cpyassets);
 });
 
 //  [ Copy assets ] end
 
 //  [ build html ] start
+if (rtl_layout == "true") {
+  var rtltemp = "rtl"
+} else {
+  var rtltemp = "ltr"
+}
+
+if (dark_layout == 'true') {
+  var darklayouttemp = "dark"
+} else {
+  var darklayouttemp = "light"
+}
+if (dark_navbar == 'true') {
+  var  darknavbartemp = "dark"
+} else {
+  var  darknavbartemp = "light"
+}
+
+const layout = {
+  pc_caption_show: caption_show,
+  pc_preset_theme: preset_theme,
+  pc_header_theme: header_theme,
+  pc_dark_navbar: dark_navbar,
+  pc_dark_layout: dark_layout,
+  pc_rtl_layout: rtl_layout,
+  pc_box_container: box_container,
+  pc_theme_version: version,
+  bodySetup: 'data-pc-header="' + header_theme + '" data-pc-preset="' + preset_theme + '" data-pc-sidebar-theme="'+ darknavbartemp +'" data-pc-sidebar-caption="' + caption_show + '" data-pc-direction="' + rtltemp + '" data-pc-theme="' + darklayouttemp + '"',
+};
+
 gulp.task("build-html", function () {
   return gulp
-    .src("src/html/*.html")
+    .src("src/html/**/*.html")
     .pipe(
       fileinclude({
         context: layout,
@@ -104,7 +143,6 @@ gulp.task("mincss", function () {
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssbeautify())
-    .pipe(gulp.dest("dist/assets/css"))
     .pipe(cssmin())
     .pipe(gulp.dest("dist/assets/css"));
 });
@@ -126,28 +164,6 @@ gulp.task("uglify", function () {
   return merge(layoutjs, pagesjs);
 });
 //  [ uglify js ] end
-
-//  [ minify html ] start
-gulp.task("htmlmin", function () {
-  return gulp
-    .src("src/html/*.html")
-    .pipe(
-      fileinclude({
-        context: layout,
-        prefix: "@@",
-        basepath: "@file",
-        indent: true,
-      })
-    )
-    .pipe(
-      htmlmin({
-        collapseWhitespace: true,
-      })
-    )
-    .pipe(gulp.dest("dist"));
-});
-//  [ minify html ] end
-
 //  [ image optimizer ] start
 gulp.task("imgmin", function () {
   return gulp
@@ -165,6 +181,11 @@ gulp.task("browserSync", function () {
 });
 //  [ browser reload ] end
 
+gulp.task("cleandist", function (callback) {
+  del.sync(["dist/*/"]);
+  callback();
+});
+
 //  [ watch ] start
 gulp.task("watch", function () {
   gulp
@@ -176,31 +197,20 @@ gulp.task("watch", function () {
   gulp
     .watch("src/html/**/*.html", gulp.series("build-html"))
     .on("change", browsersync.reload);
-  gulp
-    .watch("src/doc/**/*.html", gulp.series("build"))
-    .on("change", browsersync.reload);
 });
+
 //  [ watch ] start
 const compile = gulp.parallel("browserSync", "watch");
+
 //  [ Default task ] start
 gulp.task(
   "default",
-
-  gulp.series("build", "sass", "build-js", "build-html", "imgmin", compile)
+  gulp.series("cleandist", "build", "sass", "build-js", "build-html", "imgmin", compile)
 );
-// gulp.parallel('browserSync','watch')
 //  [ Default task ] end
 
-//  [ watch minify ] start
-gulp.task("watch-minify", function () {
-  gulp.watch("src/assets/scss/**/*.scss", gulp.series("mincss"));
-  gulp.watch("src/assets/js/**/*.js", gulp.series("uglify"));
-  gulp.watch("src/html/**/*.html", gulp.series("htmlmin"));
-  gulp.watch("src/doc/**/*.html", gulp.series("build"));
-});
-//  [ watch minify ] start
-
+// build in production mode
 gulp.task(
   "build-prod",
-  gulp.series("build", "sass", "build-js", "build-html", "imgmin")
+  gulp.series("cleandist", "build", "sass", "build-js", "build-html", "imgmin")
 );
