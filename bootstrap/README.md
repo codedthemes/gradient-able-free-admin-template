@@ -2,7 +2,8 @@
 
 Gradient Able Admin Template made using Bootstrap 4 framework, It is a free lite version of [Gradient Able Premium Admin Template](https://codedthemes.com/item/gradient-able-bootstrap-lite/) that makes you fulfill your entire Dashboard needs.
 
-![https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-BOOTSTRAP-REPO-Gradient+Able.jpg)
+
+(https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-BOOTSTRAP-REPO-Gradient+Able.jpg)
 
 Gradient Able admin template comes with variety of Bootstrap components like Button, Badges, Tabs, Breadcrumb, Icons, Form elements, Table, Charts & authentication pages.
 
