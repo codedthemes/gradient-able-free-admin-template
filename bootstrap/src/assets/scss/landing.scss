@@ -1,0 +1,105 @@
+/**======================================================================
+=========================================================================
+Template Name: Gradient Able - Bootstrap Admin Template
+Author: codedthemes
+Support: https://codedthemes.authordesk.app
+File: style.css
+=========================================================================
+=================================================================================== */
+
+// main framework
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'settings/color-variables';
+@import 'settings/bootstrap-variables';
+@import 'settings/theme-variables';
+
+@import 'node_modules/bootstrap/scss/mixins';
+
+section {
+  padding: 100px 0;
+}
+
+.landing-page {
+  overflow-x: hidden;
+  background: var(--bs-body-bg);
+
+  @media (min-width: 1600px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+}
+
+.navbar {
+  position: fixed;
+  padding: 16px 0;
+  width: 100%;
+  z-index: 1099;
+  top: 0;
+  backdrop-filter: blur(7px);
+  background: var(--pc-header-background);
+
+  &.top-nav-collapse.default {
+    box-shadow: none;
+  }
+
+  &.default,
+  &.top-nav-collapse {
+    box-shadow: 0 8px 6px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, .9);
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+}
+
+header {
+  overflow: hidden;
+  position: relative;
+  padding: 174px 0 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+  @media (max-width: 1199.98px) {
+    min-height: unset;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 130px 0 60px 0;
+    .header-content{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  .img-header {
+    transform: scale(1.3);
+    transform-origin: left;
+    padding: 5px;
+
+    img {
+      border-radius: 5px;
+    }
+
+    @media (max-width: 1680px) {
+      transform: unset;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  section {
+    padding: 40px 0;
+  }
+}
