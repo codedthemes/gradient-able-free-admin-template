@@ -6,7 +6,41 @@
 <div class="h-list-body">
   <div class="main-chat-cont">
     <div class="main-friend-chat">
-      <ng-template #CHATNOTFOUND>
+      @if (chatMessage.chat) {
+        <ng-scrollbar style="height: calc(100vh - 170px)" visibility="hover">
+          @for (messages of chatMessage.chat; track messages) {
+            <div>
+              <div class="media chat-messages">
+                @if (messages.type) {
+                  <a class="media-left photo-table" href="javascript:">
+                    <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}" alt="{{ chatMessage.name }}" />
+                  </a>
+                }
+                <div class="media-body" [ngClass]="{ 'chat-menu-content': messages.type, 'chat-menu-reply': !messages.type }">
+                  <div class="">
+                    <p class="chat-cont">{{ messages.msg }}</p>
+                  </div>
+                  <p class="chat-time">{{ messages.time }}</p>
+                </div>
+              </div>
+            </div>
+          }
+          <div #newChat [innerHTML]="newReplay"></div>
+          @if (friendWriting) {
+            <div class="media chat-messages typing">
+              <a class="media-left photo-table" href="javascript:"
+                ><img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}" alt="{{ chatMessage.name }}"
+              /></a>
+              <div class="media-body chat-menu-content">
+                <div class="rem-msg">
+                  <p class="chat-cont">Typing . . .</p>
+                </div>
+                <p class="chat-time">now</p>
+              </div>
+            </div>
+          }
+        </ng-scrollbar>
+      } @else {
         <div class="media chat-messages text-center">
           <div class="media-body chat-menu-content">
             <div class="">
@@ -14,36 +48,7 @@
             </div>
           </div>
         </div>
-      </ng-template>
-      <ng-container *ngIf="chatMessage.chat; else CHATNOTFOUND">
-        <ng-scrollbar style="height: calc(100vh - 170px)" visibility="hover">
-          <div *ngFor="let messages of chatMessage.chat">
-            <div class="media chat-messages">
-              <a *ngIf="messages.type" class="media-left photo-table" href="javascript:">
-                <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}" alt="{{ chatMessage.name }}" />
-              </a>
-              <div class="media-body" [ngClass]="{ 'chat-menu-content': messages.type, 'chat-menu-reply': !messages.type }">
-                <div class="">
-                  <p class="chat-cont">{{ messages.msg }}</p>
-                </div>
-                <p class="chat-time">{{ messages.time }}</p>
-              </div>
-            </div>
-          </div>
-          <div #newChat [innerHTML]="newReplay"></div>
-          <div *ngIf="friendWriting" class="media chat-messages typing">
-            <a class="media-left photo-table" href="javascript:"
-              ><img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}" alt="{{ chatMessage.name }}"
-            /></a>
-            <div class="media-body chat-menu-content">
-              <div class="rem-msg">
-                <p class="chat-cont">Typing . . .</p>
-              </div>
-              <p class="chat-time">now</p>
-            </div>
-          </div></ng-scrollbar
-        >
-      </ng-container>
+      }
     </div>
   </div>
 </div>

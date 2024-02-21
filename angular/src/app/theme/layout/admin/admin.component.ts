@@ -1,7 +1,6 @@
 // Angular Import
 import { Component } from '@angular/core';
 import { Location, LocationStrategy } from '@angular/common';
-import { GradientConfig } from 'src/app/app-config';
 
 @Component({
   selector: 'app-admin',
@@ -10,7 +9,7 @@ import { GradientConfig } from 'src/app/app-config';
 })
 export class AdminComponent {
   // public props
-  navCollapsed: boolean;
+  navCollapsed!: boolean;
   navCollapsedMob: boolean;
   windowWidth: number;
 
@@ -24,14 +23,7 @@ export class AdminComponent {
     if (baseHref) {
       current_url = baseHref + this.location.path();
     }
-
     this.windowWidth = window.innerWidth;
-
-    if (current_url === baseHref + '/layout/collapse-menu' || (this.windowWidth >= 992 && this.windowWidth <= 1024)) {
-      GradientConfig.collapse_menu = true;
-    }
-
-    this.navCollapsed = this.windowWidth >= 992 ? GradientConfig.collapse_menu : false;
     this.navCollapsedMob = false;
   }
 

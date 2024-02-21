@@ -136,7 +136,7 @@ export const NavigationItems: NavigationItem[] = [
     children: [
       {
         id: 'forms',
-        title: 'Basic Elements',
+        title: 'Basic Forms',
         type: 'item',
         url: '/forms',
         classes: 'nav-item',

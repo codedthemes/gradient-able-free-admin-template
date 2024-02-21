@@ -18,7 +18,7 @@ const routes: Routes = [
       },
       {
         path: 'analytics',
-        loadComponent: () => import('./demo/dashboard/dash-analytics/dash-analytics.component')
+        loadComponent: () => import('./demo/dashboard/dash-analytics.component')
       },
       {
         path: 'component',
@@ -26,7 +26,7 @@ const routes: Routes = [
       },
       {
         path: 'chart',
-        loadComponent: () => import('./demo/chart & map/core-apex/core-apex.component')
+        loadComponent: () => import('./demo/chart & map/core-apex.component')
       },
       {
         path: 'forms',

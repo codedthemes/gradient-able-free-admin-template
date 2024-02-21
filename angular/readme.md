@@ -1,199 +1,133 @@
-# Gradient Able Angular 16 Free Admin Dashboard
+# Gradient Able Angular 17 Free Admin Dashboard [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Gradient%20%20Able%20Angular%20-%20The%20Most%20Beautiful%20Bootstrap%20Designed%20Admin%20Dashboard%20Template%20&url=https://codedthemes.com/demos/admin-templates/gradient-able/angular/default&via=codedthemes&hashtags=angular,webdev,developers,typescript)
 
-Gradient Able dashboard template built using Angular 16 with Bootstrap 5 framework, It is a free lite version of [Gradient Able Angular](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) Dashboard Template will complete your admin dashboard needs.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://codedthemes.com/item/gradient-able-angular-free-admin-template/)
 
-Gradient Able Angular Free Admin Template comes with variety of components like Button, Badges, Breadcrumb, Pagination, Collapse, Tabs & Pills, Form Elements, Table, Charts & Authentication Pages.
+Gradient Able is a free angular admin dashboard template built with Angular and latest Bootstrap 5. It is meant to provide the best possible User Experience with highly customizable feature-rich pages. It is a complete Dashboard Template that has easy and intuitive responsive design whether it is viewed on retina screens or laptops.
 
-The code structure is highly flexible to use and modify. 
+:star: :star: :star: Do not forget to star (Top right of this page) it if you like the theme :star: :star: :star:
 
-Its design adapt any screen size easily even if retina screens (retina tested).
+![IMG_8566.jpg](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-ANGULAR-REPO%20-%20Gradient.jpg)
 
-The routing structure is lazy loading.
+[Pro version](https://codedthemes.com/item/gradient-able-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium) of Gradient Able Angular Dashboard template contains features like TypeScript, Apps, Authentication Methods (i.e. JWT), Advance Components, Form Plugins, Layouts, Widgets, and many more.
 
-It is modern concept dashboard design with eye catchy colors.
+| [Gradient Able Free](https://codedthemes.com/demos/admin-templates/gradient-able/angular/free/) | [Gradient Able](https://codedthemes.com/item/gradient-able-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)            |
+| -------------------------------------------------------     | :------------------------------------------------------------------------------- |
+| **9** Demo pages                                            | **45+** demo pages                                                               |
+| -                                                           | ✓ Multi-language                                                                 |
+| -                                                           | ✓ Dark/Light Mode 🌓                                                             |
+| -                                                           | ✓ TypeScript version                                                             |
+| -                                                           | ✓ 6+ color Options                                                               |
+| -                                                           | ✓ RTL                                                                            |
+| ✓ MIT License                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)                |
 
-Wish you happy to use our product in your project.
+## Why Gradient Able?
 
-## Free Version Preview & Download
+Gradient Able is offers everything you need to create dashboards. We have included the following high-end features in our initial release:
 
-Check out live preview of Gradient Able Angular Lite version & download it.
+- Modern aesthetics UI design
+- Bootstrap components
+- Fully Responsive, all modern browser supported
+- Easy to use code structure
+- Flexible & High-Performance code
+- Easy Documentation Guide
+
+## Gradient Able Free version
 
 #### Preview
 
- - [Demo](codedthemes.com/public_html/demos/admin-templates/gradient-able/angular/free)
+- [Demo](https://codedthemes.com/demos/admin-templates/gradient-able/angular/free)
 
 #### Download
 
- - [Download from Github](https://github.com/codedthemes/gradient-able-free-admin-template)
- - [Download from CodedThemes](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) & receive important notification instantly in your maiL.
- 
- ## Premium Version Preview & Download
+- [Download from GitHub](https://github.com/codedthemes/gradient-able-free-admin-template)
 
-Gradient Able Admin Template is available to purchase. Visit its numerous demos and make your purchase decision.
+## Gradient Able Pro version
 
 #### Preview
 
- - [Demo](https://codedthemes.com/demos/admin-templates/gradient-able/angular/)
+- [Demo](https://codedthemes.com/demos/admin-templates/gradient-able/angular/default/)
 
-#### Download
+#### Purchase
 
- - [Purchase from CodedThemes](https://codedthemes.com/item/gradient-able-angular-admin-template/)
+- [Purchase from CodedThemes](https://codedthemes.com/item/gradient-able-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
 
 ## Table of contents
 
- * [Getting Started](#getting-started)
- * [Online Documentation](#online-documentation)
- * [Build With](#build-with)
- * [Directory Structure](#directory-structure)
- * [RoadMap](#roadmap)
- * [Author](#author)
- * [Issues?](#issues)
- * [License](#license)
- * [Other Dashboard Products](#other-dashboard-products)
- * [Social Profiles](#social-profiles)
- 
+- [Getting Started](#getting-started)
+- [Documentation](#documentation)
+- [Technology Stack](#technology-stack)
+- [Author](#author)
+- [Issues?](#issues)
+- [License](#license)
+- [More Free Angular Templates](#more-free-angular-dashboard-templates)
+- [More Pro Angular Templates](#more-premium-angular-dashboard-templates)
+- [Follow us](#follow-us)
+
 ## Getting Started
 
-Clone from Github 
+1. Clone from Github
+
 ```
-git clone https://github.com/codedthemes/gradient-able-free-angular-admin-template.git
-```
-#### Terminal Commands
-
-This project was generated with Angular CLI version 9.0.2 and angular 9.x.
-
- 1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en)
- 2. Open Terminal.
- 3. Go to your file project.
- 4. Make sure you have installed [Angular CLI] (https://github.com/angular/angular-cli) already. If not, please install.
- 5. Install node modules, Run in terminal: npm install
- 6. Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README] (https://github.com/angular/angular-cli/blob/master/README.md).
-
-*no other dependencies required to run the Gradient Able Admin Dashboard*
-
-## Online Documentation
-
-Gradient Able Lite version documentation cover in its Pro version documentation - check our [website.](https://codedthemes-2.gitbook.io/gradient-able-angular/)
-
-## Build With
-
- - [Angular CLI](https://github.com/angular/angular-cli)
- - [Latest Bootstrap 5 Stable](https://getbootstrap.com/)
- - [SASS Powered](https://sass-lang.com/)
- - [NodeJs](https://nodejs.org/en/)
- - [NgBootstrap](https://ng-bootstrap.github.io/#/home)
-
-## Directory Structure
-```
-gradient-able/
-├── e2e
-|    ├── src/
-|   |   ├── app/
-|    |   |   ├── demo/
-|    |   |   ├── theme/
-|    |   |   |   ├── layout/
-|    |   |   |   |   ├── admin/
-|    |   |   |   |   |   ├── configuration/
-|    |   |   |   |   |   ├── nav-bar/
-|    |   |   |   |   |   ├── navigation/
-|    |   |   |   |   |   |   ├── nav-content/
-|    |   |   |   |   |   |   ├── ...
-|    |   |   |   |   |   |   ├── navigation.ts
-|    |   |   |   |   |   ├── admin.component.html
-|    |   |   |   |   |   ├── admin.component.ts
-|    |   |   |   |   |   ├── admin.component.scss
-|    |   |   |   |   ├── auth/
-|    |   |   |   ├── shared/
-|    |   |   |   |   ├── components/
-|    |   |   |   |   |   ├── button/
-|    |   |   |   |   |   ├── ...
-|    |   |   |   |   |   ├── index.ts
-|    |   |   |   |   ├── full-screen/
-|    |   |   |   |   ├── shared.module.ts
-|    |   |   ├── app.component.html
-|    |   |   ├── app.component.scss
-|    |   |   ├── app.component.ts
-|    |   |   ├── app.module.ts
-|    |   |   ├── app-config.ts
-|    |   |   ├── app-routing.module.ts
-|    |   ├── assets/
-|    |   |   ├── fonts/
-|    |   |   ├── images/
-|    |   |   ├── tinymce/
-|    |   ├── environments/
-|    |   ├── fake-data/
-|    |   ├── scss
-|    |   ├── favicon.ico
-|    |   ├── index.html
-|    |   ├── main.ts
-|    |   ├── polyfills.ts
-|    |   ├── style.scss
-|    |   ├── test.ts
-|    ├── .editorconfig
-|    ├── .gitignore
-|    ├── angular.json
-|    ├── browserslist
-|    ├── karma.conf.js
-|    ├── package.json
-|    ├── README.md
-|    ├── tsconfig.app.json
-|    ├── tsconfig.json
-|    ├── tsconfig.spec.json
-|    ├── tslint.json
-├── ... More
+git clone https://github.com/codedthemes/gradient-able-free-admin-template.git
 ```
 
-#### Layouts 
- - Vertical version
-    - Static
-    - Fixed
-    - Navbar Fixed
-    - Collapse Menu
-    - Vertical RTL
- - Horizontal version
- - Horizontal v2
- - Horizontal RTL
- - Box Layout
- - Navbar Dark
- - Dark Layout
- - Introduce Live Customizer (i.e. only for demo)
- 
-#### Pages
- - Pricing
- - Login/Register pages version 2
- - User profile
- - Maintenance Pages like Error Pages, Offline UI, Maintenance
+2. Install packages
 
-#### Basic & Advance Components
- - Alert, Button, Cards, Progress, Modal, Tabs & Pills
- - Datepicker, Notification, Slider
+```
+yarn
+```
 
-*All above pages already included in Pro version. We need your support to include those pages in lite version too.*
+3. Run project
+
+```
+yarn start
+```
+
+## Documentation
+
+[Gradient Able Angular Documentation](https://codedthemes.gitbook.io/gradient-able-angular) helps you with installation, deployment, and troubleshooting.
+
+## Technology Stack
+
+- Bootstrap 5
+- Angular 17
 
 ## Author
 
-Design and code is completely written by CodedThemes's design and development team. We are happy to welcome the contributors work for our all repositories.
+Gradient Able is developed by Team [CodedThemes](https://codedthemes.com).
 
 ## Issues
 
-Please generate Github issue if you found bug in any version. We are try to be responsive to resolve the issue.
+To report a bug, please submit an [issue](https://github.com/codedthemes/gradient-able-free-admin-template/issues) on Github. We will respond as soon as possible to resolve the issue.
 
 ## License
 
- - Licensed cover under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/master/LICENSE)
+- Licensed cover under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/angular/LICENSE)
 
-## Other Dashboard Products
+## Gradient Able - React version
 
- - [Free Bootstrap 4 Admin Template](https://codedthemes.com/item/category/free-templates/free-bootstrap-admin-templates)
- - [Free React Dashboard Template](https://codedthemes.com/item/category/free-templates/free-react-admin-templates)
- - [Free Angular Dashboard Template](https://codedthemes.com/item/category/free-templates/free-angular-admin-templates)
- - [Premium Bootstrap & Angular Admin Template](https://codedthemes.com/item/category/templates/admin-templates/)
- 
-## Social Profiles
- - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
- - Behance [https://www.behance.net/codedthemes](https://www.behance.net/codedthemes)
- - Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
- - Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)
- - Instagram [https://www.instagram.com/codedthemes/](https://www.instagram.com/codedthemes/)
+- [Premium](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
+
+## More Free Angular Dashboard Templates
+
+- [Mantis Angular](https://codedthemes.com/item/mantis-angular-free-admin-template/)
+- [Datta Able Angular](https://codedthemes.com/item/datta-able-angular-lite/)
+- [Next Angular](https://codedthemes.com/item/next-free-admin-template/)
+- [Berry Angular](https://codedthemes.com/item/berry-angular-free-admin-template/)
+
+## More Premium Angular Dashboard Templates
+
+- [Mantis Angular Pro](https://codedthemes.com/item/mantis-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
+- [Datta Able Angular Pro](https://codedthemes.com/item/datta-able-angular/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
+- [Next Angular Pro](https://codedthemes.com/item/next-angular-admin-template/)
+- [Berry Angular Pro](https://codedthemes.com/item/berry-angular-admin-dashboard-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
+
+## Follow us
+
+- Website [https://codedthemes.com/demos/admin-templates/gradient-able/angular/default](https://codedthemes.com/demos/admin-templates/gradient-able/angular/default)
+- Blog [https://blog.codedthemes.com/](https://blog.codedthemes.com/)
+- CodedThemes [https://codedthemes.com](https://codedthemes.com)
+- Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
+- Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
+- Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)

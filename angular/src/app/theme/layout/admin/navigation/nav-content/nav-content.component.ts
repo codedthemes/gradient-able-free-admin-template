@@ -1,7 +1,10 @@
+// angular import
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { NavigationItem, NavigationItems } from '../navigation';
 import { Location, LocationStrategy } from '@angular/common';
+
+// project import
 import { environment } from 'src/environments/environment';
+import { NavigationItem, NavigationItems } from '../navigation';
 
 @Component({
   selector: 'app-nav-content',

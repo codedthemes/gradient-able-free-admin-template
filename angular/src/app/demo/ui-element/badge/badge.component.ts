@@ -1,11 +1,13 @@
+// angular import
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+// project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 
 @Component({
   selector: 'app-badge',
   standalone: true,
-  imports: [CommonModule, SharedModule],
+  imports: [SharedModule],
   templateUrl: './badge.component.html',
   styleUrls: ['./badge.component.scss']
 })

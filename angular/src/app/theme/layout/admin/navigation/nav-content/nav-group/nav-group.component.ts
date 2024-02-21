@@ -1,6 +1,8 @@
 // Angular Import
 import { Component, Input, OnInit } from '@angular/core';
 import { Location, LocationStrategy } from '@angular/common';
+
+// project import
 import { NavigationItem } from '../../navigation';
 
 @Component({

@@ -1,0 +1,56 @@
+/**======================================================================
+=========================================================================
+Template Name: Gradient Able Free Admin Template
+Author: Codedthemes
+=================================================================================
+=================================================================================== */
+
+// Theme Font
+@import 'themes/font/theme-font';
+
+// theme scrollbar
+@import 'themes/plugin/perfect-scrollbar';
+
+// main framework
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import 'settings/custom-variables';
+@import 'settings/theme-variables';
+
+// ng module
+@import 'react-module/react-module';
+
+// bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// icon
+@import 'themes/font/next-icon';
+@import 'themes/font/feather';
+@import 'themes/font/fontawesome';
+@import 'themes/font/flaticon';
+@import 'themes/font/cryptofont';
+
+// bootstrap css
+@import 'themes/bootstrap-overlay/card';
+@import 'themes/bootstrap-overlay/button';
+@import 'themes/bootstrap-overlay/radiobox-checkbox';
+@import 'themes/bootstrap-overlay/switches';
+@import 'themes/bootstrap-overlay/badge';
+
+@import 'themes/general';
+@import 'themes/generic';
+
+// theme layouts
+@import 'themes/layouts/menu-lite';
+
+// Dashboard Widgets
+@import 'themes/dashboard/widget';
+
+//Chat
+@import 'themes/chat/chat';
+
+// pages
+@import 'themes/pages/authentication';
+
+// custom
+@import 'themes/custom';

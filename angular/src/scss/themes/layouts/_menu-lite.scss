@@ -1500,9 +1500,12 @@
 
   &.menu-light {
     .card {
-      background: rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 0 1px $theme-background;
       color: rgba(0, 0, 0, 0.6);
+
+      .card-body{
+        padding: 10px !important;
+      }
 
       h6 {
         color: $menu-light-text-color;

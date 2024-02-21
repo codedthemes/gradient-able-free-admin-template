@@ -1,0 +1,354 @@
+<div class="row">
+  <!-- [ variant-chart ] start -->
+  <div class="col-md-6">
+    <app-card cardTitle="Basic line chart" [options]="false">
+      <apx-chart
+        [dataLabels]="line1CAC.dataLabels!"
+        [chart]="line1CAC.chart!"
+        [stroke]="line1CAC.stroke!"
+        [colors]="line1CAC.colors!"
+        [series]="line1CAC.series!"
+        [title]="line1CAC.title!"
+        [grid]="line1CAC.grid!"
+        [xaxis]="line1CAC.xaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Real-time Chart" [options]="false">
+      <apx-chart
+        [dataLabels]="line2CAC.dataLabels!"
+        [chart]="line2CAC.chart!"
+        [stroke]="line2CAC.stroke!"
+        [colors]="line2CAC.colors!"
+        [series]="line2CAC.series!"
+        [title]="line2CAC.title!"
+        [grid]="line2CAC.grid!"
+        [xaxis]="line2CAC.xaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-sm-12">
+    <app-card cardTitle="Different line chart" [options]="false">
+      <apx-chart
+        [dataLabels]="line3CAC.dataLabels!"
+        [chart]="line3CAC.chart!"
+        [stroke]="line3CAC.stroke!"
+        [colors]="line3CAC.colors!"
+        [series]="line3CAC.series!"
+        [title]="line3CAC.title!"
+        [markers]="line3CAC.markers!"
+        [tooltip]="line3CAC.tooltip!"
+        [grid]="line3CAC.grid!"
+        [xaxis]="line3CAC.xaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Area chart" [options]="false">
+      <apx-chart
+        [dataLabels]="area1CAC.dataLabels!"
+        [chart]="area1CAC.chart!"
+        [stroke]="area1CAC.stroke!"
+        [colors]="area1CAC.colors!"
+        [series]="area1CAC.series!"
+        [tooltip]="area1CAC.tooltip!"
+        [xaxis]="area1CAC.xaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Area chart DateTime X-Axis">
+      <div class="toolbar btn-group">
+        <button id="one_month" class="btn btn-sm btn-outline-primary">1M</button>
+        <button id="six_months" class="btn btn-sm btn-outline-primary">6M</button>
+        <button id="one_year" class="btn btn-sm btn-outline-primary active">1Y</button>
+        <button id="ytd" class="btn btn-sm btn-outline-primary">YTD</button>
+        <button id="all" class="btn btn-sm btn-outline-primary">ALL</button>
+      </div>
+      <apx-chart
+        [series]="chartOptions_11.series!"
+        [chart]="chartOptions_11.chart!"
+        [dataLabels]="chartOptions_11.dataLabels!"
+        [colors]="chartOptions_11.colors!"
+        [stroke]="chartOptions_11.stroke!"
+        [xaxis]="chartOptions_11.xaxis!"
+        [tooltip]="chartOptions_11.tooltip!"
+        [annotations]="chartOptions_11.annotations!"
+        [markers]="chartOptions_11.markers!"
+        [labels]="chartOptions_11.labels!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Bar chart" [options]="false">
+      <apx-chart
+        [dataLabels]="bar1CAC.dataLabels!"
+        [chart]="bar1CAC.chart!"
+        [plotOptions]="bar1CAC.plotOptions!"
+        [stroke]="bar1CAC.stroke!"
+        [colors]="bar1CAC.colors!"
+        [series]="bar1CAC.series!"
+        [tooltip]="bar1CAC.tooltip!"
+        [xaxis]="bar1CAC.xaxis!"
+        [yaxis]="bar1CAC.yaxis!"
+        [fill]="bar1CAC.fill!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Bar chart stacked" [options]="false">
+      <apx-chart
+        [dataLabels]="bar2CAC.dataLabels!"
+        [chart]="bar2CAC.chart!"
+        [plotOptions]="bar2CAC.plotOptions!"
+        [responsive]="bar2CAC.responsive!"
+        [colors]="bar2CAC.colors!"
+        [series]="bar2CAC.series!"
+        [legend]="bar2CAC.legend!"
+        [xaxis]="bar2CAC.xaxis!"
+        [fill]="bar2CAC.fill!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Bar chart horizontal" [options]="false">
+      <apx-chart
+        [dataLabels]="bar3CAC.dataLabels!"
+        [chart]="bar3CAC.chart!"
+        [plotOptions]="bar3CAC.plotOptions!"
+        [stroke]="bar3CAC.stroke!"
+        [colors]="bar3CAC.colors!"
+        [series]="bar3CAC.series!"
+        [xaxis]="bar3CAC.xaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Bar chart horizontal stacked" [options]="false">
+      <apx-chart
+        [dataLabels]="bar4CAC.dataLabels!"
+        [chart]="bar4CAC.chart!"
+        [plotOptions]="bar4CAC.plotOptions!"
+        [stroke]="bar4CAC.stroke!"
+        [colors]="bar4CAC.colors!"
+        [series]="bar4CAC.series!"
+        [title]="bar4CAC.title!"
+        [tooltip]="bar4CAC.tooltip!"
+        [fill]="bar4CAC.fill!"
+        [legend]="bar4CAC.legend!"
+        [xaxis]="bar4CAC.xaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Mixed Chart" [options]="false">
+      <apx-chart
+        [dataLabels]="mixed1CAC.dataLabels!"
+        [chart]="mixed1CAC.chart!"
+        [labels]="mixed1CAC.labels!"
+        [stroke]="mixed1CAC.stroke!"
+        [colors]="mixed1CAC.colors!"
+        [series]="mixed1CAC.series!"
+        [title]="mixed1CAC.title!"
+        [yaxis]="mixed1CAC.yaxis!"
+        [xaxis]="mixed1CAC.xaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Mixed Chart" [options]="false">
+      <apx-chart
+        [dataLabels]="mixed2CAC.dataLabels!"
+        [chart]="mixed2CAC.chart!"
+        [plotOptions]="mixed2CAC.plotOptions!"
+        [stroke]="mixed2CAC.stroke!"
+        [colors]="mixed2CAC.colors!"
+        [series]="mixed2CAC.series!"
+        [fill]="mixed2CAC.fill!"
+        [labels]="mixed2CAC.labels!"
+        [xaxis]="mixed2CAC.xaxis!"
+        [yaxis]="mixed2CAC.yaxis!"
+        [tooltip]="mixed2CAC.tooltip!"
+        [legend]="mixed2CAC.legend!"
+        [markers]="mixed2CAC.markers!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-12">
+    <app-card cardTitle="Candlestick Chart" [options]="false">
+      <apx-chart
+        [dataLabels]="candlestickCAC.dataLabels!"
+        [chart]="candlestickCAC.chart!"
+        [title]="candlestickCAC.title!"
+        [colors]="candlestickCAC.colors!"
+        [series]="candlestickCAC.series!"
+        [xaxis]="candlestickCAC.xaxis!"
+        [yaxis]="candlestickCAC.yaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Bubble Chart" [options]="false">
+      <apx-chart
+        [dataLabels]="bubble1CAC.dataLabels!"
+        [chart]="bubble1CAC.chart!"
+        [fill]="bubble1CAC.fill!"
+        [colors]="bubble1CAC.colors!"
+        [series]="bubble1CAC.series!"
+        [title]="bubble1CAC.title!"
+        [xaxis]="bubble1CAC.xaxis!"
+        [yaxis]="bubble1CAC.yaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Bubble Chart 3d" [options]="false">
+      <apx-chart
+        [dataLabels]="bubble2CAC.dataLabels!"
+        [chart]="bubble2CAC.chart!"
+        [fill]="bubble2CAC.fill!"
+        [colors]="bubble2CAC.colors!"
+        [series]="bubble2CAC.series!"
+        [title]="bubble2CAC.title!"
+        [xaxis]="bubble2CAC.xaxis!"
+        [yaxis]="bubble2CAC.yaxis!"
+        [theme]="bubble2CAC.theme!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Scatter Chart" [options]="false">
+      <apx-chart
+        [dataLabels]="scatter1CAC.dataLabels!"
+        [chart]="scatter1CAC.chart!"
+        [colors]="scatter1CAC.colors!"
+        [series]="scatter1CAC.series!"
+        [xaxis]="scatter1CAC.xaxis!"
+        [yaxis]="scatter1CAC.yaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Scatter Chart Datetime" [options]="false">
+      <apx-chart
+        [dataLabels]="scatter2CAC.dataLabels!"
+        [chart]="scatter2CAC.chart!"
+        [colors]="scatter2CAC.colors!"
+        [series]="scatter2CAC.series!"
+        [xaxis]="scatter2CAC.xaxis!"
+        [yaxis]="scatter2CAC.yaxis!"
+        [grid]="scatter2CAC.grid!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Heatmap Chart" [options]="false">
+      <apx-chart
+        [dataLabels]="heatMap1CAC.dataLabels!"
+        [chart]="heatMap1CAC.chart!"
+        [colors]="heatMap1CAC.colors!"
+        [series]="heatMap1CAC.series!"
+        [title]="heatMap1CAC.title!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Heatmap Chart Rounded" [options]="false">
+      <apx-chart
+        [stroke]="heatMap2CAC.stroke!"
+        [chart]="heatMap2CAC.chart!"
+        [plotOptions]="heatMap2CAC.plotOptions!"
+        [dataLabels]="heatMap2CAC.dataLabels!"
+        [series]="heatMap2CAC.series!"
+        [colors]="heatMap2CAC.colors!"
+        [xaxis]="heatMap2CAC.xaxis!"
+        [title]="heatMap2CAC.title!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Pie Chart" [options]="false">
+      <apx-chart
+        [labels]="pie1CAC.labels!"
+        [chart]="pie1CAC.chart!"
+        [dataLabels]="pie1CAC.dataLabels!"
+        [series]="pie1CAC.series!"
+        [colors]="pie1CAC.colors!"
+        [responsive]="pie1CAC.responsive!"
+        [legend]="pie1CAC.legend!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Pie Chart donut" [options]="false">
+      <apx-chart
+        [plotOptions]="pie2CAC.plotOptions!"
+        [chart]="pie2CAC.chart!"
+        [dataLabels]="pie2CAC.dataLabels!"
+        [series]="pie2CAC.series!"
+        [colors]="pie2CAC.colors!"
+        [responsive]="pie2CAC.responsive!"
+        [legend]="pie2CAC.legend!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Radial Bar Chart" [options]="false">
+      <apx-chart
+        [plotOptions]="radialBar1CAC.plotOptions!"
+        [chart]="radialBar1CAC.chart!"
+        [dataLabels]="radialBar1CAC.dataLabels!"
+        [series]="radialBar1CAC.series!"
+        [colors]="radialBar1CAC.colors!"
+        [legend]="radialBar1CAC.legend!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Radial Bar Chart Custom Angle" [options]="false">
+      <apx-chart
+        [plotOptions]="radialBar2CAC.plotOptions!"
+        [chart]="radialBar2CAC.chart!"
+        [dataLabels]="radialBar2CAC.dataLabels!"
+        [series]="radialBar2CAC.series!"
+        [colors]="radialBar2CAC.colors!"
+        [legend]="radialBar2CAC.legend!"
+        [labels]="radialBar2CAC.labels!"
+        [responsive]="radialBar2CAC.responsive!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Radar With Polygon Fill" [options]="false">
+      <apx-chart
+        [plotOptions]="radar1CAC.plotOptions!"
+        [chart]="radar1CAC.chart!"
+        [dataLabels]="radar1CAC.dataLabels!"
+        [series]="radar1CAC.series!"
+        [colors]="radar1CAC.colors!"
+        [title]="radar1CAC.title!"
+        [labels]="radar1CAC.labels!"
+        [markers]="radar1CAC.markers!"
+        [tooltip]="radar1CAC.tooltip!"
+        [yaxis]="radar1CAC.yaxis!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <div class="col-md-6">
+    <app-card cardTitle="Radar Chart Multiple Series" [options]="false">
+      <apx-chart
+        [chart]="radar2CAC.chart!"
+        [dataLabels]="radar2CAC.dataLabels!"
+        [series]="radar2CAC.series!"
+        [colors]="radar2CAC.colors!"
+        [title]="radar2CAC.title!"
+        [labels]="radar2CAC.labels!"
+        [markers]="radar2CAC.markers!"
+        [fill]="radar2CAC.fill!"
+        [stroke]="radar2CAC.stroke!"
+      ></apx-chart>
+    </app-card>
+  </div>
+  <!-- [ variant-chart ] end -->
+</div>

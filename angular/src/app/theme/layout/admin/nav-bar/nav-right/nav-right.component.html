@@ -97,34 +97,32 @@
   </li>
 </ul>
 
-<section
-  class="header-user-list"
-  *ngIf="visibleUserList && !this.gradientConfig.isRtlLayout"
-  [ngClass]="{ open: visibleUserList }"
-  [@slideInOutLeft]
->
-  <app-chat-user-list
-    (ChatToggle)="onChatToggle($event)"
-    (ChatCollapse)="this.visibleUserList = !this.visibleUserList; this.chatMessage = false"
-  ></app-chat-user-list>
-</section>
+@if (visibleUserList) {
+  <section class="header-user-list" [ngClass]="{ open: visibleUserList }" [@slideInOutLeft]>
+    <app-chat-user-list
+      (ChatToggle)="onChatToggle($event)"
+      (ChatCollapse)="this.visibleUserList = !this.visibleUserList; this.chatMessage = false"
+    ></app-chat-user-list>
+  </section>
+}
 
-<section class="header-chat" *ngIf="chatMessage && !this.gradientConfig.isRtlLayout" [ngClass]="{ open: chatMessage }" [@slideInOutLeft]>
-  <app-chat-msg (ChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId"></app-chat-msg>
-</section>
+@if (chatMessage) {
+  <section class="header-chat" [ngClass]="{ open: chatMessage }" [@slideInOutLeft]>
+    <app-chat-msg (ChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId"></app-chat-msg>
+  </section>
+}
 
-<section
-  class="header-user-list"
-  *ngIf="visibleUserList && this.gradientConfig.isRtlLayout"
-  [ngClass]="{ open: visibleUserList }"
-  [@slideInOutRight]
->
-  <app-chat-user-list
-    (ChatToggle)="onChatToggle($event)"
-    (ChatCollapse)="this.visibleUserList = !this.visibleUserList; this.chatMessage = false"
-  ></app-chat-user-list>
-</section>
+@if (visibleUserList) {
+  <section class="header-user-list" [ngClass]="{ open: visibleUserList }" [@slideInOutRight]>
+    <app-chat-user-list
+      (ChatToggle)="onChatToggle($event)"
+      (ChatCollapse)="this.visibleUserList = !this.visibleUserList; this.chatMessage = false"
+    ></app-chat-user-list>
+  </section>
+}
 
-<section class="header-chat" *ngIf="chatMessage && this.gradientConfig.isRtlLayout" [ngClass]="{ open: chatMessage }" [@slideInOutRight]>
-  <app-chat-msg (ChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId"></app-chat-msg>
-</section>
+@if (chatMessage) {
+  <section class="header-chat" [ngClass]="{ open: chatMessage }" [@slideInOutRight]>
+    <app-chat-msg (ChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId"></app-chat-msg>
+  </section>
+}

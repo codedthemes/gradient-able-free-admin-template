@@ -1,54 +1,83 @@
 /**======================================================================
 =========================================================================
-Template Name: Gradient able Bootstrap Admin Template
-Author: Phoenixcoded
-Support: support@phoenixcoded.net
+Template Name: Gradient Able - Bootstrap Admin Template
+Author: codedthemes
+Support: https://codedthemes.authordesk.app
 File: style.css
 =========================================================================
 =================================================================================== */
 
+// main framework
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/variables-dark';
 
+@import 'settings/color-variables';
+@import 'settings/theme-variables';
+@import 'settings/bootstrap-variables';
 
-// theme font
-@import "themes/font/theme-font";
+@import 'node_modules/bootstrap/scss/maps';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/root';
+@import 'node_modules/bootstrap/scss/reboot';
+@import 'node_modules/bootstrap/scss/type';
+@import 'node_modules/bootstrap/scss/images';
+@import 'node_modules/bootstrap/scss/containers';
+@import 'node_modules/bootstrap/scss/grid';
+@import 'node_modules/bootstrap/scss/tables';
+@import 'node_modules/bootstrap/scss/forms';
+@import 'node_modules/bootstrap/scss/buttons';
+@import 'node_modules/bootstrap/scss/transitions';
+@import 'node_modules/bootstrap/scss/dropdown';
+@import 'node_modules/bootstrap/scss/button-group';
+@import 'node_modules/bootstrap/scss/nav';
+@import 'node_modules/bootstrap/scss/navbar';
+@import 'node_modules/bootstrap/scss/card';
+@import 'node_modules/bootstrap/scss/accordion';
+@import 'node_modules/bootstrap/scss/breadcrumb';
+@import 'node_modules/bootstrap/scss/pagination';
+@import 'node_modules/bootstrap/scss/badge';
+@import 'node_modules/bootstrap/scss/alert';
+@import 'node_modules/bootstrap/scss/progress';
+@import 'node_modules/bootstrap/scss/list-group';
+@import 'node_modules/bootstrap/scss/close';
+@import 'node_modules/bootstrap/scss/toasts';
+@import 'node_modules/bootstrap/scss/modal';
+@import 'node_modules/bootstrap/scss/tooltip';
+@import 'node_modules/bootstrap/scss/popover';
+@import 'node_modules/bootstrap/scss/carousel';
+@import 'node_modules/bootstrap/scss/spinners';
+@import 'node_modules/bootstrap/scss/offcanvas';
+@import 'node_modules/bootstrap/scss/placeholders';
+@import 'node_modules/bootstrap/scss/helpers';
 
-// theme scrollbar
-@import "themes/plugins/perfect-scrollbar";
+@import 'node_modules/bootstrap/scss/utilities';
+@import 'node_modules/bootstrap/scss/utilities/api';
 
 // main framework
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "settings/custom-variables";
-@import "settings/theme-variables";
-@import "node_modules/bootstrap/scss/bootstrap";
+@import 'themes/generic';
+@import 'themes/general';
 
-// icon
-@import "themes/font/datta-icon";
-@import "themes/font/feather";
-@import "themes/font/fontawesome";
+// Layouts
+@import 'themes/layouts/pc-sidebar';
+@import 'themes/layouts/pc-header';
+@import 'themes/layouts/pc-footer';
+@import 'themes/layouts/pc-common';
 
-// bootstrap css
-@import "themes/bootstrap-overlay/card";
-@import "themes/bootstrap-overlay/button";
-@import "themes/bootstrap-overlay/radiobox-checkbox";
-@import "themes/bootstrap-overlay/switches";
-@import "themes/bootstrap-overlay/badge";
+// widget
+@import 'themes/components/widget';
 
-// utility css & animate css
-@import "themes/general";
-@import "themes/generic";
-@import "plugins/animate.min.css";
-
-// theme layouts
-@import "themes/layouts/menu-lite";
-
-// dashboard widgets
-@import "themes/dashboard/widget";
-
-// custom pluginss
-@import "themes/plugins/data-tables";
+// Components
+@import 'themes/components/avtar';
+@import 'themes/components/badge';
+@import 'themes/components/button';
+@import 'themes/components/dropdown';
+@import 'themes/components/card';
+@import 'themes/components/progress';
+@import 'themes/components/table';
+@import 'themes/components/tabs';
+@import 'themes/components/form';
 
 // pages
-@import "themes/pages/authentication";
-@import "themes/pages/icon-lauouts";
-@import "themes/pages/user";
+@import 'themes/pages/authentication';
+@import 'themes/pages/icon-pages';
