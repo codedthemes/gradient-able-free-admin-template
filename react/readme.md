@@ -3,8 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/react/LICENSE)
 
-### Name Derived From Nature
-
 Gradient Able React Free Admin Template comes with variety of components like Button, Badges, Breadcrumb, & Authentication pages.
 
 The code structure is high flexible to use and modify.
