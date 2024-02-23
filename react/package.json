@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "private": false,
   "author": "codedThemes",
-  "homepage": "https://codedthemes.com/demos/admin-templates/gradient-able/react/free/",
+  "homepage": "https://codedthemes.com/demos/admin-templates/gradient-able/react/free",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@tanem/react-nprogress": "^5.0.14",
