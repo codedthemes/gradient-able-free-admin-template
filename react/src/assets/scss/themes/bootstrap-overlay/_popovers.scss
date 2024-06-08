@@ -1,0 +1,16 @@
+@media (max-width: 575px) {
+  .tooltip-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .popover-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .position-sm {
+    left: 275px;
+    position: absolute;
+  }
+}

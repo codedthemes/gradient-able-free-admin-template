@@ -608,8 +608,8 @@
     }
 
     + .scroll-div {
-      float: left;
-      display: inline-block;
+      float: inline-start;
+      display: inline-flex;
     }
   }
 
@@ -1500,11 +1500,6 @@
     }
   }
 
-  .sidenav-horizontal-next,
-  .sidenav-horizontal-prev {
-    background: #fff;
-  }
-
   .mobile-menu {
     span {
       background-color: transparentize($header-dark-text-color, 0.2);
@@ -1592,30 +1587,6 @@
       &:hover {
         > a {
           color: $menu-light-text-color;
-        }
-      }
-    }
-  }
-
-  &.theme-horizontal {
-    .pcoded-inner-navbar {
-      > li {
-        &.active,
-        &.pcoded-trigger,
-        &:hover {
-          > a {
-            color: $primary;
-            background: transparent;
-          }
-        }
-
-        &.pcoded-hasmenu {
-          &.active,
-          &.pcoded-trigger {
-            &:before {
-              color: $menu-light-background;
-            }
-          }
         }
       }
     }

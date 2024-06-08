@@ -122,17 +122,6 @@ $i: 100;
   $i: $i + 100;
 }
 /*====== Font-weight css ends ======*/
-/*====== text-color, background color css starts ======*/
-@each $value in $social-name {
-  $i: index($social-name, $value);
-  .bg-#{$value} {
-    background: nth($social-color, $i);
-  }
-  .text-#{$value} {
-    color: nth($social-color, $i);
-  }
-}
-/*====== text-color css ends ======*/
 /*====== width, Height css starts ======*/
 $i: 20;
 @while $i<=150 {
