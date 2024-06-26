@@ -11,8 +11,10 @@ export const NAV_CONTENT_LEAVE = 'NAV_CONTENT_LEAVE';
 export const NAV_FIXED_LAYOUT = 'NAV_FIXED_LAYOUT';
 export const RESET = 'RESET';
 export const RTL_LAYOUT = 'RTL_LAYOUT';
+export const THEME_LOCALE = 'THEME_LOCALE';
 
 export const LOGIN = 'LOGIN';
 export const LOGOUT = 'LOGOUT';
+export const REGISTER = 'REGISTER';
 export const ACCOUNT_INITIALISE = 'ACCOUNT_INITIALISE';
 export const FIREBASE_STATE_CHANGED = 'FIREBASE_STATE_CHANGED';

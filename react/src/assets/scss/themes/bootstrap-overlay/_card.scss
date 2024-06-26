@@ -34,6 +34,10 @@
     border-bottom: $card-header-border;
     position: relative;
 
+    + .card-body {
+      padding-top: 0;
+    }
+
     h5 {
       margin-bottom: 0;
       color: $theme-heading-color;
@@ -73,10 +77,10 @@
         border: none;
         background: transparent;
         box-shadow: none;
-        color: #888;
 
         i {
           margin-right: 0;
+          color: #888;
         }
 
         &:after {

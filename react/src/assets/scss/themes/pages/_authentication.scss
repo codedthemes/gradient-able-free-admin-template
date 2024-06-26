@@ -96,67 +96,11 @@
     }
   }
 
-  .auth-side-img {
-    padding-right: 400px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    @media only screen and (max-width: 991px) {
-      display: none;
-    }
-  }
-
-  .auth-side-form {
-    position: relative;
-    min-height: 100%;
-    background: #fff;
-    display: inline-flex;
-    align-items: center;
-    left: auto;
-    float: right;
-    box-shadow: -2px 0 7px -2px rgba(0, 0, 0, 0.5);
-
-    > * {
-      position: relative;
-      z-index: 5;
-    }
-    @media only screen and (max-width: 991px) {
-      width: 100%;
-      justify-content: center;
-
-      .auth-content:not(.container) {
-        max-width: 350px;
-      }
-    }
-  }
-
-  &.aut-bg-img {
-    .auth-side-form {
-      @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 100vh;
-      }
-    }
-  }
   @media only screen and (max-width: 767px) {
     .card {
       .card-body {
         padding: 30px 15px;
       }
-    }
-  }
-
-  &.offline {
-    background-image: none;
-
-    h1 {
-      font-size: 87px;
-      font-weight: 700;
-    }
-
-    &:before {
-      display: none;
     }
   }
 
@@ -182,16 +126,5 @@
     left: 50px;
   }
 }
-/* image varient start */
-.aut-bg-img {
-  background-image: url('../../../images/auth/img-auth-big.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
 
-  .auth-content {
-    padding: 70px 40px;
-  }
-}
-/* image varient End */
 /**====== Authentication css end ======**/

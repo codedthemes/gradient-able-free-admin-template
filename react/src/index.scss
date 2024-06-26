@@ -35,17 +35,6 @@
   }
 }
 
-.datatable-table td,
-.datatable-table th,
-.table td,
-.table th {
-  border-top: 1px solid #dbe0e5;
-  border-bottom: none;
-  white-space: nowrap;
-  padding: 0.75rem 0.75rem;
-  vertical-align: middle;
-}
-
 @media only screen and (max-width: 991px) {
   .nav-outside {
     ~ {
@@ -60,8 +49,8 @@
     }
 
     .pcoded-header {
-      .container > .collapse:not(.show) .me-auto,
-      > .collapse:not(.show) .me-auto {
+      .container > .collapse:not(.show) .mr-auto,
+      > .collapse:not(.show) .mr-auto {
         display: inline-flex;
         justify-content: center;
       }
@@ -78,6 +67,25 @@
   overflow: hidden;
 }
 
+.zoom-container {
+  position: relative;
+  display: flex;
+}
+
+.img-preview-section-container {
+  display: none;
+}
+.zoom-container:hover .img-preview-section-container {
+  display: block;
+  position: relative;
+  left: 50px;
+}
+.zoom-container:hover .img-preview-section-container {
+  left: 100%;
+  position: absolute;
+  background: #fff;
+  border: 1px solid $border-color;
+}
 .carousel-inner {
   overflow: visible;
   z-index: 1000;
@@ -89,6 +97,30 @@
 .table {
   .badge {
     margin-right: 0.25rem;
+  }
+}
+.mb-3.row {
+  > .col,
+  .col.d-flex {
+    @media (max-width: 791px) {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      &:nth-child(2) {
+        flex-direction: column;
+        text-align: left;
+        > span {
+          justify-content: flex-start !important;
+          .form-control {
+            max-width: 150px;
+          }
+        }
+        .btn {
+          margin-top: 8px;
+          max-width: fit-content;
+          margin-left: 0 !important;
+        }
+      }
+    }
   }
 }
 
@@ -121,18 +153,21 @@ td {
     max-width: 40px;
   }
 }
-
+.new-cust-card {
+  @media (max-width: 1024px) {
+    .d-inline-block {
+      width: calc(100% - 55px);
+    }
+    .align-middle .status {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}
 .table th,
 .table td {
   vertical-align: middle;
-}
-.cover-img-block {
-  overflow: hidden;
-  z-index: 1;
-}
-.user-about-block {
-  position: relative;
-  z-index: 5;
 }
 @media only screen and (max-width: 1200px) {
   .user-card .user-about-block {
@@ -140,11 +175,15 @@ td {
   }
 }
 
-.table.table-bordered.table-hover {
-  th {
-    select.form-control {
-      min-width: 140px;
-    }
+.alert {
+  .float-end {
+    margin-left: 8px;
+    float: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .modal-open .modal {
+    padding-left: 0 !important;
   }
 }
 .filter-bar .navbar {

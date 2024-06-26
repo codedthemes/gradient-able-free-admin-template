@@ -1,1 +1,21 @@
 @import 'header';
+
+.tooltip-arrow::before {
+  top: -3px !important;
+}
+
+.badge {
+  color: $yiq-light-color;
+}
+
+.bs-tooltip-start {
+  .tooltip-arrow::before {
+    left: -3px !important;
+  }
+}
+
+.bs-tooltip-end {
+  .tooltip-arrow::before {
+    right: -3px !important;
+  }
+}

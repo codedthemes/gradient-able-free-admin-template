@@ -1,7 +1,8 @@
 /**======================================================================
 =========================================================================
-Template Name: Gradient Able Free Admin Template
+Template Name: Gradient Able Admin Template
 Author: Codedthemes
+File: style.css
 =================================================================================
 =================================================================================== */
 
@@ -12,8 +13,8 @@ Author: Codedthemes
 @import 'themes/plugin/perfect-scrollbar';
 
 // main framework
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
 @import 'settings/custom-variables';
 @import 'settings/theme-variables';
 
@@ -21,14 +22,12 @@ Author: Codedthemes
 @import 'react-module/react-module';
 
 // bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap';
 
 // icon
 @import 'themes/font/next-icon';
 @import 'themes/font/feather';
 @import 'themes/font/fontawesome';
-@import 'themes/font/flaticon';
-@import 'themes/font/cryptofont';
 
 // bootstrap css
 @import 'themes/bootstrap-overlay/card';
@@ -36,6 +35,7 @@ Author: Codedthemes
 @import 'themes/bootstrap-overlay/radiobox-checkbox';
 @import 'themes/bootstrap-overlay/switches';
 @import 'themes/bootstrap-overlay/badge';
+@import 'themes/bootstrap-overlay/popovers';
 
 @import 'themes/general';
 @import 'themes/generic';
