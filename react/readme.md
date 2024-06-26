@@ -79,14 +79,15 @@ Gradient Able offers everything needed to build an advanced dashboard applicatio
 ```
 git clone https://github.com/codedthemes/gradient-able-free-admin-template.git
 ```
+2. Go into react folder
 
-2. Install packages
+3. Install packages
 
 ```
 yarn
 ```
 
-3. Run project
+4. Run project
 
 ```
 yarn start
