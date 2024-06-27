@@ -8,8 +8,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NavigationComponent {
   // public props
-  windowWidth = window.innerWidth;
+  windowWidth: number;
   @Output() NavMobCollapse = new EventEmitter();
+
+  // constructor
+  constructor() {
+    this.windowWidth = window.innerWidth;
+  }
 
   // public method
   navMobCollapse() {
