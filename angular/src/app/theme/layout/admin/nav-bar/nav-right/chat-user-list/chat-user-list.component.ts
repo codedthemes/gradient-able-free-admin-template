@@ -1,5 +1,5 @@
 // Angular Import
-import { Component, EventEmitter, NgIterable, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 // project import
 import { FriendsList } from 'src/app/fack-db/friends-list';

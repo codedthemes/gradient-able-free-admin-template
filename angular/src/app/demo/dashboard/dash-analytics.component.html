@@ -4,12 +4,14 @@
     <div class="col-md-6 col-xl-3">
       <app-card [hidHeader]="true" cardClass="{{ card.background }} order-card">
         <h6 class="text-white">{{ card.title }}</h6>
-        <h2 class="text-end text-white"
-          ><i class="feather {{ card.icon }} float-start"></i><span>{{ card.number }}</span>
+        <h2 class="text-end text-white">
+          <i class="feather {{ card.icon }} float-start"></i>
+          <span>{{ card.number }}</span>
         </h2>
-        <p class="m-b-0"
-          >{{ card.text }}<span class="float-end">{{ card.no }}</span></p
-        >
+        <p class="m-b-0">
+          {{ card.text }}
+          <span class="float-end">{{ card.no }}</span>
+        </p>
       </app-card>
     </div>
   }
@@ -41,7 +43,10 @@
             </div>
             <div class="col text-end">
               <h2 class="mb-0">826</h2>
-              <span class="text-c-green">8.2%<i class="feather icon-trending-up ms-1"></i></span>
+              <span class="text-c-green">
+                8.2%
+                <i class="feather icon-trending-up ms-1"></i>
+              </span>
             </div>
           </div>
           <apx-chart
@@ -56,15 +61,20 @@
             [grid]="chartOptions_1.grid!"
             [plotOptions]="chartOptions_1.plotOptions!"
             [tooltip]="chartOptions_1.tooltip!"
-          >
-          </apx-chart>
+          ></apx-chart>
           <div class="row mt-3 text-center">
             <div class="col">
-              <h3 class="m-0"><i class="fas fa-circle f-10 m-r-5 text-success"></i>674</h3>
+              <h3 class="m-0">
+                <i class="fas fa-circle f-10 m-r-5 text-success"></i>
+                674
+              </h3>
               <span class="ms-3">New</span>
             </div>
             <div class="col">
-              <h3 class="m-0"><i class="fas fa-circle text-primary f-10 m-r-5"></i>182</h3>
+              <h3 class="m-0">
+                <i class="fas fa-circle text-primary f-10 m-r-5"></i>
+                182
+              </h3>
               <span class="ms-3">Return</span>
             </div>
           </div>
@@ -78,7 +88,10 @@
             </div>
             <div class="col text-end">
               <h2 class="mb-0 text-white">826</h2>
-              <span class="text-white">8.2%<i class="feather icon-trending-up ms-1"></i></span>
+              <span class="text-white">
+                8.2%
+                <i class="feather icon-trending-up ms-1"></i>
+              </span>
             </div>
           </div>
           <div id="customerChart">
@@ -98,11 +111,17 @@
           </div>
           <div class="row mt-3 text-center">
             <div class="col">
-              <h3 class="m-0 text-white"><i class="fas fa-circle f-10 m-r-5 text-white"></i>674</h3>
+              <h3 class="m-0 text-white">
+                <i class="fas fa-circle f-10 m-r-5 text-white"></i>
+                674
+              </h3>
               <span class="ms-3">New</span>
             </div>
             <div class="col">
-              <h3 class="m-0 text-white"><i class="fas fa-circle text-white f-10 m-r-5"></i>182</h3>
+              <h3 class="m-0 text-white">
+                <i class="fas fa-circle text-white f-10 m-r-5"></i>
+                182
+              </h3>
               <span class="ms-3">Return</span>
             </div>
           </div>
@@ -139,7 +158,10 @@
   <div class="col-md-6 col-lg-4">
     <app-card [hidHeader]="true" blockClass="text-center">
       <i class="fa fa-envelope-open text-c-blue d-block f-40"></i>
-      <h4 class="m-t-20"><span class="text-c-blue">8.62k</span> Subscribers</h4>
+      <h4 class="m-t-20">
+        <span class="text-c-blue">8.62k</span>
+        Subscribers
+      </h4>
       <p class="m-b-20">Your main list is growing</p>
       <button class="btn btn-primery btn-sm btn-round">Manage List</button>
     </app-card>
@@ -147,7 +169,10 @@
   <div class="col-md-6 col-lg-4">
     <app-card [hidHeader]="true" blockClass="text-center">
       <i class="fab fa-twitter text-c-green d-block f-40"></i>
-      <h4 class="m-t-20"><span class="text-c-green">+40</span> Followers</h4>
+      <h4 class="m-t-20">
+        <span class="text-c-green">+40</span>
+        Followers
+      </h4>
       <p class="m-b-20">Your main list is growing</p>
       <button class="btn btn-success btn-sm btn-round">Check Theme Out</button>
     </app-card>
@@ -158,27 +183,39 @@
   <div class="col-lg-4 col-md-12">
     <app-card [hidHeader]="true" footerClass="border border-top-0 p-0 overflow-hidden" [isCardFooter]="true">
       <h6>Conversions</h6>
-      <h4 class="m-0"
-        >0.85%<span class="text-c-blue ms-2"><i class="feather icon-arrow-up"></i>0.50%</span></h4
-      >
+      <h4 class="m-0">
+        0.85%
+        <span class="text-c-blue ms-2">
+          <i class="feather icon-arrow-up"></i>
+          0.50%
+        </span>
+      </h4>
       <span>Purchased</span>
-      <div class="app-card-footer"> </div>
+      <div class="app-card-footer"></div>
     </app-card>
     <app-card [hidHeader]="true" footerClass="border border-top-0 p-0 overflow-hidden" [isCardFooter]="true">
       <h6>Conversions</h6>
-      <h4 class="m-0"
-        >0.85%<span class="text-c-red ms-2"><i class="feather icon-arrow-up"></i>0.50%</span></h4
-      >
+      <h4 class="m-0">
+        0.85%
+        <span class="text-c-red ms-2">
+          <i class="feather icon-arrow-up"></i>
+          0.50%
+        </span>
+      </h4>
       <span>Purchased</span>
-      <div class="app-card-footer"> </div>
+      <div class="app-card-footer"></div>
     </app-card>
     <app-card [hidHeader]="true" footerClass="border border-top-0 p-0 overflow-hidden" [isCardFooter]="true">
       <h6>Conversions</h6>
-      <h4 class="m-0"
-        >0.85%<span class="text-c-green ms-2"><i class="feather icon-arrow-up"></i>0.50%</span></h4
-      >
+      <h4 class="m-0">
+        0.85%
+        <span class="text-c-green ms-2">
+          <i class="feather icon-arrow-up"></i>
+          0.50%
+        </span>
+      </h4>
       <span>Purchased</span>
-      <div class="app-card-footer"> </div>
+      <div class="app-card-footer"></div>
     </app-card>
   </div>
   <div class="col-lg-8 col-md-12">
@@ -188,19 +225,25 @@
           <div class="feed-user-img">
             <img src="assets/images/user/avatar-4.jpg" class="img-radius" alt="User-Profile-Image" />
           </div>
-          <h6><span class="badge bg-danger">File</span> Eddie uploaded new files: <small class="text-muted ms-1">2 hours ago</small></h6>
-          <p class="m-b-15 m-t-15"
-            >hii <b> &#64;everone</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s.</p
-          >
+          <h6>
+            <span class="badge bg-danger">File</span>
+            Eddie uploaded new files:
+            <small class="text-muted ms-1">2 hours ago</small>
+          </h6>
+          <p class="m-b-15 m-t-15">
+            hii
+            <b>&#64;everone</b>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s.
+          </p>
           <div class="row">
             @for (image of images; track image) {
               <div class="col-auto text-center">
                 <img src="{{ image.src }}" alt="img" class="img-fluid wid-100" />
                 <h6 class="m-t-15 m-b-0">{{ image.title }}</h6>
-                <p class="text-muted m-b-0"
-                  ><small>{{ image.size }}</small></p
-                >
+                <p class="text-muted m-b-0">
+                  <small>{{ image.size }}</small>
+                </p>
               </div>
             }
           </div>
@@ -209,23 +252,29 @@
           <div class="feed-user-img">
             <img src="assets/images/user/avatar-2.jpg" class="img-radius" alt="User-Profile-Image" />
           </div>
-          <h6
-            ><span class="badge bg-success">Task</span> Sarah marked the Pending Review:
-            <span class="text-c-green"> Trash Can Icon Design </span><small class="text-muted"> 2 hours ago</small>
+          <h6>
+            <span class="badge bg-success">Task</span>
+            Sarah marked the Pending Review:
+            <span class="text-c-green">Trash Can Icon Design</span>
+            <small class="text-muted">2 hours ago</small>
           </h6>
         </li>
         <li class="diactive-feed">
           <div class="feed-user-img">
             <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image" />
           </div>
-          <h6
-            ><span class="badge bg-primary">comment</span> abc posted a task: <span class="text-c-green">Design a new Homepage </span>
+          <h6>
+            <span class="badge bg-primary">comment</span>
+            abc posted a task:
+            <span class="text-c-green">Design a new Homepage</span>
             <small class="text-muted">6 hours ago</small>
           </h6>
-          <p class="m-b-15 m-t-15"
-            >hii <b> &#64;everone</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s.</p
-          >
+          <p class="m-b-15 m-t-15">
+            hii
+            <b>&#64;everone</b>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s.
+          </p>
         </li>
       </ul>
     </app-card>
@@ -235,7 +284,10 @@
     <app-card cardTitle="Campaign Monitor" cardClass="tab-card tab-content" blockClass="nav-fill" [options]="false">
       <ul ngbNav #nav="ngbNav" aria-busy="true" class="nav-pills">
         <li [ngbNavItem]="1" class="flex">
-          <a ngbNavLink><i class="fa fa-home m-r-10"></i>Home</a>
+          <a ngbNavLink>
+            <i class="fa fa-home m-r-10"></i>
+            Home
+          </a>
           <ng-template ngbNavContent>
             <div class="table-responsive">
               <app-product-sale></app-product-sale>
@@ -243,19 +295,28 @@
           </ng-template>
         </li>
         <li [ngbNavItem]="2" class="flex">
-          <a ngbNavLink><i class="fa fa-key m-r-10"></i>Security</a>
+          <a ngbNavLink>
+            <i class="fa fa-key m-r-10"></i>
+            Security
+          </a>
           <ng-template ngbNavContent>
             <app-product-sale></app-product-sale>
           </ng-template>
         </li>
         <li [ngbNavItem]="3" class="flex">
-          <a ngbNavLink><i class="fa fa-play-circle m-r-10"></i>Entertainment</a>
+          <a ngbNavLink>
+            <i class="fa fa-play-circle m-r-10"></i>
+            Entertainment
+          </a>
           <ng-template ngbNavContent>
             <app-product-sale></app-product-sale>
           </ng-template>
         </li>
         <li [ngbNavItem]="4" class="flex">
-          <a ngbNavLink><i class="fa fa-database m-r-10"></i>Big Data</a>
+          <a ngbNavLink>
+            <i class="fa fa-database m-r-10"></i>
+            Big Data
+          </a>
           <ng-template ngbNavContent>
             <app-product-sale></app-product-sale>
           </ng-template>

@@ -28,9 +28,9 @@
           <div #newChat [innerHTML]="newReplay"></div>
           @if (friendWriting) {
             <div class="media chat-messages typing">
-              <a class="media-left photo-table" href="javascript:"
-                ><img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}" alt="{{ chatMessage.name }}"
-              /></a>
+              <a class="media-left photo-table" href="javascript:">
+                <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}" alt="{{ chatMessage.name }}" />
+              </a>
               <div class="media-body chat-menu-content">
                 <div class="rem-msg">
                   <p class="chat-cont">Typing . . .</p>

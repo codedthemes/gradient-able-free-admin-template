@@ -1,53 +1,12 @@
 // angular import
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 import { ChartDB } from 'src/app/fack-db/chartData';
 
 // third party import
-import { NgApexchartsModule } from 'ng-apexcharts';
-import {
-  ChartComponent,
-  ApexAxisChartSeries,
-  ApexNonAxisChartSeries,
-  ApexChart,
-  ApexXAxis,
-  ApexDataLabels,
-  ApexStroke,
-  ApexYAxis,
-  ApexLegend,
-  ApexFill,
-  ApexGrid,
-  ApexPlotOptions,
-  ApexTooltip,
-  ApexTheme,
-  ApexResponsive,
-  ApexMarkers,
-  ApexTitleSubtitle,
-  ApexAnnotations
-} from 'ng-apexcharts';
-
-export type ChartOptions = {
-  series: ApexAxisChartSeries | ApexNonAxisChartSeries;
-  chart: ApexChart;
-  xaxis: ApexXAxis;
-  stroke: ApexStroke;
-  dataLabels: ApexDataLabels;
-  plotOptions: ApexPlotOptions;
-  yaxis: ApexYAxis;
-  tooltip: ApexTooltip;
-  labels: string[];
-  colors: string[];
-  legend: ApexLegend;
-  fill: ApexFill;
-  grid: ApexGrid;
-  theme: ApexTheme;
-  responsive: ApexResponsive[];
-  markers: ApexMarkers;
-  title: ApexTitleSubtitle;
-  annotations: ApexAnnotations;
-};
+import { ApexOptions, NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-core-apex',
@@ -56,41 +15,42 @@ export type ChartOptions = {
   templateUrl: './core-apex.component.html',
   styleUrls: ['./core-apex.component.scss']
 })
-export default class CoreApexComponent implements OnInit {
+export default class CoreApexComponent implements OnInit, OnDestroy {
   // public props
   // eslint-disable-next-line
   chartDB: any;
   lastDate!: number;
   // eslint-disable-next-line
   data: any;
+  // eslint-disable-next-line
   intervalSub: any;
+  // eslint-disable-next-line
   intervalMain: any;
 
-  @ViewChild('chart1') chart!: ChartComponent;
-  line1CAC!: Partial<ChartOptions>;
-  line2CAC!: Partial<ChartOptions>;
-  line3CAC: Partial<ChartOptions>;
-  area1CAC: Partial<ChartOptions>;
-  bar1CAC: Partial<ChartOptions>;
-  chartOptions_11: Partial<ChartOptions>;
-  bar2CAC: Partial<ChartOptions>;
-  bar3CAC: Partial<ChartOptions>;
-  bar4CAC: Partial<ChartOptions>;
-  mixed1CAC: Partial<ChartOptions>;
-  mixed2CAC: Partial<ChartOptions>;
-  candlestickCAC: Partial<ChartOptions>;
-  bubble1CAC: Partial<ChartOptions>;
-  bubble2CAC: Partial<ChartOptions>;
-  scatter1CAC: Partial<ChartOptions>;
-  scatter2CAC: Partial<ChartOptions>;
-  heatMap1CAC: Partial<ChartOptions>;
-  heatMap2CAC: Partial<ChartOptions>;
-  pie1CAC: Partial<ChartOptions>;
-  pie2CAC: Partial<ChartOptions>;
-  radialBar1CAC: Partial<ChartOptions>;
-  radialBar2CAC: Partial<ChartOptions>;
-  radar1CAC: Partial<ChartOptions>;
-  radar2CAC: Partial<ChartOptions>;
+  line1CAC!: ApexOptions;
+  line2CAC!: ApexOptions;
+  line3CAC: ApexOptions;
+  area1CAC: ApexOptions;
+  bar1CAC: ApexOptions;
+  chartOptions_11: ApexOptions;
+  bar2CAC: ApexOptions;
+  bar3CAC: ApexOptions;
+  bar4CAC: ApexOptions;
+  mixed1CAC: ApexOptions;
+  mixed2CAC: ApexOptions;
+  candlestickCAC: ApexOptions;
+  bubble1CAC: ApexOptions;
+  bubble2CAC: ApexOptions;
+  scatter1CAC: ApexOptions;
+  scatter2CAC: ApexOptions;
+  heatMap1CAC: ApexOptions;
+  heatMap2CAC: ApexOptions;
+  pie1CAC: ApexOptions;
+  pie2CAC: ApexOptions;
+  radialBar1CAC: ApexOptions;
+  radialBar2CAC: ApexOptions;
+  radar1CAC: ApexOptions;
+  radar2CAC: ApexOptions;
 
   // constructor
   constructor() {

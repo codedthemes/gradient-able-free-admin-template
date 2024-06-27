@@ -1,5 +1,5 @@
 // Angular Import
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Location, LocationStrategy } from '@angular/common';
 
 @Component({
@@ -18,13 +18,20 @@ export class AdminComponent {
     private location: Location,
     private locationStrategy: LocationStrategy
   ) {
-    let current_url = this.location.path();
-    const baseHref = this.locationStrategy.getBaseHref();
-    if (baseHref) {
-      current_url = baseHref + this.location.path();
-    }
     this.windowWidth = window.innerWidth;
     this.navCollapsedMob = false;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  // eslint-disable-next-line
+  onResize(event: any): void {
+    this.windowWidth = event.target.innerWidth;
+    if (this.windowWidth < 992) {
+      document.querySelector('.pcoded-navbar')?.classList.add('menupos-static');
+      if (document.querySelector('app-navigation.pcoded-navbar')?.classList.contains('navbar-collapsed')) {
+        document.querySelector('app-navigation.pcoded-navbar')?.classList.remove('navbar-collapsed');
+      }
+    }
   }
 
   // public method
@@ -38,6 +45,18 @@ export class AdminComponent {
       } else {
         this.navCollapsedMob = !this.navCollapsedMob;
       }
+    }
+  }
+
+  handleKeyDown(event: KeyboardEvent): void {
+    if (event.key === 'Escape') {
+      this.closeMenu();
+    }
+  }
+
+  closeMenu() {
+    if (document.querySelector('app-navigation.pcoded-navbar')?.classList.contains('mob-open')) {
+      document.querySelector('app-navigation.pcoded-navbar')?.classList.remove('mob-open');
     }
   }
 }
