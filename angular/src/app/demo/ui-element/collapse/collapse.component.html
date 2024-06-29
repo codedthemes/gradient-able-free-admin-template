@@ -7,16 +7,18 @@
         (click)="isCollapsed = !isCollapsed"
         [attr.aria-expanded]="!isCollapsed"
         aria-controls="collapseExample"
-        >Link with href</a
       >
+        Link with href
+      </a>
       <button
         class="btn btn-primary mb-2"
         type="button"
         (click)="isCollapsed = !isCollapsed"
         [attr.aria-expanded]="!isCollapsed"
         aria-controls="collapseExample"
-        >Button with data-target</button
       >
+        Button with data-target
+      </button>
       <div id="collapseExample" [ngbCollapse]="isCollapsed">
         <p class="mt-3">
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
@@ -35,8 +37,9 @@
       (click)="isMultiCollapsed1 = !isMultiCollapsed1"
       [attr.aria-expanded]="!isMultiCollapsed1"
       aria-controls="multiCollapseExample1"
-      >Toggle first element</a
     >
+      Toggle first element
+    </a>
     <button
       class="btn btn-primary me-2 mb-2"
       (click)="isMultiCollapsed2 = !isMultiCollapsed2"
@@ -105,7 +108,11 @@
         <div ngbAccordionItem>
           <h2 ngbAccordionHeader>
             <button ngbAccordionButton>
-              <span>&#9733; <b>Fancy</b> title &#9733;</span>
+              <span>
+                &#9733;
+                <b>Fancy</b>
+                title &#9733;
+              </span>
             </button>
           </h2>
           <div ngbAccordionCollapse>

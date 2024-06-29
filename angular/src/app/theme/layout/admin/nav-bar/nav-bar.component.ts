@@ -1,5 +1,5 @@
 // Angular Import
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -23,6 +23,18 @@ export class NavBarComponent {
   navCollapse() {
     if (this.windowWidth >= 992) {
       this.NavCollapse.emit();
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  // eslint-disable-next-line
+  onResize(event: any): void {
+    this.windowWidth = event.target.innerWidth;
+  }
+
+  navCollapseMob() {
+    if (this.windowWidth < 992) {
+      this.NavCollapsedMob.emit();
     }
   }
 }

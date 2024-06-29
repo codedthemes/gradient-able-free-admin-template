@@ -25,16 +25,16 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
-      - name: Install Node.js 18
+      - name: Install Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: "18.x"
+          node-version: "20.x"
 
       - name: 🔨 Build Project
         run: |
           cd angular
-          npm install --legacy-peer-deps
-          npm run build-prod
+          yarn
+          yarn build-prod
 
       - name: 📂 Deploy to Server
         uses: easingthemes/ssh-deploy@main
@@ -42,7 +42,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           # ARGS: "-rltgoDzvO --delete"
           SOURCE: "angular/dist/"
-          REMOTE_HOST: 217.21.92.35
+          REMOTE_HOST: 154.49.240.71
           REMOTE_USER: u778408432
           REMOTE_PORT: "65002"
           TARGET: domains/codedthemes.com/public_html/demos/admin-templates/gradient-able/angular/free
