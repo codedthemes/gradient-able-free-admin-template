@@ -112,6 +112,12 @@
               Lock Screen
             </a>
           </li>
+          <li>
+            <a href="javascript:" class="dropdown-item">
+              <i class="feather icon-lock"></i>
+              Logout
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -123,27 +129,24 @@
     <app-chat-user-list
       (ChatToggle)="onChatToggle($event)"
       (ChatCollapse)="this.visibleUserList = !this.visibleUserList; this.chatMessage = false"
-    ></app-chat-user-list>
+    />
   </section>
 }
-
 @if (chatMessage) {
   <section class="header-chat" [ngClass]="{ open: chatMessage }" [@slideInOutLeft]>
-    <app-chat-msg (ChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId"></app-chat-msg>
+    <app-chat-msg (ChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId" />
   </section>
 }
-
 @if (visibleUserList) {
   <section class="header-user-list" [ngClass]="{ open: visibleUserList }" [@slideInOutRight]>
     <app-chat-user-list
       (ChatToggle)="onChatToggle($event)"
       (ChatCollapse)="this.visibleUserList = !this.visibleUserList; this.chatMessage = false"
-    ></app-chat-user-list>
+    />
   </section>
 }
-
 @if (chatMessage) {
   <section class="header-chat" [ngClass]="{ open: chatMessage }" [@slideInOutRight]>
-    <app-chat-msg (ChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId"></app-chat-msg>
+    <app-chat-msg (ChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId" />
   </section>
 }

@@ -1,5 +1,8 @@
-// Angular Import
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+// angular import
+import { Component, output, input } from '@angular/core';
+
+// project import
+import { SharedModule } from 'src/app/theme/shared/shared.module';
 
 interface friendsList {
   id: number;
@@ -12,16 +15,15 @@ interface friendsList {
 
 @Component({
   selector: 'app-friend',
+  imports: [SharedModule],
   templateUrl: './friend.component.html',
   styleUrls: ['./friend.component.scss']
 })
 export class FriendComponent {
-  // public props
-  @Input() friends!: friendsList;
-  @Output() ChatOn = new EventEmitter();
+  readonly friends = input.required<friendsList>();
+  ChatOn = output<number>();
 
-  // public method
-  innerChatToggle(friends: friendsList) {
+  public innerChatToggle(friends: friendsList) {
     this.ChatOn.emit(friends.id);
   }
 }

@@ -1,12 +1,18 @@
-// Angular Import
+// angular import
 import { Component } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 
-// bootstrap
+// bootstrap import
 import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
+
+// project import
+import { SharedModule } from 'src/app/theme/shared/shared.module';
+import { ChatUserListComponent } from './chat-user-list/chat-user-list.component';
+import { ChatMsgComponent } from './chat-msg/chat-msg.component';
 
 @Component({
   selector: 'app-nav-right',
+  imports: [SharedModule, ChatUserListComponent, ChatMsgComponent],
   templateUrl: './nav-right.component.html',
   styleUrls: ['./nav-right.component.scss'],
   providers: [NgbDropdownConfig],
@@ -34,7 +40,7 @@ export class NavRightComponent {
   }
 
   // public method
-  onChatToggle(friendID: number) {
+  onChatToggle(friendID: any) {
     this.friendId = friendID;
     this.chatMessage = !this.chatMessage;
   }

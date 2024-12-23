@@ -1,19 +1,21 @@
-// Angular Import
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
+// angular import
+import { Component, ElementRef, OnInit, Renderer2, effect, inject, output, viewChild, input } from '@angular/core';
 
 // project import
 import { FriendsList } from 'src/app/fack-db/friends-list';
 import { UserChat } from 'src/app/fack-db/user-chat';
+import { SharedModule } from 'src/app/theme/shared/shared.module';
 
 @Component({
   selector: 'app-chat-msg',
+  imports: [SharedModule],
   templateUrl: './chat-msg.component.html',
   styleUrls: ['./chat-msg.component.scss']
 })
 export class ChatMsgComponent implements OnInit {
-  @Input() friendId!: number;
-  @Output() ChatToggle = new EventEmitter();
-  @ViewChild('newChat', { read: ElementRef, static: false }) newChat!: ElementRef;
+  friendId = input.required<number>();
+  ChatToggle = output();
+  newChat = viewChild.required('newChat', { read: ElementRef });
   friendsList = FriendsList.friends;
   userChat = UserChat.chat;
   // eslint-disable-next-line
@@ -22,15 +24,22 @@ export class ChatMsgComponent implements OnInit {
   message_error!: boolean;
   friendWriting!: boolean;
   newReplay: string;
+  direction = 'ltr';
 
-  constructor(private rend: Renderer2) {
+  // constructor
+  constructor() {
     this.newReplay = '';
   }
 
+  // private method
+  private isRtlMode(isRtl: boolean) {
+    this.direction = isRtl === true ? 'rtl' : 'ltr';
+  }
+
   ngOnInit() {
-    this.chatMessage = findObjectByKeyValue(this.friendsList, 'id', this.friendId);
+    this.chatMessage = findObjectByKeyValue(this.friendsList, 'id', this.friendId());
     if (this.chatMessage) {
-      const message = findObjectByKeyValue(this.userChat, 'friend_id', this.friendId);
+      const message = findObjectByKeyValue(this.userChat, 'friend_id', this.friendId());
       if (message) {
         this.chatMessage['chat'] = message['messages'];
       }
@@ -49,7 +58,7 @@ export class ChatMsgComponent implements OnInit {
         const html_send =
           '<div class="media chat-messages">' +
           '<div class="media-body chat-menu-reply">' +
-          '<div class="">' +
+          '<div >' +
           '<p class="chat-cont">' +
           this.message +
           '</p>' +
@@ -73,7 +82,7 @@ export class ChatMsgComponent implements OnInit {
             '">' +
             '</a>' +
             '<div class="media-body chat-menu-content">' +
-            '<div class="">' +
+            '<div >' +
             '<p class="chat-cont">hello superior personality you write</p>' +
             '<p class="chat-cont">' +
             temp_replay +

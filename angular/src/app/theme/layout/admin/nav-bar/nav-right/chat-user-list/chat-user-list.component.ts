@@ -1,23 +1,29 @@
-// Angular Import
-import { Component, EventEmitter, Output } from '@angular/core';
+// angular import
+import { Component, effect, inject, output } from '@angular/core';
 
 // project import
 import { FriendsList } from 'src/app/fack-db/friends-list';
+import { SharedModule } from 'src/app/theme/shared/shared.module';
+import { FriendComponent } from './friend/friend.component';
+import { DataFilterPipe } from 'src/app/theme/shared/filter/data-filter.pipe';
 
 @Component({
   selector: 'app-chat-user-list',
+  imports: [SharedModule, FriendComponent, DataFilterPipe],
   templateUrl: './chat-user-list.component.html',
   styleUrls: ['./chat-user-list.component.scss']
 })
 export class ChatUserListComponent {
-  // public props
-  @Output() ChatCollapse = new EventEmitter();
-  @Output() ChatToggle = new EventEmitter();
-  searchFriends!: string;
+  readonly ChatCollapse = output();
+  readonly ChatToggle = output();
   // eslint-disable-next-line
-  friendsList: any = FriendsList.friends;
+  friendsList: any;
+  searchFriends!: string;
 
-  // public method
+  constructor() {
+    this.friendsList = FriendsList.friends;
+  }
+
   ChatOn() {
     this.ChatToggle.emit();
   }

@@ -1,6 +1,6 @@
 // Angular Import
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, inject, input } from '@angular/core';
 import { animate, AUTO_STYLE, state, style, transition, trigger } from '@angular/animations';
 
 // bootstrap import
@@ -53,15 +53,15 @@ export class CardComponent implements OnInit {
   // public props
   @Input() cardTitle: string;
   @Input() cardClass!: string;
-  @Input() blockClass!: string;
-  @Input() headerClass!: string;
+  blockClass = input<string>();
+  headerClass = input<string>();
   @Input() options: boolean;
   @Input() hidHeader: boolean;
   @Input() customHeader: boolean;
   @Input() customDate: boolean;
-  @Input() CardDate!: string;
+  CardDate = input<string>();
   @Input() isCardFooter: boolean;
-  @Input() footerClass!: string;
+  footerClass = input<string>();
 
   animation!: string;
   fullIcon: string;
@@ -72,7 +72,9 @@ export class CardComponent implements OnInit {
   cardRemove: string;
 
   // constructor
-  constructor(/*animationService: AnimationService,*/ config: NgbDropdownConfig) {
+  constructor() {
+    const config = inject(NgbDropdownConfig);
+
     config.placement = 'bottom-right';
     this.customHeader = false;
     this.customDate = false;
