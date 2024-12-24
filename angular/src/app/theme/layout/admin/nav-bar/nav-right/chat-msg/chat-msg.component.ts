@@ -1,5 +1,5 @@
 // angular import
-import { Component, ElementRef, OnInit, Renderer2, effect, inject, output, viewChild, input } from '@angular/core';
+import { Component, ElementRef, OnInit, output, viewChild, input } from '@angular/core';
 
 // project import
 import { FriendsList } from 'src/app/fack-db/friends-list';

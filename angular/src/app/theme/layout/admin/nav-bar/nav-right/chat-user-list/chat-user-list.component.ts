@@ -1,5 +1,5 @@
 // angular import
-import { Component, effect, inject, output } from '@angular/core';
+import { Component, output } from '@angular/core';
 
 // project import
 import { FriendsList } from 'src/app/fack-db/friends-list';
