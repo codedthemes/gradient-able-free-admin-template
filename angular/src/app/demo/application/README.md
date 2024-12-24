@@ -38,4 +38,4 @@ Looking for more advanced features and pages? This page(folder) is part of the p
 
 ## Get Started with the Pro Version!
 
-👉 [Explore the Pro version now](https://codedthemes.com/item/datta-able-angular/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium) - and supercharge your development experience!
+👉 [Explore the Pro version now](https://codedthemes.com/item/gradient-able-angular-admin-template/) - and supercharge your development experience!
