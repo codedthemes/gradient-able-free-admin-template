@@ -1,32 +1,41 @@
-# Admin Panel Demo
+# Gradient Able Admin Panel - Unlock Premium Features with the Pro Version
 
-This is a demo of the admin panel for the CodedThemes Angular 19 Admin Template.
+Looking for more advanced features and pages? This page(folder) is part of the premium version of our <b>8.0.0</b> template. Upgrade to the Pro version to access these exclusive pages and take your project to the next level!
 
-The demo is a fully functional admin panel that showcases the features of the template. It includes a variety of pages and components, including:
+## Included in the Pro Version:
 
-- Dashboard
-- Users
-- Products
-- Settings
-- Profile
-- Login
-- Register
-- Forgot Password
+[🚀 Dashboards](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/dashboard/analytics) : Interactive dashboards packed with dynamic data visualizations and real-time insights.
 
-The demo also includes a variety of custom components, including:
+[📦 Widgets](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/widget/statistic) : A collection of pre-built widgets to accelerate your project’s functionality.
 
-- Sidebar
-- Navbar
-- Breadcrumbs
-- Cards
-- Tables
-- Forms
-- Charts
-- Maps
-- Notifications
+[⚙️ Admin Panel](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/online-course/dashboard) : Fully responsive and intuitive admin panels for seamless management.
 
-The demo is built using the latest version of Angular and is fully responsive, meaning it will work on a variety of devices and screen sizes.
+[🔧 Components](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/basic/button) : A diverse library of reusable and customizable UI components.
 
-## Running the Demo
+[🚀 Advanced Components](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/advance/sweetAlert) : Sophisticated tools and components to elevate your project’s design and functionality.
 
-To run the demo, simply clone the repository and run `npm install` followed by `ng serve`. The demo will be available at `http://localhost:4200/`.
+[📝 Forms](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/forms/basic) : Advanced forms with validation, customization, and seamless user interaction.
+
+[📊 Tables](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/tbl-bootstrap/bt-basic) : Interactive and sortable tables to streamline data management.
+
+[📈 Charts](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/charts/apex) : Stunning, visually appealing charts powered by advanced data visualization tools.
+
+[🔒 Authentication](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/auth/register) : Secure authentication pages with login, signup, and password recovery.
+
+[✅ To-Do List](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/todo/basic) : A fully functional task management system for enhanced productivity.
+
+[🎚️ Range Sliders](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/advance/rangeSlider) : Interactive sliders to enhance user feedback and UI experiences.
+
+[🔔 Toast Notifications](https://codedthemes.com/demos/admin-templates/gradient-able/angular/stage/basic/toasts) : Customizable notification systems for seamless alerts and updates.
+
+## Why Upgrade to the Pro Version?
+
+1. 🚀 <b>Advanced Features</b> : Unlock premium components and tools for high-end projects.
+2. ⚡ <b>Faster Development</b> : Save time with ready-to-use pages and widgets.
+3. 📱 <b>Fully Responsive Design</b> : Ensure your project looks stunning across all devices.
+4. 🛠 <b>Developer-Friendly</b> : Comes with clean, modular code and comprehensive documentation.
+5. 🎨 <b>Customization-Ready</b> : Easily tailor layouts and elements to match your project’s branding.
+
+## Get Started with the Pro Version!
+
+👉 [Explore the Pro version now](https://codedthemes.com/item/datta-able-angular/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium) - and supercharge your development experience!
