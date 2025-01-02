@@ -13,11 +13,10 @@
   .card-body {
     padding: 0 !important;
 
-    >div {
+    > div {
       margin-left: 0;
       margin-right: 0;
     }
-
 
     .notify-icon i {
       font-size: 30px;
@@ -98,7 +97,7 @@
     margin-left: 0;
     margin-right: 0;
 
-    >div {
+    > div {
       padding: 15px 0;
       text-align: center;
       cursor: pointer;
@@ -114,7 +113,7 @@
 .user-radial-card {
   text-align: center;
 
-  >div {
+  > div {
     margin: 0 auto;
     display: block;
 
@@ -145,7 +144,7 @@
         overflow: visible;
 
         &:before {
-          content: "";
+          content: '';
           height: 5px;
           width: 5px;
           border-radius: 50%;
@@ -293,7 +292,7 @@
 
       &:after,
       &:before {
-        content: "";
+        content: '';
         width: 100%;
         height: 48%;
         border: 2px solid $primary;
@@ -370,7 +369,7 @@
       position: relative;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -10px;
         left: 0;
@@ -384,7 +383,7 @@
   .seo-statustic {
     position: absolute;
 
-    &+.seo-chart {
+    & + .seo-chart {
       margin-top: 60px;
     }
   }
@@ -420,7 +419,7 @@
       top: -10px;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 3px;
         right: 3px;
@@ -481,7 +480,7 @@
     padding-bottom: 20px;
     padding-top: 20px;
 
-    &+li {
+    & + li {
       border-top: 1px solid var(--bs-border-color);
     }
 
@@ -539,7 +538,7 @@
       position: relative;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         background: #ebebeb;
         height: 100%;
@@ -625,7 +624,7 @@
       height: 40px;
     }
 
-    >div {
+    > div {
       padding-top: 15px;
       padding-bottom: 9px;
       margin-left: 0;
@@ -649,7 +648,7 @@
 
     .pop-up {
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         background-color: $danger;
         height: 8px;
@@ -670,7 +669,7 @@
     margin-bottom: 30px;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       height: 12px;
       width: 12px;
@@ -725,7 +724,7 @@
     text-align: center;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: calc(50% - 1px);
       left: 0;
@@ -806,7 +805,7 @@
       border-radius: 0 5px 5px 5px;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         left: -7px;
         top: -7px;
@@ -826,7 +825,7 @@
       border-radius: 5px 0 5px 5px;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         right: -7px;
         top: -7px;
@@ -860,7 +859,7 @@
     }
   }
 
-  .card-footer:not([class*="bg-"]) {
+  .card-footer:not([class*='bg-']) {
     background: #fff;
 
     .progress {
@@ -926,7 +925,7 @@
     position: relative;
     overflow: hidden;
 
-    >* {
+    > * {
       position: relative;
       z-index: 5;
 
@@ -961,9 +960,8 @@
     }
 
     &.nav-pills {
-
       .nav-link.active,
-      .show>.nav-link {
+      .show > .nav-link {
         box-shadow: var(--pc-card-box-shadow);
         background: var(--bs-success-bg-subtle);
         color: var(--bs-success);
@@ -979,12 +977,11 @@
   padding-top: 0;
 
   .table {
-    >thead>tr>th {
+    > thead > tr > th {
       border-top: 0;
     }
 
     tr {
-
       td,
       th {
         &:first-child {
@@ -1099,7 +1096,7 @@
           margin-inline: 0;
         }
 
-        >div {
+        > div {
           @include media-breakpoint-down(sm) {
             padding-inline: 0;
           }
@@ -1112,7 +1109,6 @@
           }
         }
       }
-
     }
   }
 }

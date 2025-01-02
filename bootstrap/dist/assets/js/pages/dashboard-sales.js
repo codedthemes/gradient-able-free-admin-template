@@ -6,42 +6,42 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function floatchart() {
-
   (function () {
     // map
     var map = new jsVectorMap({
-      selector: "#world-map-markers",
-      map: "world",
+      selector: '#world-map-markers',
+      map: 'world',
       markersSelectable: true,
-      markers: [{
-        coords: [-14.2350, -51.9253]
-      },
-      {
-        coords: [35.8617, 104.1954]
-      },
-      {
-        coords: [61, 105]
-      },
-      {
-        coords: [26.8206, 30.8025]
-      }
+      markers: [
+        {
+          coords: [-14.235, -51.9253]
+        },
+        {
+          coords: [35.8617, 104.1954]
+        },
+        {
+          coords: [61, 105]
+        },
+        {
+          coords: [26.8206, 30.8025]
+        }
       ],
       markerStyle: {
         initial: {
-          fill: '#3f4d67',
+          fill: '#3f4d67'
         },
         hover: {
-          fill: '#4099ff',
-        },
+          fill: '#4099ff'
+        }
       },
       markerLabelStyle: {
         initial: {
           fontFamily: "'Inter', sans-serif",
           fontSize: 13,
           fontWeight: 500,
-          fill: '#3f4d67',
-        },
-      },
+          fill: '#3f4d67'
+        }
+      }
     });
 
     // chart
@@ -63,12 +63,12 @@ function floatchart() {
         strokeColors: '#fff',
         strokeWidth: 3,
         hover: {
-          size: 4,
+          size: 4
         }
       },
       stroke: {
         width: 1,
-        curve: 'smooth',
+        curve: 'smooth'
       },
       plotOptions: {
         bar: {
@@ -85,12 +85,12 @@ function floatchart() {
         }
       ],
       yaxis: {
-        show: false,
+        show: false
       },
       xaxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
         labels: {
-          hideOverlappingLabels: true,
+          hideOverlappingLabels: true
         },
         axisBorder: {
           show: false
@@ -100,8 +100,7 @@ function floatchart() {
         }
       }
     };
-    var chart = new ApexCharts(document.querySelector("#earnings-users-chart"), options);
+    var chart = new ApexCharts(document.querySelector('#earnings-users-chart'), options);
     chart.render();
   })();
-
 }
