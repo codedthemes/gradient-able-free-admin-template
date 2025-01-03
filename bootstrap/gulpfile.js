@@ -25,7 +25,7 @@ const header_theme = 'header-1'; // [ preset-1 to preset-12 ]
 const dark_layout = 'false'; // [ false , true , default ]
 const rtl_layout = 'false'; // [ false , true ]
 const box_container = 'false'; // [ false , true ]
-const version = 'v3.0.0';
+const version = 'v5.2.0';
 
 // =======================================================
 
