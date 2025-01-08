@@ -43,4 +43,4 @@ Looking for more advanced features and pages? This page(folder) is part of the p
 
 ## Get Started with the Pro Version!
 
-👉 [Explore the Pro version now](https://codedthemes.com/item/gradient-able-angular-admin-template/) - and supercharge your development experience!
+👉 [Explore the Pro version now](https://codedthemes.com/item/gradient-able-admin-template/) - and supercharge your development experience!
