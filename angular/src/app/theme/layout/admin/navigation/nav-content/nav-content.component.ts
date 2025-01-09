@@ -1,17 +1,25 @@
 // angular import
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit, inject, output } from '@angular/core';
 import { Location, LocationStrategy } from '@angular/common';
 
 // project import
 import { environment } from 'src/environments/environment';
 import { NavigationItem, NavigationItems } from '../navigation';
+import { SharedModule } from 'src/app/theme/shared/shared.module';
+import { NavCollapseComponent } from './nav-collapse/nav-collapse.component';
+import { NavGroupComponent } from './nav-group/nav-group.component';
+import { NavItemComponent } from './nav-item/nav-item.component';
 
 @Component({
   selector: 'app-nav-content',
+  imports: [SharedModule, NavCollapseComponent, NavGroupComponent, NavItemComponent],
   templateUrl: './nav-content.component.html',
   styleUrls: ['./nav-content.component.scss']
 })
 export class NavContentComponent implements OnInit {
+  private location = inject(Location);
+  private locationStrategy = inject(LocationStrategy);
+
   // version
   title = 'Demo application for version numbering';
   currentApplicationVersion = environment.appVersion;
@@ -21,12 +29,9 @@ export class NavContentComponent implements OnInit {
   wrapperWidth!: number;
   windowWidth: number;
 
-  @Output() NavMobCollapse = new EventEmitter();
+  NavMobCollapse = output();
   // constructor
-  constructor(
-    private location: Location,
-    private locationStrategy: LocationStrategy
-  ) {
+  constructor() {
     this.windowWidth = window.innerWidth;
     this.navigations = NavigationItems;
   }

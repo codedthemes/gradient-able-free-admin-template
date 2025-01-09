@@ -8,8 +8,8 @@
   <div class="main-friend-cont scroll-div">
     <div class="main-friend-list">
       <ng-scrollbar style="height: calc(100vh - 85px)" visibility="hover">
-        @for (friends of friendsList; track friends) {
-          <app-friend (ChatOn)="ChatOn()" [friends]="friends"></app-friend>
+        @for (friends of friendsList | dataFilter: searchFriends; track friends) {
+          <app-friend (ChatOn)="ChatOn()" [friends]="friends" />
         }
       </ng-scrollbar>
     </div>

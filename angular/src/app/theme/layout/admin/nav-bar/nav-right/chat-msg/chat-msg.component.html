@@ -7,7 +7,7 @@
   <div class="main-chat-cont">
     <div class="main-friend-chat">
       @if (chatMessage.chat) {
-        <ng-scrollbar style="height: calc(100vh - 170px)" visibility="hover">
+        <ng-scrollbar style="height: calc(100vh - 170px)" visibility="hover" [dir]="direction">
           @for (messages of chatMessage.chat; track messages) {
             <div>
               <div class="media chat-messages">
@@ -17,7 +17,7 @@
                   </a>
                 }
                 <div class="media-body" [ngClass]="{ 'chat-menu-content': messages.type, 'chat-menu-reply': !messages.type }">
-                  <div class="">
+                  <div>
                     <p class="chat-cont">{{ messages.msg }}</p>
                   </div>
                   <p class="chat-time">{{ messages.time }}</p>
@@ -43,7 +43,7 @@
       } @else {
         <div class="media chat-messages text-center">
           <div class="media-body chat-menu-content">
-            <div class="">
+            <div>
               <p class="chat-cont">CHAT NOT FOUND</p>
             </div>
           </div>

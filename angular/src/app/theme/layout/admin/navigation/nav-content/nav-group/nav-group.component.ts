@@ -1,24 +1,24 @@
 // Angular Import
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, inject, input } from '@angular/core';
 import { Location, LocationStrategy } from '@angular/common';
 
 // project import
 import { NavigationItem } from '../../navigation';
+import { NavCollapseComponent } from '../nav-collapse/nav-collapse.component';
+import { NavItemComponent } from '../nav-item/nav-item.component';
 
 @Component({
   selector: 'app-nav-group',
+  imports: [NavCollapseComponent, NavItemComponent],
   templateUrl: './nav-group.component.html',
   styleUrls: ['./nav-group.component.scss']
 })
 export class NavGroupComponent implements OnInit {
-  // public props
-  @Input() item!: NavigationItem;
+  private location = inject(Location);
+  private locationStrategy = inject(LocationStrategy);
 
-  // constructor
-  constructor(
-    private location: Location,
-    private locationStrategy: LocationStrategy
-  ) {}
+  // public props
+  item = input<NavigationItem>();
 
   // life cycle event
   ngOnInit() {

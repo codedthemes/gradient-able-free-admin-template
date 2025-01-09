@@ -1,11 +1,11 @@
 <div class="card" [ngClass]="cardClass" [@cardRemove]="cardRemove" #toAnimate>
   @if (!hidHeader) {
-    <div class="card-header" [ngClass]="headerClass">
+    <div class="card-header" [ngClass]="headerClass()">
       @if (!customHeader) {
         <h5>{{ cardTitle }}</h5>
       }
       @if (!customDate) {
-        <span class="d-block">{{ CardDate }}</span>
+        <span class="d-block">{{ CardDate() }}</span>
       }
       @if (this.options && !customHeader) {
         <div class="card-header-right">
@@ -58,12 +58,12 @@
   }
 
   <div [@collapsedCard]="collapsedCard">
-    <div class="card-body" [ngClass]="blockClass">
+    <div class="card-body" [ngClass]="blockClass()">
       <ng-content></ng-content>
     </div>
   </div>
   @if (isCardFooter) {
-    <div class="card-footer" [ngClass]="footerClass">
+    <div class="card-footer" [ngClass]="footerClass()">
       <ng-content select=".app-card-footer"></ng-content>
     </div>
   }
