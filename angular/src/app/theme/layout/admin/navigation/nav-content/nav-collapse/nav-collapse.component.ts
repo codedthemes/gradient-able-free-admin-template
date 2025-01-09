@@ -1,23 +1,16 @@
 // Angular Import
 import { Component, Input } from '@angular/core';
-import { animate, style, transition, trigger } from '@angular/animations';
+import { RouterModule } from '@angular/router';
 
 // project import
 import { NavigationItem } from '../../navigation';
+import { NavItemComponent } from '../nav-item/nav-item.component';
 
 @Component({
   selector: 'app-nav-collapse',
+  imports: [NavItemComponent, RouterModule],
   templateUrl: './nav-collapse.component.html',
-  styleUrls: ['./nav-collapse.component.scss'],
-  animations: [
-    trigger('slideInOut', [
-      transition(':enter', [
-        style({ transform: 'translateY(-100%)', display: 'block' }),
-        animate('250ms ease-in', style({ transform: 'translateY(0%)' }))
-      ]),
-      transition(':leave', [animate('250ms ease-in', style({ transform: 'translateY(-100%)' }))])
-    ])
-  ]
+  styleUrls: ['./nav-collapse.component.scss']
 })
 export class NavCollapseComponent {
   // public props

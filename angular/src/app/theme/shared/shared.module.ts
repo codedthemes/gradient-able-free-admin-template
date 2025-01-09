@@ -6,8 +6,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // project import
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { CardComponent } from './components/card/card.component';
-import { DataFilterPipe } from './filter/data-filter.pipe';
-import { SpinnerComponent } from './components/spinner/spinner.component';
 
 // third party
 import { NgScrollbarModule } from 'ngx-scrollbar';
@@ -35,13 +33,11 @@ import { NgbDropdownModule, NgbNavModule, NgbModule } from '@ng-bootstrap/ng-boo
     ReactiveFormsModule,
     CardComponent,
     BreadcrumbComponent,
-    DataFilterPipe,
-    SpinnerComponent,
     NgbModule,
     NgbDropdownModule,
     NgbNavModule,
     NgScrollbarModule
   ],
-  declarations: [DataFilterPipe, SpinnerComponent]
+  declarations: []
 })
 export class SharedModule {}

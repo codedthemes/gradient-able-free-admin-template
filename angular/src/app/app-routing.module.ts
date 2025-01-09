@@ -26,19 +26,19 @@ const routes: Routes = [
       },
       {
         path: 'chart',
-        loadComponent: () => import('./demo/chart & map/core-apex.component')
+        loadComponent: () => import('./demo/chart-maps/core-apex.component')
       },
       {
         path: 'forms',
-        loadComponent: () => import('./demo/forms & tables/form-elements/form-elements.component')
+        loadComponent: () => import('./demo/forms/form-elements/form-elements.component')
       },
       {
         path: 'tables',
-        loadComponent: () => import('./demo/forms & tables/tbl-bootstrap/tbl-bootstrap.component')
+        loadComponent: () => import('./demo/tables/tbl-bootstrap/tbl-bootstrap.component')
       },
       {
         path: 'sample-page',
-        loadComponent: () => import('./demo/sample-page/sample-page.component')
+        loadComponent: () => import('./demo/other/sample-page/sample-page.component')
       }
     ]
   },
@@ -48,11 +48,11 @@ const routes: Routes = [
     children: [
       {
         path: 'auth/signup',
-        loadComponent: () => import('./demo/authentication/sign-up/sign-up.component')
+        loadComponent: () => import('./demo/pages/authentication/sign-up/sign-up.component')
       },
       {
         path: 'auth/signin',
-        loadComponent: () => import('./demo/authentication/sign-in/sign-in.component')
+        loadComponent: () => import('./demo/pages/authentication/sign-in/sign-in.component')
       }
     ]
   }

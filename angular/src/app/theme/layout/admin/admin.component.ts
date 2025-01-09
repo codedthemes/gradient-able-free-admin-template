@@ -1,23 +1,31 @@
 // Angular Import
-import { Component, HostListener } from '@angular/core';
-import { Location, LocationStrategy } from '@angular/common';
+import { Component, HostListener, inject } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule, Location, LocationStrategy } from '@angular/common';
+
+// Project Import
+import { ConfigurationComponent } from './configuration/configuration.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { BreadcrumbComponent } from '../../shared/components/breadcrumb/breadcrumb.component';
 
 @Component({
   selector: 'app-admin',
+  imports: [ConfigurationComponent, RouterModule, NavBarComponent, NavigationComponent, CommonModule, BreadcrumbComponent],
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent {
+  private location = inject(Location);
+  private locationStrategy = inject(LocationStrategy);
+
   // public props
   navCollapsed!: boolean;
   navCollapsedMob: boolean;
   windowWidth: number;
 
   // constructor
-  constructor(
-    private location: Location,
-    private locationStrategy: LocationStrategy
-  ) {
+  constructor() {
     this.windowWidth = window.innerWidth;
     this.navCollapsedMob = false;
   }

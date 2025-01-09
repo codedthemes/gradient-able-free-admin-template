@@ -1,46 +1,13 @@
 // angular import
-import { Component, ViewChild } from '@angular/core';
+import { Component, viewChild } from '@angular/core';
 
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
-import { ApexTheme, NgApexchartsModule } from 'ng-apexcharts';
 import { ProductSaleComponent } from './product-sale/product-sale.component';
 
-import {
-  ChartComponent,
-  ApexAxisChartSeries,
-  ApexNonAxisChartSeries,
-  ApexChart,
-  ApexXAxis,
-  ApexDataLabels,
-  ApexStroke,
-  ApexYAxis,
-  ApexLegend,
-  ApexFill,
-  ApexGrid,
-  ApexPlotOptions,
-  ApexTooltip,
-  ApexMarkers
-} from 'ng-apexcharts';
+// 3rd party import
 
-export type ChartOptions = {
-  series: ApexAxisChartSeries | ApexNonAxisChartSeries;
-  chart: ApexChart;
-  xaxis: ApexXAxis;
-  stroke: ApexStroke;
-  dataLabels: ApexDataLabels;
-  plotOptions: ApexPlotOptions;
-  yaxis: ApexYAxis;
-  tooltip: ApexTooltip;
-  labels: string[];
-  colors: string[];
-  legend: ApexLegend;
-  fill: ApexFill;
-  grid: ApexGrid;
-  markers: ApexMarkers;
-  theme: ApexTheme;
-};
-
+import { ApexOptions, ChartComponent, NgApexchartsModule } from 'ng-apexcharts';
 @Component({
   selector: 'app-dash-analytics',
   standalone: true,
@@ -50,12 +17,12 @@ export type ChartOptions = {
 })
 export default class DashAnalyticsComponent {
   // public props
-  @ViewChild('chart') chart!: ChartComponent;
-  @ViewChild('customerChart') customerChart!: ChartComponent;
-  chartOptions!: Partial<ChartOptions>;
-  chartOptions_1!: Partial<ChartOptions>;
-  chartOptions_2!: Partial<ChartOptions>;
-  chartOptions_3!: Partial<ChartOptions>;
+  chart = viewChild<ChartComponent>('chart');
+  customerChart = viewChild<ChartComponent>('customerChart');
+  chartOptions!: Partial<ApexOptions>;
+  chartOptions_1!: Partial<ApexOptions>;
+  chartOptions_2!: Partial<ApexOptions>;
+  chartOptions_3!: Partial<ApexOptions>;
 
   // constructor
   constructor() {

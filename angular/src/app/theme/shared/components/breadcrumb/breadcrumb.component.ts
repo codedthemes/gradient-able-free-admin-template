@@ -1,5 +1,5 @@
 // Angular Import
-import { Component, Input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { NavigationEnd, Router, RouterModule, Event } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
@@ -22,18 +22,18 @@ interface titleType {
   styleUrls: ['./breadcrumb.component.scss']
 })
 export class BreadcrumbComponent {
+  private route = inject(Router);
+  private titleService = inject(Title);
+
   // public props
-  @Input() type!: string;
+  type = input<string>();
 
   navigations: NavigationItem[];
   breadcrumbList: Array<string> = [];
   navigationList!: titleType[];
 
   // constructor
-  constructor(
-    private route: Router,
-    private titleService: Title
-  ) {
+  constructor() {
     this.navigations = NavigationItems;
     this.setBreadcrumb();
   }
@@ -64,7 +64,7 @@ export class BreadcrumbComponent {
         ];
       }
       if ((navItem.type === 'group' || navItem.type === 'collapse') && 'children' in navItem) {
-        // eslint-disable-next-line
+         
         const breadcrumbList = this.filterNavigation(navItem.children!, activeLink);
         if (breadcrumbList.length > 0) {
           breadcrumbList.unshift({

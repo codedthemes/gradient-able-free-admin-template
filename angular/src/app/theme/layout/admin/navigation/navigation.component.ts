@@ -1,15 +1,19 @@
 // Angular Import
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, output } from '@angular/core';
+
+// project import
+import { NavContentComponent } from './nav-content/nav-content.component';
 
 @Component({
   selector: 'app-navigation',
+  imports: [NavContentComponent],
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
   // public props
   windowWidth: number;
-  @Output() NavMobCollapse = new EventEmitter();
+  NavMobCollapse = output();
 
   // constructor
   constructor() {
