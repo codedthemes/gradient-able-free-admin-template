@@ -1,7 +1,7 @@
 /**  =====================
     2. Custom css start
 ==========================  **/
-@import url("../fonts/phosphor/duotone/style.css");
+@import url('../fonts/phosphor/duotone/style.css');
 
 * {
   &:focus {
@@ -49,7 +49,7 @@ strong {
 }
 
 .breadcrumb-default-icon {
-  .breadcrumb-item+.breadcrumb-item::before {
+  .breadcrumb-item + .breadcrumb-item::before {
     position: relative;
     top: 2px;
   }
@@ -65,7 +65,7 @@ strong {
   height: 100%;
   text-align: center;
   color: #fff;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   padding: 50px 0;
 
   p {
@@ -90,18 +90,18 @@ strong {
     margin: 0 auto;
     width: 720px;
 
-    >li {
+    > li {
       float: left;
       vertical-align: top;
 
-      >a {
+      > a {
         display: block;
         color: #000;
         width: 140px;
         font-size: 15px;
         padding: 15px 0;
 
-        >div {
+        > div {
           margin-top: 10px;
         }
 
@@ -153,11 +153,11 @@ strong {
 }
 
 .pc-icon {
-  &:not([class*="wid-"]) {
+  &:not([class*='wid-']) {
     width: 22px;
   }
 
-  &:not([class*="hei-"]) {
+  &:not([class*='hei-']) {
     height: 22px;
   }
 }
@@ -254,9 +254,8 @@ strong {
   margin-bottom: 15px;
 
   .row {
-
-    >[class^="col-"],
-    >.col {
+    > [class^='col-'],
+    > .col {
       padding-top: 0.75rem;
       padding-bottom: 0.75rem;
       background-color: rgba(86, 61, 124, 0.15);
@@ -264,7 +263,7 @@ strong {
     }
   }
 
-  .row+.row {
+  .row + .row {
     margin-top: 1rem;
   }
 
@@ -340,10 +339,9 @@ strong {
   }
 }
 .modal {
-  .bd-example-row{
+  .bd-example-row {
     padding: 15px 25px;
   }
-
 }
 /* Example tabbable tabs */
 .bd-example-tabs .nav-tabs {
@@ -388,19 +386,19 @@ strong {
   }
 }
 
-:not(pre)>code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   background: transparent;
 }
 
 /* ================================    Blockquote Start  ===================== */
 
 svg.feather {
-  &:not([class*="wid-"]) {
+  &:not([class*='wid-']) {
     width: 20px;
   }
 
-  &:not([class*="hei-"]) {
+  &:not([class*='hei-']) {
     height: 20px;
   }
 }
@@ -411,18 +409,18 @@ svg.feather {
   }
 }
 
-pre[class*="language-"]:before,
-pre[class*="language-"]:after {
+pre[class*='language-']:before,
+pre[class*='language-']:after {
   display: none;
 }
 
-:not(pre)>code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   display: flex;
   margin: 0;
 }
 
-pre[class*="language-"]>code {
+pre[class*='language-'] > code {
   width: 100%;
 }
 
@@ -467,8 +465,7 @@ pre[class*="language-"]>code {
   border-radius: $border-radius;
   margin: 4px 0;
 
-  @each $name,
-  $value in $more-colors {
+  @each $name, $value in $more-colors {
     $i: 100;
 
     @while $i<=900 {
@@ -505,7 +502,7 @@ pre[class*="language-"]>code {
 .blockquote-footer {
   margin-top: 0;
 }
-.toast-container{
+.toast-container {
   z-index: 1022;
 }
 
@@ -537,9 +534,10 @@ pre[class*="language-"]>code {
 
 // offcanvas page css
 .customer-body {
-  height: calc(100% - 60px)
+  height: calc(100% - 60px);
 }
-.offcanvas-top, .offcanvas-bottom {
+.offcanvas-top,
+.offcanvas-bottom {
   min-height: 240px;
 }
 

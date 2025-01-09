@@ -7,37 +7,37 @@
   --bs-body-bg-rgb: #{to-rgb($body-bg)};
 
   --pc-heading-color: #222;
-  --pc-active-background: rgba(255,255,255,.2);
+  --pc-active-background: rgba(255, 255, 255, 0.2);
 
   // Navbar
   --pc-sidebar-background: #fff;
-  --pc-sidebar-color: #39465F;
-  --pc-sidebar-color-rgb: #{to-rgb(#39465F)};
+  --pc-sidebar-color: #39465f;
+  --pc-sidebar-color-rgb: #{to-rgb(#39465f)};
   --pc-sidebar-submenu-border-color: var(--bs-gray-300);
   --pc-sidebar-active-color: #{$primary};
-  --pc-sidebar-active-bg: rgba(202,202,202,.3);
-  --pc-sidebar-shadow: 2px 0 2.94px 0.06px rgba(4,26,55,.16);
+  --pc-sidebar-active-bg: rgba(202, 202, 202, 0.3);
+  --pc-sidebar-shadow: 2px 0 2.94px 0.06px rgba(4, 26, 55, 0.16);
   --pc-sidebar-caption-color: var(--pc-heading-color);
   --pc-sidebar-border: none;
 
   // header
-  --pc-header-background: linear-gradient(to right,#4099ff,#73b4ff);
+  --pc-header-background: linear-gradient(to right, #4099ff, #73b4ff);
   --pc-header-color: #{#fff};
   --pc-header-shadow: none;
 
   // card
-  --pc-card-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,.16);
+  --pc-card-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
   --pc-card-box-hover-shadow: 0px 8px 24px rgba(27, 46, 94, 0.12);
 
   // horizontal menu
   --pc-header-submenu-background: #{$white};
-  --pc-header-submenu-color: #{#39465F};
+  --pc-header-submenu-color: #{#39465f};
 }
-[data-pc-sidebar-theme="dark"]{
+[data-pc-sidebar-theme='dark'] {
   // Navbar
   --pc-sidebar-background: #3b4650;
-  --pc-sidebar-color: #FFFFFF;
-  --pc-sidebar-color-rgb: #{to-rgb(#FFFFFF)};
+  --pc-sidebar-color: #ffffff;
+  --pc-sidebar-color-rgb: #{to-rgb(#ffffff)};
   --pc-sidebar-submenu-border-color: var(--bs-gray-600);
   --pc-sidebar-caption-color: #748892;
 }
@@ -80,7 +80,7 @@ $success-text: $green-600;
 $info-text: $cyan-700;
 $warning-text: $yellow-700;
 $danger-text: $red-600;
-$light-text: #39465F;
+$light-text: #39465f;
 $dark-text: $gray-700;
 
 $primary-bg-subtle: $blue-100;
@@ -100,19 +100,19 @@ $warning-border-subtle: $yellow-200;
 $danger-border-subtle: $red-200;
 $light-border-subtle: $gray-200;
 $dark-border-subtle: $gray-500;
-$brand-colors:(
-  'brand-color-1' :$brand-color1,
-  'brand-color-2' :$brand-color2,
-  'brand-color-3' :$brand-color3,
-  'brand-color-4' :$brand-color4,
-  'brand-color-5' :$brand-color5,
-  'brand-color-6' :$brand-color6,
-  'brand-color-7' :$brand-color7,
-  'brand-color-8' :$brand-color8,
-  'brand-color-9' :$brand-color9,
-  'brand-color-10' :$brand-color10,
-  'brand-color-11' :$brand-color11,
-  'brand-color-12' :$brand-color12,
+$brand-colors: (
+  'brand-color-1': $brand-color1,
+  'brand-color-2': $brand-color2,
+  'brand-color-3': $brand-color3,
+  'brand-color-4': $brand-color4,
+  'brand-color-5': $brand-color5,
+  'brand-color-6': $brand-color6,
+  'brand-color-7': $brand-color7,
+  'brand-color-8': $brand-color8,
+  'brand-color-9': $brand-color9,
+  'brand-color-10': $brand-color10,
+  'brand-color-11': $brand-color11,
+  'brand-color-12': $brand-color12
 );
 $preset-colors: (
   preset-1: (

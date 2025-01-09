@@ -6,8 +6,8 @@
   box-shadow: var(--pc-card-box-shadow);
   margin-bottom: 24px;
   transition: box-shadow 0.2s ease-in-out;
-  &:not(.page-block){
-    &:hover{
+  &:not(.page-block) {
+    &:hover {
       box-shadow: var(--pc-card-box-hover-shadow);
     }
   }
@@ -102,7 +102,7 @@
         background: transparent;
       }
     }
-    +.card-body{
+    + .card-body {
       padding-top: 0;
     }
   }

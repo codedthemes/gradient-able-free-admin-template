@@ -61,7 +61,7 @@
         }
       }
 
-      img+span {
+      img + span {
         padding-left: 10px;
       }
 
@@ -81,12 +81,12 @@
     .footer-link {
       position: relative;
 
-      li+li {
+      li + li {
         position: relative;
         padding-left: 12px;
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           width: 1px;
           height: 100%;
@@ -132,7 +132,7 @@
     background-size: cover;
     background-position: center;
 
-    &>* {
+    & > * {
       position: relative;
       z-index: 5;
     }
@@ -166,7 +166,6 @@
           color: $white;
         }
       }
-
     }
     .auth-form {
       width: 400px;
@@ -193,7 +192,7 @@
       }
       .auth-form {
         flex-grow: 1;
-        .card{
+        .card {
           min-height: auto;
           margin-top: 30px;
           margin-bottom: 30px;

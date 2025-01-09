@@ -2,7 +2,6 @@
 //   6. Common layout css start
 // ============================
 
-
 .pc-container {
   $temp: $header-height + 61;
   position: relative;
@@ -15,17 +14,17 @@
     padding-right: 35px;
     padding-top: 35px;
     @include media-breakpoint-down(xl) {
-      &.container{
+      &.container {
         max-width: 100%;
       }
     }
   }
 
-  .page-header+.row {
+  .page-header + .row {
     padding-top: 24px;
   }
 
-  .page-header+.pc-content {
+  .page-header + .pc-content {
     padding-top: calc(30px + 55px);
   }
 }
@@ -68,7 +67,7 @@
         color: $primary;
       }
 
-      +.breadcrumb-item::before {
+      + .breadcrumb-item::before {
         position: relative;
         top: 2px;
       }
@@ -93,7 +92,7 @@
     position: relative;
   }
 
-  >.container {
+  > .container {
     z-index: 5;
     position: relative;
     margin-top: -60px;
@@ -107,7 +106,7 @@
     th {
       border: none;
 
-      +th {
+      + th {
         border-radius: 5px 5px 0 0;
         padding: 20px 0;
       }
@@ -125,12 +124,12 @@
     th {
       text-align: right;
 
-      +td,
-      +th {
+      + td,
+      + th {
         text-align: center;
       }
 
-      +td {
+      + td {
         border-left: 1px solid $body-bg;
       }
     }
@@ -212,8 +211,8 @@
     margin-left: 0px;
     margin-right: 0px;
 
-    .page-header+.row,
-    .page-header+.pc-content,
+    .page-header + .row,
+    .page-header + .pc-content,
     .pc-content {
       padding-top: 20px;
       padding-left: 15px;
@@ -246,13 +245,11 @@
       padding-right: 0;
     }
 
-    .page-header+.row,
-    .page-header+.pc-content
-    {
+    .page-header + .row,
+    .page-header + .pc-content {
       padding-left: 0;
       padding-right: 0;
     }
-
   }
 
   .page-header {
@@ -353,7 +350,6 @@
 }
 
 .simplebar-content {
-
   &:before,
   &:after {
     content: ' ';
