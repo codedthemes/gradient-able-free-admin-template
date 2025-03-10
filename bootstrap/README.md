@@ -1,125 +1,166 @@
-# Gradient-Able-free-bootstrap-admin-template
+# Gradient Able Free Bootstrap Admin Template
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://codedthemes.com/item/gradient-able-bootstrap-lite/)
+[![Download ZIP](https://img.shields.io/badge/Download-ZIP-blue?style=flat-square&logo=github)](https://codedthemes.com/item/gradient-able-bootstrap-lite/)
+[![Join Discord](https://img.shields.io/badge/Join-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/p2E2WhCb6s)
+
+Gradient Able Admin Template is a free admin template built using the Bootstrap 4 framework, designed to fulfill your dashboard needs. It comes with a variety of Bootstrap components like Buttons, Badges, Tabs, Breadcrumbs, Icons, Form elements, Tables, Charts, and authentication pages.
+
+✨ Support us! If you like this theme, click the ⭐ (Top right) and let it shine
 
 ![IMG_8566.jpg](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-BOOTSTRAP-REPO-Gradient+Able.jpg)
-
-Gradient Able Admin Template made using Bootstrap 4 framework, It is a free lite version of [Gradient Able Premium Admin Template](https://codedthemes.com/item/gradient-able-bootstrap-lite/) that makes you fulfill your entire Dashboard needs.
-Gradient Able admin template comes with variety of Bootstrap components like Button, Badges, Tabs, Breadcrumb, Icons, Form elements, Table, Charts & authentication pages.
-
-The code structure is highly flexible to use and modify.
-
-Its design adapt any screen size easily even if retina screens.
-
-It is modern concept dashboard design with eye catchy colors. Wish you happy to use our product in your project.
-
-## Free Version Preview & Download
-
-Check out live preview of Gradient Able free lite version & download it.
-
-#### Preview
-
-- [Demo](http://lite.codedthemes.com/gradient-able/bootstrap/index.html)
-
-#### Download
-
-- [Download from Github](https://github.com/codedthemes/Gradient-Able-free-bootstrap-admin-template)
-- [Download from CodedThemes](https://codedthemes.com/item/gradient-able-bootstrap-lite/) & receive important notification instantly in your maiL.
-
-## Premium Version Preview & Download
-
-Gradient Able Premium Admin Template is now available for purchase. Kindly check its numerous demos and make your purchase decision.
-
-#### Preview
-
-- [Demo](http://lite.codedthemes.com/gradient-able/bootstrap/index.html)
-
-#### Download
-
-- [Purchase from CodedThemes](https://codedthemes.com/item/gradient-able-admin-template/)
 
 ## Table of contents
 
 - [Getting Started](#getting-started)
-- [Online Documentation](#online-documentation)
-- [Build With](#build-with)
-- [Directory-structure](#directory-structure)
-- [RoadMap](#roadmap)
-- [Author](#author)
-- [Contributing](#contributing)
+- [Download](#download)
+- [Why Gradient Able?](#why-gradient-able)
+- [What's included in Premium Version?](#whats-included-in-premium-version)
+- [Documentation](#documentation)
+- [Browser support](#browser-support)
+- [Technology Stack](#technology-stack)
+- [Other Technologies](#other-technologies)
+- 💰[Save more with Big Bundle](#save-more-with-big-bundle)💰
+- [More Bootstrap Dashboard Templates](#more-bootstrap-dashboard-templates)
 - [Issues?](#issues)
 - [License](#license)
-- [Other Dashboard Products](#other-dashboard-products)
-- [Social Profiles](#social-profiles)
+- [Contributor](#contributor)
+- [Useful Resources](#useful-resources)
+- [Community](#community)
+- [Follow us](#follow-us)
 
 ## Getting Started
 
-Clone from Github
+1. Clone from Github
 
 ```
-git clone https://github.com/codedthemes/Gradient-Able-free-bootstrap-admin-template.git
+git clone https://github.com/codedthemes/gradient-able-free-admin-template.git
 ```
 
-_You can directly use /dist/ folder or You may install template through Gulp. Please check our documentation Gulp setup part for that_
-
-## Online Documentation
-
-Gradient Able Free Lite version documentation cover in its Premium version documentation - check our [website.](http://html.codedthemes.com/gradient-able/bootstrap/doc/)
-
-## Build With
-
-- [Gulp](https://gulpjs.com/)
-- [nodeJS](https://nodejs.org/en/)
-- [Bootstrap 4](https://getbootstrap.com/)
-- [SASS](https://sass-lang.com/) - SCSS file not included in lite version v1.0
-
-## Directory Structure
+2. Install packages
 
 ```
-Gradient-able/
-    ├── src/
-    │   ├── assets/
-    │   ├── html/
-    │   ├── doc/
-    ├── .babelrc
-    ├── gulpfile.js
-    ├── package.json
-    ├── package-lock.json
+npm i
 ```
 
-## RoadMap
+3. Run project
 
-We are continuously working in Gradient Able Admin Template Project and going to make it a awesome dashboard template via your support. Give us the ideas, suggestion for include more components, pages, plugins. Few of future release pages are
+```
+gulp
+```
 
-## Author
+## Download
 
-Design and code is completely written by CodedThemes's design and development team. We are happy to welcome the contributors work for our all repositiories.
+- Gradient Able Free
+  - [Live Preview](http://lite.codedthemes.com/gradient-able/bootstrap/index.html)
+  - [Download](https://codedthemes.com/item/gradient-able-bootstrap-lite/)
+- Gradient Able Pro
+  - [Live Preview](http://lite.codedthemes.com/gradient-able/bootstrap/index.html)
+  - [Download](https://codedthemes.com/item/gradient-able-admin-template/)
+
+## Why Gradient Able?
+
+Gradient Able is offers everything you need to create dashboards. We have included the following high-end features in our initial release:
+
+- Modern aesthetics UI design
+- Bootstrap components
+- Fully Responsive, all modern browser supported
+- Easy to use code structure
+- Flexible & High-Performance code
+- Easy Documentation Guide
+
+## What's included in Premium Version?
+
+[Pro version](https://codedthemes.com/item/gradient-able-admin-template/) of Gradient Able Bootstrap 5 Admin Template offers modern design pre-build dashboard with unique layouts that customize with light/dark/default, collapse, LTR / RTL, full/fixed width, color presets and many more modes. 
+
+| [Gradient Able Free](https://codedthemes.com/item/gradient-able-bootstrap-lite/) | [Gradient Able Pro](https://codedthemes.com/item/gradient-able-admin-template/)                |
+| -------------------------------------------------------     | :------------------------------------------------------------------------------- |
+| **7** Demo pages                                            | **100+** demo pages                                                               |
+| -                                                           | ✓ Multi-language                                                                 |
+| -                                                           | ✓ Dark/Light Mode 🌓                                                             |
+| -                                                           | ✓ 6+ color setting Options                                                               |
+| -                                                           | ✓ RTL                                                                            |
+| ✓ MIT License                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-angular-admin-template/)                |
+
+## Documentation
+
+[Gradient Able Bootstrap Documentation](https://codedthemes.gitbook.io/gradient-able-bootstrap) helps you with installation, deployment, and troubleshooting.
+
+## Browser support
+
+<img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/chrome.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/edge.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/safari.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/firefox.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/opera.png" width="45" height="45" >
+
+## Technology Stack
+
+- Gulp
+- nodeJS
+- Bootstrap 4
+- SASS
+
+## Other Technologies
+
+| Technology                                                                                                                        | Free                                                                               | Pro                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <p align="center"><img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/React.png" width="25" height="25"></p>   | [**Free**](https://codedthemes.com/item/gradient-able-reactjs-free-admin-template/)       | [**Pro**](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/)    |
+| <p align="center"><img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Angular.png" width="30" height="30"></p> | [**Free**](https://codedthemes.com/item/gradient-able-angular-free-admin-template/)     | [**Pro**](https://codedthemes.com/item/gradient-able-angular-admin-template/) |
+
+## Save more with Big Bundle
+
+[![bundle-image](https://org-public-assets.s3.us-west-2.amazonaws.com/Banners/Bundle+banner.png)](https://links.codedthemes.com/jhFBJ)
+
+## More Bootstrap Dashboard Templates
+
+| Dashboard                                                                                                                                                          | FREE                                                                                | PRO                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Berry%20with%20name.png"  height="30" style="display:inline-block; vertical-align:middle;">   | [**Free**](https://codedthemes.com/item/berry-bootstrap-free-admin-template/)       | [**Pro**](https://codedthemes.com/item/berry-bootstrap-5-admin-template/)</span>   |
+| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Mantis%20with%20name.png" height="30" style="display:inline-block; vertical-align:middle;">    | [**Free**](https://codedthemes.com/item/mantis-bootstrap-free-admin-template/)      | [**Pro**](https://codedthemes.com/item/mantis-bootstrap-admin-dashboard/)</span>       |
+| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Datta%20with%20name.png" height="30" style="display:inline-block; vertical-align:middle;"> | [**Free**](https://codedthemes.com/item/datta-able-bootstrap-lite/) | [**Pro**](https://codedthemes.com/item/datta-able-bootstrap-admin-template/)</span> |
 
 ## Issues
 
-Please generate Github issue if you found any bug in any version. We are try to be responsive to resolve the issue.
+If you found a bug in any version, please generate a [GitHub issue](https://github.com/codedthemes/gradient-able-free-admin-template/issues). We are trying our best to resolve the issue.
 
 ## License
 
-- Design and Code is Copyright &copy; [CodedThemes](https://www.codedthemes.com)
-- Licensed cover under [MIT](https://github.com/codedthemes/Gradient-Able-free-bootstrap-admin-template/blob/master/LICENSE)
+- Licensed under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/bootstrap/LICENSE)
+- Copyright © [CodedThemes](https://codedthemes.com/)
 
-## Premium Admin Dashboard Products
+## Contributor 
 
-- [Premium Bootstrap Admin Template](https://codedthemes.com/item/category/templates/admin-templates/)
-- [Premium Angular Admin Template](https://codedthemes.com/item/category/templates/angular-dashboards/)
-- [Premium Reactjs Admin Template](https://codedthemes.com/item/category/templates/react-admin-templates/)
+**CodedThemes Team**
 
-## Social Profiles
+- https://x.com/codedthemes
+- https://github.com/codedthemes
 
-- Website [https://codedthemes.com](https://codedthemes.com)
-- Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
-- Behance [https://www.behance.net/codedthemes](https://www.behance.net/codedthemes)
-- Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
-- Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)
-- Instagram [https://www.instagram.com/codedthemes/](https://www.instagram.com/codedthemes/)
+**Rakesh Nakrani**
 
-## Other Dashboard Products
+- https://x.com/rakesh_nakrani
 
-- [Free Bootstrap 4 Admin Template](https://codedthemes.com/item/category/free-templates/free-bootstrap-admin-templates)
-- [Free React Dashboard Template](https://codedthemes.com/item/category/free-templates/free-react-admin-templates)
-- [Free Angular Dashboard Template](https://codedthemes.com/item/category/free-templates/free-angular-admin-templates)
-- [Premium Bootstrap & Angular Admin Template](https://codedthemes.com/item/category/templates/admin-templates/)
+**Brijesh Dobariya**
+
+- https://x.com/dobaria_brijesh
+
+## Useful Resources
+
+- [More Admin Templates From CodedThemes](https://codedthemes.com/item/category/admin-templates/)
+- [Freebies From CodedThemes](https://codedthemes.com/item/category/free-templates/)
+- [Big Bundles](https://codedthemes.com/item/big-bundle/)
+- [Figma UI Kits](https://codedthemes.com/item/category/templates/figma/)
+- [Affiliate Program](https://codedthemes.com/affiliate/)
+- [Blogs](https://blog.codedthemes.com/)
+
+## Community
+
+- 👥Follow [@codedthemes](https://x.com/codedthemes)
+- 🔗Join [Discord](https://discord.com/invite/p2E2WhCb6s)
+- 🔔Subscribe to [Codedtheme Blogs](https://blog.codedthemes.com/)
+
+## Follow Us
+
+- [Twitter](https://twitter.com/codedthemes) 🐦
+- [Dribbble](https://dribbble.com/codedthemes) 🏀
+- [Github](https://github.com/codedthemes) 🐙
+- [LinkedIn](https://www.linkedin.com/company/codedthemes/) 💼
+- [Instagram](https://www.instagram.com/codedthemes/) 📷
+- [Facebook](https://www.facebook.com/codedthemes) 🟦
