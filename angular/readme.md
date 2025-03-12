@@ -1,4 +1,4 @@
-# Gradient Able Angular 19 Free Admin Dashboard [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Gradient%20%20Able%20Angular%20-%20The%20Most%20Beautiful%20Bootstrap%20Designed%20Admin%20Dashboard%20Template%20&url=https://codedthemes.com/demos/admin-templates/gradient-able/angular/default&via=codedthemes&hashtags=angular,webdev,developers,typescript)
+# Gradient Able Angular Free Admin Dashboard [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Gradient%20%20Able%20Angular%20-%20The%20Most%20Beautiful%20Bootstrap%20Designed%20Admin%20Dashboard%20Template%20&url=https://codedthemes.com/demos/admin-templates/gradient-able/angular/default&via=codedthemes&hashtags=angular,webdev,developers,typescript)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://codedthemes.com/item/gradient-able-angular-free-admin-template/)
@@ -82,7 +82,7 @@ Gradient Able is offers everything you need to create dashboards. We have includ
 | -                                                           | ✓ TypeScript version                                                             |
 | -                                                           | ✓ 6+ color Options                                                               |
 | -                                                           | ✓ RTL                                                                            |
-| ✓ MIT License                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-angular-admin-template/)                |
+| ✓ [MIT License](https://github.com/codedthemes/gradient-able-free-admin-template/blob/readme/LICENSE)                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-angular-admin-template/)                |
 
 ## Documentation
 
@@ -122,8 +122,7 @@ If you found a bug in any version, please generate a [GitHub issue](https://gith
 
 ## License
 
-- Licensed under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/angular/LICENSE)
-- Copyright © [CodedThemes](https://codedthemes.com/)
+- Licensed cover under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/readme/LICENSE)
 
 ## Contributor 
 

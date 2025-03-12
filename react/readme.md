@@ -60,7 +60,7 @@ yarn start
 ## Download
 
 - Gradient Able Free
-  - [Live Preview](https://codedthemes.com/item/gradient-able-reactjs-free-admin-template)
+  - [Live Preview](https://codedthemes.com/demos/admin-templates/gradient-able/react/free)
   - [Download](https://github.com/codedthemes/gradient-able-free-admin-template)
 - Gradient Able Pro
   - [Live Preview](https://codedthemes.com/demos/admin-templates/gradient-able/react/default)
@@ -90,11 +90,11 @@ The [Pro version](https://codedthemes.com/item/gradient-able-reactjs-admin-dashb
 | -                                                           | ✓ Multiple color options                                                                |
 | -                                                           | ✓ RTL                                                                            |
 | -                                                                                            | ✓ JWT, Firebase, Auth0, AWS authentication                                                                                                                            |
-| ✓ MIT License                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard)                |
+| ✓ [MIT License](https://github.com/codedthemes/gradient-able-free-admin-template/blob/readme/LICENSE)                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard)                |
 
 ## Documentation
 
-[Gradient Able React documentation](https://codedthemes.gitbook.io/gradient-able-react/) helps you out in all aspects from Installation to deployment.
+[Gradient Able React Documentation](https://codedthemes.gitbook.io/gradient-able-react/) helps you out in all aspects from Installation to deployment.
 
 ## Browser support
 
@@ -135,7 +135,7 @@ If you found a bug in any version, please generate a [GitHub issue](https://gith
 
 ## License
 
-- Licensed under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/react/LICENSE)
+- Licensed under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/readme/LICENSE)
 - Copyright © [CodedThemes](https://codedthemes.com/)
 
 ## Contributor 

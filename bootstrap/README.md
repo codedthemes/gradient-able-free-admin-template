@@ -5,7 +5,7 @@
 [![Download ZIP](https://img.shields.io/badge/Download-ZIP-blue?style=flat-square&logo=github)](https://codedthemes.com/item/gradient-able-bootstrap-lite/)
 [![Join Discord](https://img.shields.io/badge/Join-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/p2E2WhCb6s)
 
-Gradient Able Admin Template is a free admin template built using the Bootstrap 4 framework, designed to fulfill your dashboard needs. It comes with a variety of Bootstrap components like Buttons, Badges, Tabs, Breadcrumbs, Icons, Form elements, Tables, Charts, and authentication pages.
+Gradient Able Admin Template is a free admin template built using the Bootstrap 5 framework, designed to fulfill your dashboard needs. It comes with a variety of Bootstrap components like Buttons, Badges, Tabs, Breadcrumbs, Icons, Form elements, Tables, Charts, and authentication pages.
 
 ✨ Support us! If you like this theme, click the ⭐ (Top right) and let it shine
 
@@ -81,7 +81,7 @@ Gradient Able is offers everything you need to create dashboards. We have includ
 | -                                                           | ✓ Dark/Light Mode 🌓                                                             |
 | -                                                           | ✓ 6+ color setting Options                                                               |
 | -                                                           | ✓ RTL                                                                            |
-| ✓ MIT License                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-angular-admin-template/)                |
+| ✓ [MIT License](https://github.com/codedthemes/gradient-able-free-admin-template/blob/readme/LICENSE)                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-angular-admin-template/)                |
 
 ## Documentation
 
@@ -95,7 +95,7 @@ Gradient Able is offers everything you need to create dashboards. We have includ
 
 - Gulp
 - nodeJS
-- Bootstrap 4
+- Bootstrap 5
 - SASS
 
 ## Other Technologies
@@ -123,7 +123,7 @@ If you found a bug in any version, please generate a [GitHub issue](https://gith
 
 ## License
 
-- Licensed under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/bootstrap/LICENSE)
+- Licensed under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/readme/LICENSE)
 - Copyright © [CodedThemes](https://codedthemes.com/)
 
 ## Contributor 
