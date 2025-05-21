@@ -5,15 +5,9 @@
 [![Download ZIP](https://img.shields.io/badge/Download-ZIP-blue?style=flat-square&logo=github)](https://codedthemes.com/item/gradient-able-reactjs-free-admin-template/)
 [![Join Discord](https://img.shields.io/badge/Join-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/p2E2WhCb6s)
 
-Gradient Able React Free Admin Template comes with variety of components like Button, Badges, Breadcrumb, & Authentication pages.
+Gradient Able React Free Admin Template comes with a variety of components like Button, Badges, Breadcrumb, & Authentication pages. The code structure is highly flexible to use and modify. Its design adapts to  any screen size easily, even on retina screens. It is a modern concept dashboard design with eye-catching colors. Wish you happy in using our product in your project.
 
-The code structure is high flexible to use and modify.
-
-Its design adapt any screen size easily even if retina screens.
-
-It is modern concept dashboard design with eye catchy colors. Wish you happy to use our product in your project.
-
-✨ Support us! If you like this theme, click the ⭐ (Top right) and let it shine
+✨ Support us! If you like this theme, click the ⭐ (Top right) and let it shine.
 
 ![Gradient Able React Free Admin Template Preview Image](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-REACT-REPO%20-%20Gradient%20Able.jpg)
 
