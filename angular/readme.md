@@ -7,7 +7,7 @@
 
 Gradient Able is a free angular admin dashboard template built with Angular and latest Bootstrap 5. It is meant to provide the best possible User Experience with highly customizable feature-rich pages. It is a complete Dashboard Template that has easy and intuitive responsive design whether it is viewed on retina screens or laptops.
 
-✨ Support us! If you like this theme, click the ⭐ (Top right) and let it shine
+✨ Support us! If you like this theme, click the ⭐ (Top right) and let it shine.
 
 ![IMG_8566.jpg](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-ANGULAR-REPO%20-%20Gradient.jpg)
 
