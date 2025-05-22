@@ -8,10 +8,11 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BreadcrumbComponent } from '../../shared/components/breadcrumb/breadcrumb.component';
+import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-admin',
-  imports: [ConfigurationComponent, RouterModule, NavBarComponent, NavigationComponent, CommonModule, BreadcrumbComponent],
+  imports: [ConfigurationComponent, RouterModule, NavBarComponent, NavigationComponent, CommonModule, BreadcrumbComponent, Footer],
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.scss']
 })

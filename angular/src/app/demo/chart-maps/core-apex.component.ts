@@ -114,7 +114,6 @@ export default class CoreApexComponent implements OnInit, OnDestroy {
         type: 'line',
         animations: {
           enabled: true,
-          easing: 'linear',
           dynamicAnimation: {
             speed: 2000
           }
