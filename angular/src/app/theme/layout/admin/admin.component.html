@@ -26,4 +26,9 @@
   </div>
   <div class="pc-menu-overlay" (click)="closeMenu()" (keydown)="handleKeyDown($event)" tabindex="0"></div>
 </div>
-<app-configuration></app-configuration>
+<app-footer
+  [ngClass]="{
+    'navbar-collapsed': navCollapsed
+  }"
+/>
+<app-configuration />
