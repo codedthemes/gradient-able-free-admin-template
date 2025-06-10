@@ -7,7 +7,7 @@ on:
     branches:
       - main
     paths:
-      - 'react/**'
+      - "react/**"
   #pull_request:
   #  types:
   #    - closed
@@ -25,10 +25,10 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
-      - name: Install Node.js 20
+      - name: Install Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: "22"
 
       - name: 🔨 Build Project
         run: |
@@ -42,7 +42,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           # ARGS: "-rltgoDzvO --delete"
           SOURCE: "react/dist/"
-          REMOTE_HOST: 91.108.116.107
+          REMOTE_HOST: 82.29.156.38
           REMOTE_USER: u106957989
           REMOTE_PORT: "65002"
           TARGET: domains/codedthemes.com/public_html/demos/admin-templates/gradient-able/react/free

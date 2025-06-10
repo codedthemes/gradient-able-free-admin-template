@@ -10,12 +10,11 @@ import { ProductSaleComponent } from './product-sale/product-sale.component';
 import { ApexOptions, ChartComponent, NgApexchartsModule } from 'ng-apexcharts';
 @Component({
   selector: 'app-dash-analytics',
-  standalone: true,
   imports: [SharedModule, NgApexchartsModule, ProductSaleComponent],
   templateUrl: './dash-analytics.component.html',
   styleUrls: ['./dash-analytics.component.scss']
 })
-export default class DashAnalyticsComponent {
+export class DashAnalyticsComponent {
   // public props
   chart = viewChild<ChartComponent>('chart');
   customerChart = viewChild<ChartComponent>('customerChart');

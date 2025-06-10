@@ -352,12 +352,6 @@ app-nav-group {
   @each $value in $color-active-name {
     $i: index($color-active-name, $value);
 
-    &[class*='menu-item-icon-style'] {
-      .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
-        color: $primary-color;
-      }
-    }
-
     &.active-#{'' + $value} {
       &[class*='menu-item-icon-style'] {
         .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
@@ -411,34 +405,6 @@ app-nav-group {
               > a {
                 background: #f1f1f1;
                 color: #000;
-              }
-            }
-          }
-        }
-      }
-
-      // horizontal-layout
-      &.theme-horizontal {
-        .pcoded-inner-navbar {
-          > li {
-            &,
-            &.pcoded-hasmenu {
-              &.active,
-              &.pcoded-trigger,
-              &:hover {
-                > a {
-                  background: transparent;
-                }
-              }
-
-              .pcoded-submenu > li {
-                &.active,
-                &.pcoded-trigger,
-                &:hover {
-                  > a {
-                    color: nth($color-active-color, $i);
-                  }
-                }
               }
             }
           }

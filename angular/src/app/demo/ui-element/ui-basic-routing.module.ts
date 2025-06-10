@@ -7,27 +7,27 @@ const routes: Routes = [
     children: [
       {
         path: 'badges',
-        loadComponent: () => import('./badge/badge.component')
+        loadComponent: () => import('./badge/badge.component').then((c) => c.BadgeComponent)
       },
       {
         path: 'button',
-        loadComponent: () => import('./button/button.component')
+        loadComponent: () => import('./button/button.component').then((c) => c.ButtonComponent)
       },
       {
         path: 'breadcrumb-paging',
-        loadComponent: () => import('./breadcrumb/breadcrumb.component')
+        loadComponent: () => import('./breadcrumb/breadcrumb.component').then((c) => c.BreadcrumbComponent)
       },
       {
         path: 'collapse',
-        loadComponent: () => import('./collapse/collapse.component')
+        loadComponent: () => import('./collapse/collapse.component').then((c) => c.CollapseComponent)
       },
       {
         path: 'tabs-pills',
-        loadComponent: () => import('./tabs-pills/tabs-pills.component')
+        loadComponent: () => import('./tabs-pills/tabs-pills.component').then((c) => c.TabsPillsComponent)
       },
       {
         path: 'typography',
-        loadComponent: () => import('./typography/typography.component')
+        loadComponent: () => import('./typography/typography.component').then((c) => c.TypographyComponent)
       }
     ]
   }
