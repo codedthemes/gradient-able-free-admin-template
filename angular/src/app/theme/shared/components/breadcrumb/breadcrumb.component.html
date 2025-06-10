@@ -14,7 +14,7 @@
               </div>
               <ul class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a [routerLink]="['/dashboard/analytics/']" title="Home"><i class="feather icon-home"></i></a>
+                  <a [routerLink]="['/analytics']" title="Home"><i class="feather icon-home"></i></a>
                 </li>
                 @for (breadcrumb of navigationList; track breadcrumb) {
                   @if (breadcrumb.url !== false) {

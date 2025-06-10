@@ -18,7 +18,7 @@ const routes: Routes = [
       },
       {
         path: 'analytics',
-        loadComponent: () => import('./demo/dashboard/dash-analytics.component')
+        loadComponent: () => import('./demo/dashboard/dash-analytics.component').then((c) => c.DashAnalyticsComponent)
       },
       {
         path: 'component',
@@ -26,19 +26,19 @@ const routes: Routes = [
       },
       {
         path: 'chart',
-        loadComponent: () => import('./demo/chart-maps/core-apex.component')
+        loadComponent: () => import('./demo/chart-maps/core-apex.component').then((c) => c.CoreApexComponent)
       },
       {
         path: 'forms',
-        loadComponent: () => import('./demo/forms/form-elements/form-elements.component')
+        loadComponent: () => import('./demo/forms/form-elements/form-elements.component').then((c) => c.FormElementsComponent)
       },
       {
         path: 'tables',
-        loadComponent: () => import('./demo/tables/tbl-bootstrap/tbl-bootstrap.component')
+        loadComponent: () => import('./demo/tables/tbl-bootstrap/tbl-bootstrap.component').then((c) => c.TblBootstrapComponent)
       },
       {
         path: 'sample-page',
-        loadComponent: () => import('./demo/other/sample-page/sample-page.component')
+        loadComponent: () => import('./demo/other/sample-page/sample-page.component').then((c) => c.SamplePageComponent)
       }
     ]
   },
@@ -47,12 +47,12 @@ const routes: Routes = [
     component: GuestComponent,
     children: [
       {
-        path: 'auth/signup',
-        loadComponent: () => import('./demo/pages/authentication/sign-up/sign-up.component')
+        path: 'login',
+        loadComponent: () => import('./demo/pages/authentication/sign-up/sign-up.component').then((c) => c.SignUpComponent)
       },
       {
-        path: 'auth/signin',
-        loadComponent: () => import('./demo/pages/authentication/sign-in/sign-in.component')
+        path: 'register',
+        loadComponent: () => import('./demo/pages/authentication/sign-in/sign-in.component').then((c) => c.SignInComponent)
       }
     ]
   }

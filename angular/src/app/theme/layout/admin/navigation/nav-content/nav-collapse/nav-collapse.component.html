@@ -1,19 +1,21 @@
 <li class="nav-item pcoded-hasmenu" [routerLinkActive]="['active']">
   <a [routerLinkActive]="['active']" href="javascript:" class="nav-link" (click)="navCollapse($event)">
-    @if (item.icon) {
+    @if (item().icon) {
       <span class="pcoded-micon">
-        <i class="{{ item.icon }}"></i>
+        <i class="{{ item().icon }}"></i>
       </span>
     }
-    <span class="pcoded-mtext">{{ item.title }}</span>
+    <span class="pcoded-mtext">
+      {{ item().title }}
+    </span>
   </a>
-  <ul class="pcoded-submenu" [routerLinkActive]="['active']">
-    @for (item of item.children; track item) {
-      @if (item.type === 'collapse') {
-        <app-nav-collapse [item]="item"></app-nav-collapse>
+  <ul class="pcoded-submenu" [routerLinkActive]="['active']" [ngClass]="item().classes!">
+    @for (items of item().children; track items) {
+      @if (items.type === 'item') {
+        <app-nav-item [item]="items" />
       }
-      @if (item.type === 'item') {
-        <app-nav-item [item]="item"></app-nav-item>
+      @if (items.type === 'collapse') {
+        <app-nav-collapse [item]="items" />
       }
     }
   </ul>

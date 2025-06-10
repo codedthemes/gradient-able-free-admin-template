@@ -10,12 +10,11 @@ import { ApexOptions, NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-core-apex',
-  standalone: true,
   imports: [SharedModule, NgApexchartsModule],
   templateUrl: './core-apex.component.html',
   styleUrls: ['./core-apex.component.scss']
 })
-export default class CoreApexComponent implements OnInit, OnDestroy {
+export class CoreApexComponent implements OnInit, OnDestroy {
   // public props
   // eslint-disable-next-line
   chartDB: any;

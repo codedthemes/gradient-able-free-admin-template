@@ -96,7 +96,7 @@ export const NavigationItems: NavigationItem[] = [
         id: 'signup',
         title: 'Sign up',
         type: 'item',
-        url: '/auth/signup',
+        url: '/register',
         icon: 'feather icon-at-sign',
         target: true,
         breadcrumbs: false
@@ -105,7 +105,7 @@ export const NavigationItems: NavigationItem[] = [
         id: 'signin',
         title: 'Sign in',
         type: 'item',
-        url: '/auth/signin',
+        url: '/login',
         icon: 'feather icon-log-in',
         target: true,
         breadcrumbs: false
@@ -144,7 +144,7 @@ export const NavigationItems: NavigationItem[] = [
       },
       {
         id: 'tables',
-        title: 'tables',
+        title: 'Tables',
         type: 'item',
         url: '/tables',
         classes: 'nav-item',
