@@ -1,10 +1,10 @@
-**Note:** *This README file is maintained to ensure the product structure aligns with the Pro version, making migration to Pro seamless when you choose to upgrade. This alignment aims to provide a smoother experience during the upgrade, especially regarding directory structure. You may notice these files and folders appearing throughout the project where they are part of the Pro version. While this might feel slightly inconvenient, it is intended to simplify your migration process and provide assistance. If these files are unnecessary for your use case, you can easily remove them.*
+**Note:** _This README file is maintained to ensure the product structure aligns with the Pro version, making migration to Pro seamless when you choose to upgrade. This alignment aims to provide a smoother experience during the upgrade, especially regarding directory structure. You may notice these files and folders appearing throughout the project where they are part of the Pro version. While this might feel slightly inconvenient, it is intended to simplify your migration process and provide assistance. If these files are unnecessary for your use case, you can easily remove them._
 
 Please continue reading below to explore the features of the Pro version:
 
 # Gradient Able Admin Panel - Unlock Premium Features with the Pro Version
 
-Looking for more advanced features and pages? This page(folder) is part of the premium version of our <b>8.0.0</b> template. Upgrade to the Pro version to access these exclusive pages and take your project to the next level!
+Looking for more advanced features and pages? This page(folder) is part of the premium version of our <b>8.2.0</b> template. Upgrade to the Pro version to access these exclusive pages and take your project to the next level!
 
 ## Included in the Pro Version:
 

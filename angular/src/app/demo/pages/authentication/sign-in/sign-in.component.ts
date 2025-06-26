@@ -7,9 +7,8 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
 
 @Component({
   selector: 'app-sign-in',
-  standalone: true,
   imports: [SharedModule, RouterModule],
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.scss']
 })
-export default class SignInComponent {}
+export class SignInComponent {}

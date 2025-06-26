@@ -50,7 +50,8 @@ $color-menu-color: #4099ff, #ff5370, #7759de, #00bcd4, #101b33;
 
 // Menu background gradient
 $color-menu-gradient-name: blue, red, purple, info, dark;
-$color-menu-gradient-color: linear-gradient(to bottom, #7759de 0%, #4099ff 100%),
+$color-menu-gradient-color:
+  linear-gradient(to bottom, #7759de 0%, #4099ff 100%),
   linear-gradient(to bottom, rgb(164, 69, 178) 0%, rgb(212, 24, 114) 52%, rgb(255, 0, 102) 100%),
   linear-gradient(to top, rgb(178, 117, 240) 0%, rgb(117, 117, 240) 100%),
   linear-gradient(to bottom, rgb(1, 169, 172) 0%, rgb(1, 219, 223) 100%),
