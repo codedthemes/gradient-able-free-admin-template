@@ -732,7 +732,7 @@
 
           a {
             &:after {
-              top: 7px;
+              top: 11px;
             }
           }
         }
@@ -828,7 +828,6 @@
         color: #fff;
         padding: 18px 15px 5px;
         position: relative;
-        text-transform: lowercase;
         letter-spacing: 1px;
         border-top: 1px solid darken($menu-dark-text-color, 40%);
         margin-top: 10px;
