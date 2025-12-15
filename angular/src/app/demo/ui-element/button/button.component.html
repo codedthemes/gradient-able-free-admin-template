@@ -1,7 +1,7 @@
 <div class="row btn-page">
   <!-- [ default-button ] start -->
   <div class="col-sm-6">
-    <app-card cardTitle="Default" [options]="false">
+    <app-card cardTitle="Default">
       <div class="d-flex flex-wrap gap-2">
         <button type="button" class="btn btn-primary" ngbTooltip="btn-primary">Primary</button>
         <button type="button" class="btn btn-secondary" ngbTooltip="btn-secondary">Secondary</button>
@@ -20,7 +20,7 @@
   <!-- [ default-button ] end -->
   <!-- [ light-button ] start -->
   <div class="col-sm-6">
-    <app-card cardTitle="Light" [options]="false">
+    <app-card cardTitle="Light">
       <div class="d-flex flex-wrap gap-2">
         <button type="button" class="btn btn-light-primary" ngbTooltip="btn-light-primary">Primary</button>
         <button type="button" class="btn btn-light-secondary" ngbTooltip="btn-light-secondary">Secondary</button>
@@ -36,7 +36,7 @@
   <!-- [ light-button ] end -->
   <!-- [ link-button ] start -->
   <div class="col-sm-12">
-    <app-card cardTitle="Link" [options]="false">
+    <app-card cardTitle="Link">
       <div class="d-flex flex-wrap gap-2">
         <a class="btn btn-primary" role="button" href="javascript:">Primary link</a>
         <a class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true" href="javascript:">Disabled Primary link</a>
@@ -47,7 +47,7 @@
   <!-- [ link-button ] end -->
   <!-- [ outline-button ] start -->
   <div class="col-sm-12">
-    <app-card cardTitle="Outline" [options]="false">
+    <app-card cardTitle="Outline">
       <div class="d-flex flex-wrap gap-2">
         <button type="button" class="btn btn-outline-primary" ngbTooltip="btn-outline-primary">Primary</button>
         <button type="button" class="btn btn-outline-secondary" ngbTooltip="btn-outline-secondary">Secondary</button>
@@ -62,7 +62,7 @@
   <!-- [ outline-button ] end -->
   <!-- [ disabled-button ] start -->
   <div class="col-sm-12">
-    <app-card cardTitle="Disabled Button" [options]="false">
+    <app-card cardTitle="Disabled Button">
       <p>
         use
         <code>.disabled</code>
@@ -85,7 +85,7 @@
   <!-- [ disabled-button ] end -->
   <!-- [ default-shadow ] start -->
   <div class="col-sm-12">
-    <app-card cardTitle="Shadow" [options]="false">
+    <app-card cardTitle="Shadow">
       <div class="d-flex flex-wrap gap-2">
         <button type="button" class="btn btn-shadow btn-primary">Primary</button>
         <button type="button" class="btn btn-shadow btn-secondary">Secondary</button>
@@ -102,7 +102,7 @@
   <!-- [ default-shadow ] end -->
   <!-- [ size-button ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Sizes [ Large ]" [options]="false">
+    <app-card cardTitle="Sizes [ Large ]">
       <p>
         use
         <code>.btn-lg</code>
@@ -119,7 +119,7 @@
   <!-- [ size-button ] end -->
   <!-- [ size-small-button ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Sizes [ Small ]" [options]="false">
+    <app-card cardTitle="Sizes [ Small ]">
       <p>
         use
         <code>.btn-sm</code>
@@ -138,7 +138,7 @@
 <div class="row btn-page">
   <!-- [ button-icon ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Button With Icon" [options]="false">
+    <app-card cardTitle="Button With Icon">
       <div class="d-flex flex-wrap gap-2">
         <button type="button" class="btn btn-primary">
           <i class="feather icon-thumbs-up me-1"></i>
@@ -170,7 +170,7 @@
   <!-- [ button-icon ] end -->
   <!-- [ button-outline ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Outline Icon BUttons" [options]="false">
+    <app-card cardTitle="Outline Icon BUttons">
       <div class="d-flex flex-wrap gap-2">
         <button type="button" class="btn btn-outline-primary">
           <i class="feather icon-thumbs-up me-1"></i>
@@ -202,7 +202,7 @@
   <!-- [ button-outline ] end -->
   <!-- [ only-icon ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Only Icon" [options]="false">
+    <app-card cardTitle="Only Icon">
       <div class="d-flex flex-wrap gap-2">
         <button type="button" class="btn btn-icon btn-primary d-inline-flex">
           <i class="feather icon-thumbs-up"></i>
@@ -228,7 +228,7 @@
   <!-- [ only-icon ] end -->
   <!-- [ outline-icon ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Outline Only" [options]="false">
+    <app-card cardTitle="Outline Only">
       <div class="d-flex flex-wrap gap-2">
         <button type="button" class="btn btn-icon btn-outline-primary d-inline-flex">
           <i class="feather icon-thumbs-up"></i>
@@ -256,7 +256,7 @@
 <div class="row btn-page">
   <!-- [ basic-button-group ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="basic Button Group" [options]="false">
+    <app-card cardTitle="basic Button Group">
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-primary">Left</button>
         <button type="button" class="btn btn-primary">Middle</button>
@@ -267,7 +267,7 @@
   <!-- [ basic-button-group ] end -->
   <!-- [ button-toolbar ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Button Toolbar" [options]="false">
+    <app-card cardTitle="Button Toolbar">
       <div class="btn-toolbar d-flex flex-wrap gap-2" role="toolbar">
         <div class="btn-group" role="group">
           <button type="button" class="btn btn-light">1</button>
@@ -289,7 +289,7 @@
   <!-- [ button-toolbar ] end -->
   <!-- [ button-toolbar-input ] start -->
   <div class="col-md-12">
-    <app-card cardTitle="Button Toolbar Input" [options]="false">
+    <app-card cardTitle="Button Toolbar Input">
       <div class="row">
         <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group me-2 mb-2" role="group" aria-label="First group">
@@ -334,7 +334,7 @@
   <!-- [ button-toolbar-input ] end -->
   <!-- [ button-toolbar-size ] start -->
   <div class="col-md-12">
-    <app-card cardTitle="Button Toolbar Size" [options]="false">
+    <app-card cardTitle="Button Toolbar Size">
       <div class="row">
         <div class="col-xl-4 col-md-12 mb-2">
           <p>
@@ -378,7 +378,7 @@
   <!-- [ button-toolbar-size ] end -->
   <!-- [ nesting ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Nesting" [options]="false">
+    <app-card cardTitle="Nesting">
       <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
         <button type="button" class="btn btn-primary">1</button>
         <button type="button" class="btn btn-primary">2</button>
@@ -397,7 +397,7 @@
   <!-- [ nesting ] end -->
   <!-- [ vertical-variation ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Vertical Variation" [options]="false">
+    <app-card cardTitle="Vertical Variation">
       <div class="row">
         <div class="col-4">
           <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
@@ -427,7 +427,7 @@
   <!-- [ vertical-variation ] end -->
   <!-- [ Mixed styles ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Mixed style" [options]="false">
+    <app-card cardTitle="Mixed style">
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-danger">A</button>
         <button type="button" class="btn btn-warning text-dark">A</button>
@@ -446,7 +446,7 @@
   <!-- [ Mixed styles ] end -->
   <!-- [ Outlined styles ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Outlined styles" [options]="false">
+    <app-card cardTitle="Outlined styles">
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-outline-secondary">Left</button>
         <button type="button" class="btn btn-outline-secondary">Middle</button>
@@ -463,7 +463,7 @@
   <!-- [ Mixed styles ] end -->
   <!-- [ Checkbox button groups ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Checkbox button groups" [options]="false">
+    <app-card cardTitle="Checkbox button groups">
       <div class="btn-group" role="group">
         <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
         <label class="btn btn-outline-secondary" for="btncheck1">Checkbox 1</label>
@@ -495,7 +495,7 @@
   <!-- [ Checkbox button groups ] end -->
   <!-- [ radio button groups ] start -->
   <div class="col-md-6">
-    <app-card cardTitle="Radio button groups" [options]="false">
+    <app-card cardTitle="Radio button groups">
       <div class="btn-group" role="group">
         <input type="radio" class="btn-check" id="btnrdo1" autocomplete="off" name="btnradio1" />
         <label class="btn btn-outline-secondary" for="btnrdo1">Radio 1</label>
