@@ -1,12 +1,11 @@
 // angular import
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 // project import
 import { NavigationItem } from '../../navigation';
 import { SharedModule } from 'src/app/theme/shared/shared.module';
-
-// service
+import { LayoutStateService } from 'src/app/theme/shared/service/layout-state.service';
 
 @Component({
   selector: 'app-nav-item',
@@ -17,6 +16,7 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
 export class NavItemComponent {
   // public props
   item = input<NavigationItem>();
+  private layoutState = inject(LayoutStateService);
 
   // public method
   closeOtherMenu(event: MouseEvent) {
@@ -47,6 +47,7 @@ export class NavItemComponent {
         last_parent.classList.add('active');
       }
     }
+    this.layoutState.toggleNavCollapsedMob();
     if (document.querySelector('app-navigation.pcoded-navbar')?.classList.contains('mob-open')) {
       document.querySelector('app-navigation.pcoded-navbar')?.classList.remove('mob-open');
     }
