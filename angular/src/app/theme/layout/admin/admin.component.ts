@@ -1,24 +1,23 @@
 // Angular Import
 import { Component, HostListener, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CommonModule, Location, LocationStrategy } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 // Project Import
-import { ConfigurationComponent } from './configuration/configuration.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BreadcrumbComponent } from '../../shared/components/breadcrumb/breadcrumb.component';
 import { Footer } from './footer/footer';
+import { LayoutStateService } from '../../shared/service/layout-state.service';
 
 @Component({
   selector: 'app-admin',
-  imports: [ConfigurationComponent, RouterModule, NavBarComponent, NavigationComponent, CommonModule, BreadcrumbComponent, Footer],
+  imports: [RouterModule, NavBarComponent, NavigationComponent, CommonModule, BreadcrumbComponent, Footer],
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent {
-  private location = inject(Location);
-  private locationStrategy = inject(LocationStrategy);
+  private layoutState = inject(LayoutStateService);
 
   // public props
   navCollapsed!: boolean;
@@ -45,16 +44,17 @@ export class AdminComponent {
 
   // public method
   navMobClick() {
-    if (this.windowWidth < 992) {
-      if (this.navCollapsedMob && !document.querySelector('app-navigation.pcoded-navbar')?.classList.contains('mob-open')) {
-        this.navCollapsedMob = !this.navCollapsedMob;
-        setTimeout(() => {
-          this.navCollapsedMob = !this.navCollapsedMob;
-        }, 100);
-      } else {
-        this.navCollapsedMob = !this.navCollapsedMob;
-      }
-    }
+    // if (this.windowWidth < 992) {
+    //   if (this.navCollapsedMob && !document.querySelector('app-navigation.pcoded-navbar')?.classList.contains('mob-open')) {
+    //     this.navCollapsedMob = !this.navCollapsedMob;
+    //     setTimeout(() => {
+    //       this.navCollapsedMob = !this.navCollapsedMob;
+    //     }, 100);
+    //   } else {
+    //     this.navCollapsedMob = !this.navCollapsedMob;
+    //   }
+    // }
+    this.layoutState.toggleNavCollapsedMob();
   }
 
   handleKeyDown(event: KeyboardEvent): void {

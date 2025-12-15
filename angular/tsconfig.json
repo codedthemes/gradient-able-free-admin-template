@@ -17,7 +17,7 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "skipLibCheck": true,
     "target": "es2022", // this will auto target to latest by angular cli
