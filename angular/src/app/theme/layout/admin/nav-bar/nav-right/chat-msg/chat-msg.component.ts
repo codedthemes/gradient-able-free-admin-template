@@ -74,7 +74,7 @@ export class ChatMsgComponent implements OnInit {
           this.friendWriting = false;
           const html_replay =
             '<div class="media chat-messages">' +
-            '<a class="media-left photo-table" href="javascript:">' +
+            '<a class="media-left photo-table" href="javascript:void(0)">' +
             '<img class="media-object img-radius img-radius m-t-5" src="' +
             this.chatMessage.photo +
             '" alt="' +

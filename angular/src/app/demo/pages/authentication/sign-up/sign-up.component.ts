@@ -2,14 +2,14 @@
 import { ChangeDetectorRef, Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { email, Field, form, minLength, required } from '@angular/forms/signals';
+import { email, form, FormField, minLength, required } from '@angular/forms/signals';
 
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 
 @Component({
   selector: 'app-sign-up',
-  imports: [CommonModule, RouterModule, SharedModule, Field],
+  imports: [CommonModule, RouterModule, SharedModule, FormField],
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.scss']
 })

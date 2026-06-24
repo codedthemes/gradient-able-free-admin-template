@@ -1,9 +1,9 @@
 <li class="nav-item pcoded-hasmenu" [routerLinkActive]="['active']">
-  <a [routerLinkActive]="['active']" href="javascript:" class="nav-link" (click)="navCollapse($event)">
+  <a [routerLinkActive]="['active']" href="javascript:void(0)" class="nav-link" (click)="navCollapse($event)">
     @if (item().icon) {
-      <span class="pcoded-micon">
-        <i class="{{ item().icon }}"></i>
-      </span>
+    <span class="pcoded-micon">
+      <i class="{{ item().icon }}"></i>
+    </span>
     }
     <span class="pcoded-mtext">
       {{ item().title }}
@@ -11,12 +11,12 @@
   </a>
   <ul class="pcoded-submenu" [routerLinkActive]="['active']" [ngClass]="item().classes!">
     @for (items of item().children; track items) {
-      @if (items.type === 'item') {
-        <app-nav-item [item]="items" />
-      }
-      @if (items.type === 'collapse') {
-        <app-nav-collapse [item]="items" />
-      }
+    @if (items.type === 'item') {
+    <app-nav-item [item]="items" />
+    }
+    @if (items.type === 'collapse') {
+    <app-nav-collapse [item]="items" />
+    }
     }
   </ul>
 </li>

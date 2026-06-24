@@ -176,7 +176,7 @@ export const NavigationItems: NavigationItem[] = [
             id: 'menu-level-2.1',
             title: 'Menu Level 2.1',
             type: 'item',
-            url: 'javascript:',
+            url: '#',
             external: true
           },
           {
@@ -188,14 +188,14 @@ export const NavigationItems: NavigationItem[] = [
                 id: 'menu-level-2.2.1',
                 title: 'Menu Level 2.2.1',
                 type: 'item',
-                url: 'javascript:',
+                url: '#',
                 external: true
               },
               {
                 id: 'menu-level-2.2.2',
                 title: 'Menu Level 2.2.2',
                 type: 'item',
-                url: 'javascript:',
+                url: '#',
                 external: true
               }
             ]
