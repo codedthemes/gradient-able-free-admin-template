@@ -1,4 +1,4 @@
-<div class="media userlist-box ripple" (click)="innerChatToggle(friends())" [attr.data-id]="friends().id"
+<div class="d-flex userlist-box ripple" (click)="innerChatToggle(friends())" [attr.data-id]="friends().id"
   [attr.data-status]="{ online: friends().status, offline: !friends().status }" [attr.data-username]="friends().name">
   <a class="media-left" href="javascript:void(0)">
     <img class="media-object img-radius" src="{{ friends().photo }}" alt="{{ friends().name }}" />
@@ -6,7 +6,7 @@
     <div class="live-status">{{ friends().new }}</div>
     }
   </a>
-  <div class="media-body">
+  <div class="flex-grow-1">
     <h6 class="chat-header">
       {{ friends().name }}
       @if (friends().time) {

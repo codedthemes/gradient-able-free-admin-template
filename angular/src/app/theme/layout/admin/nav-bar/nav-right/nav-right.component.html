@@ -1,11 +1,11 @@
 <ul class="navbar-nav ms-auto">
   <li>
-    <div class="dropdown" ngbDropdown placement="auto">
+    <div ngbDropdown placement="auto">
       <a ngbDropdownToggle href="javascript:void(0)">
         <i class="icon feather icon-bell" title="Notification"></i>
         <span class="badge bg-danger"><span class="sr-only"></span></span>
       </a>
-      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-end notification">
+      <div ngbDropdownMenu class="dropdown-menu-end notification">
         <div class="noti-head">
           <h6 class="d-inline-block m-b-0">Notifications</h6>
           <div class="float-end">
@@ -18,9 +18,9 @@
             <p class="m-b-0">NEW</p>
           </li>
           <li class="notification">
-            <div class="media">
+            <div class="d-flex">
               <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" />
-              <div class="media-body">
+              <div class="flex-grow-1">
                 <p>
                   <strong>John Doe</strong>
                   <span class="n-time text-muted">
@@ -36,9 +36,9 @@
             <p class="m-b-0">EARLIER</p>
           </li>
           <li class="notification">
-            <div class="media">
+            <div class="d-flex">
               <img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image" />
-              <div class="media-body">
+              <div class="flex-grow-1">
                 <p>
                   <strong>Joseph William</strong>
                   <span class="n-time text-muted">
@@ -51,9 +51,9 @@
             </div>
           </li>
           <li class="notification">
-            <div class="media">
+            <div class="d-flex">
               <img class="img-radius" src="assets/images/user/avatar-3.jpg" alt="Generic placeholder image" />
-              <div class="media-body">
+              <div class="flex-grow-1">
                 <p>
                   <strong>Sara Soudein</strong>
                   <span class="n-time text-muted">
@@ -81,11 +81,11 @@
     </div>
   </li>
   <li>
-    <div class="dropdown drp-user" ngbDropdown placement="auto">
+    <div class="drp-user" ngbDropdown placement="auto">
       <a href="javascript:void(0)" ngbDropdownToggle>
         <img src="assets/images/user/avatar-1.jpg" class="img-radius wid-40" alt="User-Profile-Image" />
       </a>
-      <div class="dropdown-menu dropdown-menu-end profile-notification" ngbDropdownMenu>
+      <div class="dropdown-menu-end profile-notification" ngbDropdownMenu>
         <div class="pro-head">
           <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image" />
           <span>John Doe</span>
@@ -95,25 +95,25 @@
         </div>
         <ul class="pro-body">
           <li>
-            <a href="javascript:void(0)" class="dropdown-item">
+            <a href="javascript:void(0)" ngbDropdownItem>
               <i class="feather icon-user"></i>
               Profile
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)" class="dropdown-item">
+            <a href="javascript:void(0)" ngbDropdownItem>
               <i class="feather icon-mail"></i>
               My Messages
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)" class="dropdown-item">
+            <a href="javascript:void(0)" ngbDropdownItem>
               <i class="feather icon-lock"></i>
               Lock Screen
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)" class="dropdown-item">
+            <a href="javascript:void(0)" ngbDropdownItem>
               <i class="feather icon-lock"></i>
               Logout
             </a>

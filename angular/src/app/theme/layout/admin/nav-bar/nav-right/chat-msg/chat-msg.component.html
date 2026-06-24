@@ -11,14 +11,14 @@
       <ng-scrollbar style="height: calc(100vh - 170px)" visibility="hover" [dir]="direction">
         @for (messages of chatMessage.chat; track messages) {
         <div>
-          <div class="media chat-messages">
+          <div class="d-flex chat-messages">
             @if (messages.type) {
             <a class="media-left photo-table" href="javascript:void(0)">
               <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}"
                 alt="{{ chatMessage.name }}" />
             </a>
             }
-            <div class="media-body"
+            <div class="flex-grow-1"
               [ngClass]="{ 'chat-menu-content': messages.type, 'chat-menu-reply': !messages.type }">
               <div>
                 <p class="chat-cont">{{ messages.msg }}</p>
@@ -30,12 +30,12 @@
         }
         <div #newChat [innerHTML]="newReplay"></div>
         @if (friendWriting) {
-        <div class="media chat-messages typing">
+        <div class="d-flex chat-messages typing">
           <a class="media-left photo-table" href="javascript:void(0)">
             <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}"
               alt="{{ chatMessage.name }}" />
           </a>
-          <div class="media-body chat-menu-content">
+          <div class="flex-grow-1 chat-menu-content">
             <div class="rem-msg">
               <p class="chat-cont">Typing . . .</p>
             </div>
@@ -45,8 +45,8 @@
         }
       </ng-scrollbar>
       } @else {
-      <div class="media chat-messages text-center">
-        <div class="media-body chat-menu-content">
+      <div class="d-flex chat-messages text-center">
+        <div class="flex-grow-1 chat-menu-content">
           <div>
             <p class="chat-cont">CHAT NOT FOUND</p>
           </div>
