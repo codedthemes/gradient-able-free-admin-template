@@ -8,48 +8,33 @@
               <img src="assets/images/logo-dark.png" alt="logo" class="img-fluid mb-4" />
               <h4 class="mb-3 f-w-400">Signin</h4>
               <div class="input-group mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  [class.is-invalid]="submitted() && loginForm.email().invalid()"
-                  placeholder="Email Address"
-                  [field]="loginForm.email"
-                />
+                <input type="email" class="form-control" id="floatingInput"
+                  [class.is-invalid]="submitted() && loginForm.email().invalid()" placeholder="Email Address"
+                  [formField]="loginForm.email" />
                 @if (submitted() && loginForm.email().invalid()) {
-                  <div class="invalid-feedback">
-                    @for (error of loginForm.email().errors(); track error.kind) {
-                      <div>{{ error.message }}</div>
-                    }
-                  </div>
+                <div class="invalid-feedback">
+                  @for (error of loginForm.email().errors(); track error.kind) {
+                  <div>{{ error.message }}</div>
+                  }
+                </div>
                 }
               </div>
               <div class="input-group mb-4">
                 @if (!showPassword()) {
-                  <input
-                    type="password"
-                    id="password"
-                    class="form-control"
-                    [field]="loginForm.password"
-                    [class.is-invalid]="submitted() && loginForm.password().errors().length > 0"
-                    placeholder="Password (min. 8 characters)"
-                  />
+                <input type="password" id="password" class="form-control" [formField]="loginForm.password"
+                  [class.is-invalid]="submitted() && loginForm.password().errors().length > 0"
+                  placeholder="Password (min. 8 characters)" />
                 } @else {
-                  <input
-                    type="text"
-                    id="password"
-                    class="form-control"
-                    [field]="loginForm.password"
-                    [class.is-invalid]="submitted() && loginForm.password().errors().length > 0"
-                    placeholder="Password (min. 8 characters)"
-                  />
+                <input type="text" id="password" class="form-control" [formField]="loginForm.password"
+                  [class.is-invalid]="submitted() && loginForm.password().errors().length > 0"
+                  placeholder="Password (min. 8 characters)" />
                 }
                 @if (submitted() && loginForm.password().errors().length > 0) {
-                  <div class="invalid-feedback">
-                    @for (error of loginForm.password().errors(); track error.kind) {
-                      <div>{{ error.message }}</div>
-                    }
-                  </div>
+                <div class="invalid-feedback">
+                  @for (error of loginForm.password().errors(); track error.kind) {
+                  <div>{{ error.message }}</div>
+                  }
+                </div>
                 }
               </div>
               <div class="form-group text-start mt-2">
