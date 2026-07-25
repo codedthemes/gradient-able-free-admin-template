@@ -95,7 +95,7 @@ Gradient Able is offers everything you need to create dashboards. We have includ
 ## Technology Stack
 
 - Bootstrap 5
-- Angular 21
+- Angular 22
 
 ## Other Technologies
 

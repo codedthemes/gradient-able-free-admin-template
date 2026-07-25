@@ -105,14 +105,14 @@
     margin-bottom: 0;
     display: inline-block;
 
-    > li {
+    >li {
       line-height: $header-height;
       display: inline-block;
       padding: 0 12px;
 
-      > a,
+      >a,
       .dropdown-toggle {
-        > i {
+        >i {
           font-size: 16px;
         }
 
@@ -215,6 +215,7 @@
 
       .form-control,
       .search-btn {
+
         &:active,
         &:focus,
         &:hover {
@@ -253,6 +254,7 @@
 
         .form-control,
         .search-btn {
+
           &:active,
           &:focus,
           &:hover {
@@ -448,7 +450,7 @@
             background: $primary-color;
             box-shadow: 0 15px 8px -9px rgba(0, 0, 0, 0.25);
 
-            > a {
+            >a {
               color: #fff;
               background: transparent;
             }
@@ -628,7 +630,7 @@
       transition: unset;
     }
 
-    + .scroll-div {
+    +.scroll-div {
       float: left;
       display: inline-block;
     }
@@ -664,7 +666,7 @@
     li {
       position: relative;
 
-      > a {
+      >a {
         text-align: left;
         padding: 7px 20px;
         margin: 5px 0 0;
@@ -686,7 +688,7 @@
           position: relative;
         }
 
-        > .pcoded-micon {
+        >.pcoded-micon {
           font-size: 16px;
           padding: 0;
           margin-right: 5px;
@@ -698,7 +700,7 @@
           text-align: center;
           justify-content: center;
 
-          + .pcoded-mtext {
+          +.pcoded-mtext {
             position: relative;
             top: 0;
           }
@@ -706,7 +708,7 @@
       }
 
       &.pcoded-hasmenu {
-        > a {
+        >a {
           &:after {
             content: '\e844';
             font-family: 'feather';
@@ -720,7 +722,7 @@
         }
 
         &.pcoded-trigger {
-          > a {
+          >a {
             &:after {
               transform: rotate(90deg);
             }
@@ -738,11 +740,11 @@
         }
 
         &.pcoded-trigger.active {
-          > .pcoded-submenu {
+          >.pcoded-submenu {
             display: block;
           }
 
-          > a {
+          >a {
             position: relative;
           }
         }
@@ -773,7 +775,7 @@
               background: transparentize($menu-dark-text-color, 0.8);
             }
 
-            > a {
+            >a {
               text-align: left;
               padding: 10px 7px 10px 60px;
               margin: 0;
@@ -790,8 +792,8 @@
               }
             }
 
-            + li {
-              > a {
+            +li {
+              >a {
                 // border-top: 1px solid lighten($menu-dark-background,8%);
               }
             }
@@ -803,13 +805,13 @@
                 height: calc(100% - 15px);
               }
 
-              > li {
+              >li {
                 &:after {
                   left: 46px;
                   width: 20px;
                 }
 
-                > a {
+                >a {
                   padding: 10px 7px 10px 80px;
 
                   &:before {
@@ -837,13 +839,13 @@
           margin-top: 0;
         }
 
-        > label {
+        >label {
           margin-bottom: 0;
         }
       }
 
       &.disabled {
-        > a {
+        >a {
           cursor: default;
           opacity: 0.5;
         }
@@ -909,7 +911,7 @@
       white-space: nowrap;
       overflow: hidden;
 
-      > label {
+      >label {
         transform: rotateY(-90deg);
         transform-origin: 0 0;
         opacity: 0;
@@ -928,17 +930,17 @@
     }
 
     .pcoded-inner-navbar {
-      > li {
-        > a {
+      >li {
+        >a {
           padding: 7px 20px;
 
           // margin: 0;
-          > .pcoded-micon + .pcoded-mtext {
+          >.pcoded-micon+.pcoded-mtext {
             position: absolute;
             top: 11px;
           }
 
-          > .pcoded-mtext {
+          >.pcoded-mtext {
             transform: rotateY(-90deg);
             transform-origin: 0 0;
             opacity: 0;
@@ -947,7 +949,7 @@
         }
 
         &.pcoded-hasmenu {
-          > a {
+          >a {
             &:after {
               right: 12px;
             }
@@ -959,7 +961,7 @@
         }
       }
 
-      > li {
+      >li {
         &.pcoded-trigger {
           .pcoded-submenu {
             li {
@@ -968,7 +970,7 @@
                 white-space: nowrap;
               }
 
-              + li {
+              +li {
                 a {
                   border-top: none;
                 }
@@ -987,12 +989,12 @@
       }
     }
 
-    ~ .pcoded-header {
+    ~.pcoded-header {
       // width: calc(100% - #{$Menu-collapsed-width});
     }
 
     // ~ .pcoded-header,
-    ~ .pcoded-main-container {
+    ~.pcoded-main-container {
       margin-left: $Menu-collapsed-width;
     }
 
@@ -1027,7 +1029,7 @@
       }
 
       .pcoded-menu-caption {
-        > label {
+        >label {
           transform: rotateY(0deg);
           opacity: 1;
         }
@@ -1043,10 +1045,11 @@
       }
 
       .pcoded-inner-navbar {
-        > li {
-          > a {
+        >li {
+          >a {
+
             // margin: 5px 10px;
-            > .pcoded-mtext {
+            >.pcoded-mtext {
               transform: rotateY(0deg);
               opacity: 1;
 
@@ -1058,14 +1061,14 @@
           }
 
           &.pcoded-hasmenu {
-            > a {
+            >a {
               &:after {
                 transform: rotateX(0deg);
               }
             }
 
             &.pcoded-trigger {
-              > a {
+              >a {
                 &:after {
                   transform: rotateX(0deg) rotate(90deg);
                 }
@@ -1074,7 +1077,7 @@
           }
         }
 
-        > li {
+        >li {
           &.pcoded-trigger {
             .pcoded-submenu {
               &:after {
@@ -1107,9 +1110,10 @@
 
   .pcoded-inner-navbar {
     li {
+
       &.active,
       &.pcoded-trigger {
-        > a {
+        >a {
           font-weight: 600;
         }
       }
@@ -1117,16 +1121,17 @@
       &.active,
       &:focus,
       &:hover {
-        > a {
+        >a {
           color: #e5efff;
         }
       }
 
-      .pcoded-submenu > li {
+      .pcoded-submenu>li {
+
         &.active,
         &:focus,
         &:hover {
-          > a {
+          >a {
             &:before {
               background: #e5efff;
             }
@@ -1135,13 +1140,13 @@
       }
     }
 
-    > li {
+    >li {
+
       &.active,
       &.pcoded-trigger {
-        &:after {
-        }
+        &:after {}
 
-        > a {
+        >a {
           background: rgba(202, 202, 202, 0.3);
           color: #e5efff;
 
@@ -1152,7 +1157,8 @@
       }
     }
 
-    > .pcoded-menu-caption {
+    >.pcoded-menu-caption {
+
       &.active,
       &.pcoded-trigger {
         &:after {
@@ -1164,10 +1170,12 @@
 }
 
 .pcoded-navbar {
+
   &.mob-open,
   &.navbar-collapsed:hover {
-    ~ .pcoded-header,
-    ~ .pcoded-main-container {
+
+    ~.pcoded-header,
+    ~.pcoded-main-container {
       .pc-menu-overlay {
         position: fixed;
         top: 0;
@@ -1225,6 +1233,7 @@
 
 @media only screen and (max-width: 991px) {
   .pcoded-header {
+
     .input-group-text,
     a,
     dropdown-toggle {
@@ -1235,8 +1244,8 @@
       }
     }
 
-    .container > .collapse:not(.show),
-    > .collapse:not(.show) {
+    .container>.collapse:not(.show),
+    >.collapse:not(.show) {
       background: #fff;
       box-shadow: 0 0 3px 0 rgba(54, 80, 138, 0.34);
       position: relative;
@@ -1302,7 +1311,7 @@
     }
 
     .navbar-nav {
-      > li {
+      >li {
         &:last-child {
           padding-right: 20px;
         }
@@ -1320,12 +1329,12 @@
       height: 100%;
     }
 
-    ~ .pcoded-header,
-    ~ .pcoded-main-container {
+    ~.pcoded-header,
+    ~.pcoded-main-container {
       margin-left: 0;
     }
 
-    ~ .pcoded-header {
+    ~.pcoded-header {
       width: 100%;
     }
 
@@ -1336,8 +1345,8 @@
     &.mob-open {
       margin-left: 0;
 
-      .pcoded-main-container ~ .pcoded-header,
-      ~ .pcoded-main-container {
+      .pcoded-main-container~.pcoded-header,
+      ~.pcoded-main-container {
         margin-left: 0;
       }
     }
@@ -1355,15 +1364,15 @@
     }
 
     .navbar-nav {
-      > li {
+      >li {
         padding: 0 8px;
       }
 
-      &.ms-auto > li:first-child {
+      &.ms-auto>li:first-child {
         padding-left: 0;
       }
 
-      > li:last-child {
+      >li:last-child {
         padding-right: 15px;
       }
     }
@@ -1438,21 +1447,21 @@
       }
 
       .pcoded-menu-caption {
-        > label {
+        >label {
           transition: none;
         }
       }
 
       .pcoded-inner-navbar {
-        > li {
-          > a {
-            > .pcoded-mtext {
+        >li {
+          >a {
+            >.pcoded-mtext {
               transition: none;
             }
           }
 
           &.pcoded-hasmenu {
-            > a {
+            >a {
               &:after {
                 transition: none;
                 transition-delay: 0;
@@ -1522,6 +1531,7 @@
     }
   }
 }
+
 /* ===================================================================================
  ==========================    Diffrent Layout Styles Start     ====================
  ===================================================================================
@@ -1579,7 +1589,7 @@
         &.active,
         &.pcoded-trigger,
         &:hover {
-          > a {
+          >a {
             &:before {
               background: $primary-color;
             }
@@ -1588,8 +1598,8 @@
       }
     }
 
-    li.pcoded-hasmenu .pcoded-submenu li + li {
-      > a {
+    li.pcoded-hasmenu .pcoded-submenu li+li {
+      >a {
         border-top-color: #ededed;
       }
     }
@@ -1625,10 +1635,11 @@
 
   .pcoded-inner-navbar {
     li {
+
       &.active,
       &.pcoded-trigger,
       &:hover {
-        > a {
+        >a {
           color: $menu-light-text-color;
         }
       }
@@ -1665,8 +1676,9 @@
 
     @media only screen and (max-width: 992px) {
       .page-header {
-        .breadcrumb-item + .breadcrumb-item::before,
-        .page-header-title + .breadcrumb > .breadcrumb-item a,
+
+        .breadcrumb-item+.breadcrumb-item::before,
+        .page-header-title+.breadcrumb>.breadcrumb-item a,
         h5 {
           color: #fff;
         }
@@ -1683,7 +1695,7 @@
 
       .profile-notification {
         li {
-          > a {
+          >a {
             color: $theme-font-color;
           }
 
@@ -1693,7 +1705,7 @@
           &:hover {
             background: transparentize(nth($color-header-color, $i), 0.9);
 
-            > a {
+            >a {
               background: transparent;
             }
           }
@@ -1707,8 +1719,8 @@
           color: $theme-font-color;
         }
 
-        > li {
-          > a {
+        >li {
+          >a {
             color: $theme-font-color;
           }
 
@@ -1719,7 +1731,7 @@
             background: transparentize(nth($color-header-color, $i), 0.9);
             color: $theme-font-color;
 
-            > a {
+            >a {
               background: transparent;
             }
           }
@@ -1731,10 +1743,6 @@
       dropdown-toggle {
         color: #fff;
 
-        &:hover {
-          color: $menu-light-text-color;
-        }
-
         @media only screen and (max-width: 991px) {
           color: $menu-light-text-color;
 
@@ -1745,13 +1753,13 @@
       }
 
       @media only screen and (max-width: 991px) {
-        .m-header > a {
+        .m-header>a {
           color: #fff;
         }
       }
 
       .main-search {
-        .search-close > .input-group-text {
+        .search-close>.input-group-text {
           color: nth($color-header-color, $i);
         }
 
@@ -1854,7 +1862,7 @@
   position: fixed;
   top: 0;
 
-  ~ .pcoded-main-container {
+  ~.pcoded-main-container {
     padding-top: $header-height;
 
     @media only screen and (max-width: 991px) {

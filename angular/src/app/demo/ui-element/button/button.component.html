@@ -38,9 +38,10 @@
   <div class="col-sm-12">
     <app-card cardTitle="Link">
       <div class="d-flex flex-wrap gap-2">
-        <a class="btn btn-primary" role="button" href="javascript:">Primary link</a>
-        <a class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true" href="javascript:">Disabled Primary link</a>
-        <a class="btn btn-link-success" role="button" href="javascript:">Light Success link</a>
+        <a class="btn btn-primary" role="button" href="javascript:void(0)">Primary link</a>
+        <a class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true"
+          href="javascript:void(0)">Disabled Primary link</a>
+        <a class="btn btn-link-success" role="button" href="javascript:void(0)">Light Success link</a>
       </div>
     </app-card>
   </div>
@@ -75,7 +76,7 @@
         <button type="button" class="btn disabled btn-secondary">Secondary</button>
         <button type="button" class="btn disabled btn-success">Success</button>
         <button type="button" class="btn disabled btn-danger">Danger</button>
-        <button type="button" class="btn disabled btn-warning text-dark">Warning</button>
+        <button type="button" class="btn disabled btn-warning">Warning</button>
         <button type="button" class="btn disabled btn-info">Info</button>
         <button type="button" class="btn disabled btn-light">Light</button>
         <button type="button" class="btn disabled btn-dark">Dark</button>
@@ -91,7 +92,7 @@
         <button type="button" class="btn btn-shadow btn-secondary">Secondary</button>
         <button type="button" class="btn btn-shadow btn-success">Success</button>
         <button type="button" class="btn btn-shadow btn-danger">Danger</button>
-        <button type="button" class="btn btn-shadow btn-warning text-dark">Warning</button>
+        <button type="button" class="btn btn-shadow btn-warning">Warning</button>
         <button type="button" class="btn btn-shadow btn-info">Info</button>
         <button type="button" class="btn btn-shadow btn-light">Light</button>
         <button type="button" class="btn btn-shadow btn-dark">Dark</button>
@@ -156,7 +157,7 @@
           <i class="feather icon-slash me-1"></i>
           Danger
         </button>
-        <button type="button" class="btn btn-warning text-dark">
+        <button type="button" class="btn btn-warning">
           <i class="feather icon-alert-triangle me-1"></i>
           Warning
         </button>
@@ -216,7 +217,7 @@
         <button type="button" class="btn btn-icon btn-danger d-inline-flex">
           <i class="feather icon-slash"></i>
         </button>
-        <button type="button" class="btn btn-icon btn-warning text-dark d-inline-flex">
+        <button type="button" class="btn btn-icon btn-warning d-inline-flex">
           <i class="feather icon-alert-triangle"></i>
         </button>
         <button type="button" class="btn btn-icon btn-info d-inline-flex">
@@ -300,13 +301,8 @@
           </div>
           <div class="input-group mb-2">
             <div class="input-group-text" id="btnGroupAddon">&#64;</div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Input group example"
-              aria-label="Input group example"
-              aria-describedby="btnGroupAddon"
-            />
+            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example"
+              aria-describedby="btnGroupAddon" />
           </div>
         </div>
 
@@ -319,13 +315,8 @@
           </div>
           <div class="input-group mb-2">
             <div class="input-group-text" id="btnGroupAddon2">&#64;</div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Input group example"
-              aria-label="Input group example"
-              aria-describedby="btnGroupAddon2"
-            />
+            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example"
+              aria-describedby="btnGroupAddon2" />
           </div>
         </div>
       </div>
@@ -384,10 +375,11 @@
         <button type="button" class="btn btn-primary">2</button>
         <div class="btn-group" role="group">
           <div ngbDropdown>
-            <button type="button" class="btn btn-primary dropdown-toggle custom-border" ngbDropdownToggle>Dropdown</button>
+            <button type="button" class="btn btn-primary dropdown-toggle custom-border"
+              ngbDropdownToggle>Dropdown</button>
             <div class="dropdown-menu" ngbDropdownMenu>
-              <a class="dropdown-item" href="javascript:">Dropdown link</a>
-              <a class="dropdown-item" href="javascript:">Dropdown link</a>
+              <a ngbDropdownItem href="javascript:void(0)">Dropdown link</a>
+              <a ngbDropdownItem href="javascript:void(0)">Dropdown link</a>
             </div>
           </div>
         </div>
@@ -412,10 +404,11 @@
             <button type="button" class="btn m-0 btn-secondary">2</button>
             <div class="btn-group" role="group">
               <div ngbDropdown>
-                <button type="button" class="btn m-0 btn-secondary vertical-custom dropdown-toggle" ngbDropdownToggle>Dropdown</button>
+                <button type="button" class="btn m-0 btn-secondary vertical-custom dropdown-toggle"
+                  ngbDropdownToggle>Dropdown</button>
                 <div class="dropdown-menu" ngbDropdownMenu>
-                  <a class="dropdown-item" href="javascript:">Dropdown link</a>
-                  <a class="dropdown-item" href="javascript:">Dropdown link</a>
+                  <a ngbDropdownItem href="javascript:void(0)">Dropdown link</a>
+                  <a ngbDropdownItem href="javascript:void(0)">Dropdown link</a>
                 </div>
               </div>
             </div>
@@ -430,14 +423,14 @@
     <app-card cardTitle="Mixed style">
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-danger">A</button>
-        <button type="button" class="btn btn-warning text-dark">A</button>
+        <button type="button" class="btn btn-warning">A</button>
         <button type="button" class="btn btn-primary">A</button>
         <button type="button" class="btn btn-success">A</button>
       </div>
       <hr />
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-light-danger">A</button>
-        <button type="button" class="btn btn-light-warning text-dark">A</button>
+        <button type="button" class="btn btn-light-warning">A</button>
         <button type="button" class="btn btn-light-primary">A</button>
         <button type="button" class="btn btn-light-success">A</button>
       </div>

@@ -103,7 +103,7 @@ export class DashAnalyticsComponent {
         show: false
       },
       tooltip: {
-        theme: 'dark'
+        theme: 'light'
       },
       grid: {
         padding: {
@@ -142,7 +142,7 @@ export class DashAnalyticsComponent {
         show: false
       },
       tooltip: {
-        theme: 'dark'
+        theme: 'light'
       },
       grid: {
         padding: {
@@ -152,7 +152,7 @@ export class DashAnalyticsComponent {
           left: 0
         }
       },
-      colors: ['#fff', '#2ed8b6'],
+      colors: ['#cbd3eeff', '#2ed8b6'],
       fill: {
         opacity: [1, 1]
       },

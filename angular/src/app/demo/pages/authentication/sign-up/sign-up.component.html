@@ -8,65 +8,45 @@
               <img src="assets/images/logo-dark.png" alt="logo" class="img-fluid mb-4" />
               <h4 class="mb-3 f-w-400">Sign up</h4>
               <div class="input-group mb-3">
-                <input
-                  type="text"
-                  id="username"
-                  class="form-control"
-                  placeholder="Username"
-                  [field]="registerForm.username"
-                  [class.is-invalid]="submitted() && registerForm.username().errors().length > 0"
-                />
+                <input type="text" id="username" class="form-control" placeholder="Username"
+                  [formField]="registerForm.username"
+                  [class.is-invalid]="submitted() && registerForm.username().errors().length > 0" />
                 @if (submitted() && registerForm.username().errors().length > 0) {
-                  <div class="invalid-feedback">
-                    @for (error of registerForm.username().errors(); track error.kind) {
-                      <div>{{ error.message }}</div>
-                    }
-                  </div>
+                <div class="invalid-feedback">
+                  @for (error of registerForm.username().errors(); track error.kind) {
+                  <div>{{ error.message }}</div>
+                  }
+                </div>
                 }
               </div>
               <div class="input-group mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  [class.is-invalid]="submitted() && registerForm.email().invalid()"
-                  placeholder="Email Address"
-                  [field]="registerForm.email"
-                />
+                <input type="email" class="form-control" id="floatingInput"
+                  [class.is-invalid]="submitted() && registerForm.email().invalid()" placeholder="Email Address"
+                  [formField]="registerForm.email" />
                 @if (submitted() && registerForm.email().invalid()) {
-                  <div class="invalid-feedback">
-                    @for (error of registerForm.email().errors(); track error.kind) {
-                      <div>{{ error.message }}</div>
-                    }
-                  </div>
+                <div class="invalid-feedback">
+                  @for (error of registerForm.email().errors(); track error.kind) {
+                  <div>{{ error.message }}</div>
+                  }
+                </div>
                 }
               </div>
               <div class="input-group mb-4">
                 @if (!showPassword()) {
-                  <input
-                    type="password"
-                    id="password"
-                    class="form-control"
-                    [field]="registerForm.password"
-                    [class.is-invalid]="submitted() && registerForm.password().errors().length > 0"
-                    placeholder="Password (min. 8 characters)"
-                  />
+                <input type="password" id="password" class="form-control" [formField]="registerForm.password"
+                  [class.is-invalid]="submitted() && registerForm.password().errors().length > 0"
+                  placeholder="Password (min. 8 characters)" />
                 } @else {
-                  <input
-                    type="text"
-                    id="password"
-                    class="form-control"
-                    [field]="registerForm.password"
-                    [class.is-invalid]="submitted() && registerForm.password().errors().length > 0"
-                    placeholder="Password (min. 8 characters)"
-                  />
+                <input type="text" id="password" class="form-control" [formField]="registerForm.password"
+                  [class.is-invalid]="submitted() && registerForm.password().errors().length > 0"
+                  placeholder="Password (min. 8 characters)" />
                 }
                 @if (submitted() && registerForm.password().errors().length > 0) {
-                  <div class="invalid-feedback">
-                    @for (error of registerForm.password().errors(); track error.kind) {
-                      <div>{{ error.message }}</div>
-                    }
-                  </div>
+                <div class="invalid-feedback">
+                  @for (error of registerForm.password().errors(); track error.kind) {
+                  <div>{{ error.message }}</div>
+                  }
+                </div>
                 }
               </div>
               <div class="form-group text-start mt-2">
@@ -74,7 +54,7 @@
                   <input type="checkbox" name="checkbox-fill-2" id="checkbox-fill-2" />
                   <label for="checkbox-fill-2" class="cr">
                     Send me the
-                    <a href="javascript:">Newsletter</a>
+                    <a href="javascript:void(0)">Newsletter</a>
                     weekly.
                   </label>
                 </div>
