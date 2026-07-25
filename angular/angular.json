@@ -17,8 +17,16 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "allowedCommonJsDependencies": ["bezier-easing", "mousetrap", "apexcharts","hammerjs"],
-            "outputPath": "dist",
+            "allowedCommonJsDependencies": [
+              "bezier-easing",
+              "mousetrap",
+              "apexcharts",
+              "hammerjs"
+            ],
+            "outputPath": {
+              "base": "dist",
+              "browser": ""
+            },
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -36,9 +44,16 @@
                 ]
               }
             },
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
-            "scripts": ["node_modules/apexcharts/dist/apexcharts.min.js"]
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/apexcharts/dist/apexcharts.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,7 +107,10 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
@@ -100,6 +118,8 @@
   },
   "cli": {
     "analytics": "add15f09-9029-4c0f-82d1-1471de99ba6f",
-    "schematicCollections": ["@angular-eslint/schematics"]
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
