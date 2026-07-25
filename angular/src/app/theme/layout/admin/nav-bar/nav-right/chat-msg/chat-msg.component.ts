@@ -56,8 +56,8 @@ export class ChatMsgComponent implements OnInit {
         this.message_error = false;
         const temp_replay = this.message;
         const html_send =
-          '<div class="media chat-messages">' +
-          '<div class="media-body chat-menu-reply">' +
+          '<div class="d-flex chat-messages">' +
+          '<div class="flex-grow-1 chat-menu-reply">' +
           '<div >' +
           '<p class="chat-cont">' +
           this.message +
@@ -73,15 +73,15 @@ export class ChatMsgComponent implements OnInit {
         setTimeout(() => {
           this.friendWriting = false;
           const html_replay =
-            '<div class="media chat-messages">' +
-            '<a class="media-left photo-table" href="javascript:">' +
+            '<div class="d-flex chat-messages">' +
+            '<a class="media-left photo-table" href="javascript:void(0)">' +
             '<img class="media-object img-radius img-radius m-t-5" src="' +
             this.chatMessage.photo +
             '" alt="' +
             this.chatMessage.name +
             '">' +
             '</a>' +
-            '<div class="media-body chat-menu-content">' +
+            '<div class="flex-grow-1 chat-menu-content">' +
             '<div >' +
             '<p class="chat-cont">hello superior personality you write</p>' +
             '<p class="chat-cont">' +

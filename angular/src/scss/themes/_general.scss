@@ -275,3 +275,16 @@ a {
 }
 
 /* ================================    animation End  ===================== */
+
+/* ================================    Scrollbar Start  ===================== */
+
+ng-scrollbar {
+  --_scrollbar-thumb-color: #{$gray-200} !important;
+
+  .track-inner {
+    background: transparent !important;
+    --scrollbar-track-shape: 4px;
+  }
+}
+
+/* ================================    Scrollbar End  ===================== */

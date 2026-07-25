@@ -2,11 +2,13 @@
       button css start
 ==========================  **/
 @import '../minixs/button';
+
 .btn-page {
   .btn {
     margin-right: 5px;
     margin-bottom: 5px;
   }
+
   .btn-group-vertical,
   .btn-group {
     .btn {
@@ -20,6 +22,23 @@
   .btn-#{$color} {
     @include button-variant($value, $value);
   }
+
+  // outline hover: white text for standalone outline buttons only
+  .btn-outline-#{$color} {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: #fff !important;
+    }
+  }
+
+  // keep radio/checkbox outline buttons unchanged on hover (only active/checked)
+  .btn-check:not(:checked):not(:active) + .btn-outline-#{$color}:hover {
+    color: $value !important;
+    background-color: transparent !important;
+    border-color: $value !important;
+  }
 }
 
 @each $color, $value in $theme-colors {
@@ -27,14 +46,16 @@
     background: shift-color($value, $soft-bg-level);
     color: $value;
     border-color: shift-color($value, $soft-bg-level);
+
     .material-icons-two-tone {
       background-color: $value;
     }
 
     &:hover {
-      background: $value;
-      color: #fff;
-      border-color: $value;
+      background: $value !important;
+      color: #fff !important;
+      border-color: $value !important;
+
       .material-icons-two-tone {
         background-color: #fff;
       }
@@ -45,6 +66,7 @@
       background: $value;
       color: #fff;
       border-color: $value;
+
       .material-icons-two-tone {
         background-color: #fff;
       }
@@ -52,10 +74,11 @@
 
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled):active,
-    .show > &.dropdown-toggle {
+    .show>&.dropdown-toggle {
       background: $value;
       color: #fff;
       border-color: $value;
+
       .material-icons-two-tone {
         background-color: #fff;
       }
@@ -64,10 +87,11 @@
 
   .btn-check:active,
   .btn-check:checked {
-    + .btn-light-#{$color} {
+    +.btn-light-#{$color} {
       background: $value;
       color: #fff;
       border-color: $value;
+
       .material-icons-two-tone {
         background-color: #fff;
       }
@@ -78,9 +102,11 @@
     background: transparent;
     color: $value;
     border-color: transparent;
+
     .material-icons-two-tone {
       background-color: $value;
     }
+
     &:hover {
       background: shift-color($value, $soft-bg-level);
       color: $value;
@@ -96,7 +122,7 @@
 
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled):active,
-    .show > &.dropdown-toggle {
+    .show>&.dropdown-toggle {
       background: shift-color($value, $soft-bg-level);
       color: $value;
       border-color: shift-color($value, $soft-bg-level);
@@ -105,7 +131,7 @@
 
   .btn-check:active,
   .btn-check:checked {
-    + .btn-link-#{$color} {
+    +.btn-link-#{$color} {
       background: shift-color($value, $soft-bg-level);
       color: $value;
       border-color: shift-color($value, $soft-bg-level);

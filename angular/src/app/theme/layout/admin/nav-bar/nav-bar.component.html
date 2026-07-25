@@ -1,13 +1,14 @@
 <div class="m-header">
-  <a href="javascript:" class="mobile-menu" id="mobile-collapse" title="Click to Menu Collapse" (click)="navCollapse()"><span></span></a>
-  <a href="javascript:" class="header-mobile-collapse" id="mobile-collapse1" (click)="navCollapseMob()">
+  <a href="javascript:void(0)" class="mobile-menu" id="mobile-collapse" title="Click to Menu Collapse"
+    (click)="navCollapse()"><span></span></a>
+  <a href="javascript:void(0)" class="header-mobile-collapse" id="mobile-collapse1" (click)="navCollapseMob()">
     <i class="feather icon-menu"></i>
   </a>
-  <a [routerLink]="['/dashboard/analytics']" class="b-brand">
+  <a [routerLink]="['/analytics']" class="b-brand">
     <img id="main-logo" src="assets/images/logo.png" alt="logo-img" class="logo" />
     <img src="assets/images/logo-icon.png" alt="logo-icon-img" class="logo-thumb" />
   </a>
-  <a class="mob-toggler" [ngClass]="{ on: this.menuClass }" href="javascript:" (click)="toggleMobOption()">
+  <a class="mob-toggler" [ngClass]="{ on: this.menuClass }" href="javascript:void(0)" (click)="toggleMobOption()">
     <i class="feather icon-more-vertical"></i>
   </a>
 </div>
@@ -18,15 +19,17 @@
 
 <ng-template #mainHeader>
   <div class="m-header">
-    <a href="javascript:" class="mobile-menu" id="mobile-collapse" title="Click to Menu Collapse" (click)="navCollapse()"><span></span></a>
-    <a href="javascript:" class="header-mobile-collapse" id="mobile-collapse1" (click)="this.NavCollapsedMob.emit()">
+    <a href="javascript:void(0)" class="mobile-menu" id="mobile-collapse" title="Click to Menu Collapse"
+      (click)="navCollapse()"><span></span></a>
+    <a href="javascript:void(0)" class="header-mobile-collapse" id="mobile-collapse1"
+      (click)="this.NavCollapsedMob.emit()">
       <i class="feather icon-menu"></i>
     </a>
     <a [routerLink]="['/dashboard/analytics']" class="b-brand">
       <img id="main-logo" src="assets/images/logo.png" alt="logo-img" class="logo" />
       <img src="assets/images/logo-icon.png" alt="logo-icon-img" class="logo-thumb" />
     </a>
-    <a class="mob-toggler" [ngClass]="{ on: this.menuClass }" href="javascript:" (click)="toggleMobOption()">
+    <a class="mob-toggler" [ngClass]="{ on: this.menuClass }" href="javascript:void(0)" (click)="toggleMobOption()">
       <i class="feather icon-more-vertical"></i>
     </a>
   </div>

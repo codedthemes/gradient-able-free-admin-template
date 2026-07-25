@@ -1,5 +1,5 @@
 // Angular Import
-import { Component, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, input } from '@angular/core';
 import { NavigationEnd, Router, RouterModule, Event } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
@@ -18,9 +18,11 @@ interface titleType {
   selector: 'app-breadcrumb',
   imports: [RouterModule],
   templateUrl: './breadcrumb.component.html',
-  styleUrls: ['./breadcrumb.component.scss']
+  styleUrls: ['./breadcrumb.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BreadcrumbComponent {
+  private cdr = inject(ChangeDetectorRef);
   private route = inject(Router);
   private titleService = inject(Title);
 
@@ -35,15 +37,17 @@ export class BreadcrumbComponent {
   constructor() {
     this.navigations = NavigationItems;
     this.setBreadcrumb();
+
   }
 
   // public method
   setBreadcrumb() {
     this.route.events.subscribe((router: Event) => {
       if (router instanceof NavigationEnd) {
-        const activeLink = router.url;
+        const activeLink = router.urlAfterRedirects ? router.urlAfterRedirects : router.url;
         const breadcrumbList = this.filterNavigation(this.navigations, activeLink);
         this.navigationList = breadcrumbList;
+        this.cdr.markForCheck();
         const title = breadcrumbList[breadcrumbList.length - 1]?.title || 'Welcome';
         this.titleService.setTitle(title + ' | Gradient Able Angular free Admin Template');
       }

@@ -1,53 +1,57 @@
 <div class="h-list-header">
   <h6>{{ chatMessage.name }}</h6>
-  <a href="javascript:" class="h-back-user-list" (click)="this.ChatToggle.emit()"><i class="feather icon-chevron-left"></i></a>
+  <a href="javascript:void(0)" class="h-back-user-list" (click)="this.ChatToggle.emit()"><i
+      class="feather icon-chevron-left"></i></a>
 </div>
 
 <div class="h-list-body">
   <div class="main-chat-cont">
     <div class="main-friend-chat">
       @if (chatMessage.chat) {
-        <ng-scrollbar style="height: calc(100vh - 170px)" visibility="hover" [dir]="direction">
-          @for (messages of chatMessage.chat; track messages) {
-            <div>
-              <div class="media chat-messages">
-                @if (messages.type) {
-                  <a class="media-left photo-table" href="javascript:">
-                    <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}" alt="{{ chatMessage.name }}" />
-                  </a>
-                }
-                <div class="media-body" [ngClass]="{ 'chat-menu-content': messages.type, 'chat-menu-reply': !messages.type }">
-                  <div>
-                    <p class="chat-cont">{{ messages.msg }}</p>
-                  </div>
-                  <p class="chat-time">{{ messages.time }}</p>
-                </div>
+      <ng-scrollbar style="height: calc(100vh - 170px)" visibility="hover" [dir]="direction">
+        @for (messages of chatMessage.chat; track messages) {
+        <div>
+          <div class="d-flex chat-messages">
+            @if (messages.type) {
+            <a class="media-left photo-table" href="javascript:void(0)">
+              <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}"
+                alt="{{ chatMessage.name }}" />
+            </a>
+            }
+            <div class="flex-grow-1"
+              [ngClass]="{ 'chat-menu-content': messages.type, 'chat-menu-reply': !messages.type }">
+              <div>
+                <p class="chat-cont">{{ messages.msg }}</p>
               </div>
-            </div>
-          }
-          <div #newChat [innerHTML]="newReplay"></div>
-          @if (friendWriting) {
-            <div class="media chat-messages typing">
-              <a class="media-left photo-table" href="javascript:">
-                <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}" alt="{{ chatMessage.name }}" />
-              </a>
-              <div class="media-body chat-menu-content">
-                <div class="rem-msg">
-                  <p class="chat-cont">Typing . . .</p>
-                </div>
-                <p class="chat-time">now</p>
-              </div>
-            </div>
-          }
-        </ng-scrollbar>
-      } @else {
-        <div class="media chat-messages text-center">
-          <div class="media-body chat-menu-content">
-            <div>
-              <p class="chat-cont">CHAT NOT FOUND</p>
+              <p class="chat-time">{{ messages.time }}</p>
             </div>
           </div>
         </div>
+        }
+        <div #newChat [innerHTML]="newReplay"></div>
+        @if (friendWriting) {
+        <div class="d-flex chat-messages typing">
+          <a class="media-left photo-table" href="javascript:void(0)">
+            <img class="media-object img-radius img-radius m-t-5" src="{{ chatMessage.photo }}"
+              alt="{{ chatMessage.name }}" />
+          </a>
+          <div class="flex-grow-1 chat-menu-content">
+            <div class="rem-msg">
+              <p class="chat-cont">Typing . . .</p>
+            </div>
+            <p class="chat-time">now</p>
+          </div>
+        </div>
+        }
+      </ng-scrollbar>
+      } @else {
+      <div class="d-flex chat-messages text-center">
+        <div class="flex-grow-1 chat-menu-content">
+          <div>
+            <p class="chat-cont">CHAT NOT FOUND</p>
+          </div>
+        </div>
+      </div>
       }
     </div>
   </div>
@@ -55,24 +59,14 @@
 <div class="h-list-footer">
   <div class="input-group" (focusout)="this.message_error = false">
     <input type="file" class="chat-attach" style="display: none" />
-    <a href="javascript:" class="input-group-prepend btn btn-success btn-attach" [ngClass]="{ 'btn-danger': message_error === true }">
+    <a href="javascript:void(0)" class="input-group-prepend btn btn-success btn-attach"
+      [ngClass]="{ 'btn-danger': message_error === true }">
       <i class="feather icon-paperclip"></i>
     </a>
-    <input
-      type="text"
-      [(ngModel)]="message"
-      name="h-chat-text"
-      class="form-control h-send-chat"
-      placeholder="Write hear . . "
-      (keyup)="sentMsg(1)"
-      (keyup.enter)="sentMsg(0)"
-    />
-    <button
-      type="submit"
-      class="input-group-append btn-send btn btn-primary"
-      [ngClass]="{ 'btn-danger': message_error === true }"
-      (click)="sentMsg(0)"
-    >
+    <input type="text" [(ngModel)]="message" name="h-chat-text" class="form-control h-send-chat"
+      placeholder="Write hear . . " (keyup)="sentMsg(1)" (keyup.enter)="sentMsg(0)" />
+    <button type="submit" class="input-group-append btn-send btn btn-primary"
+      [ngClass]="{ 'btn-danger': message_error === true }" (click)="sentMsg(0)">
       <i class="feather icon-message-circle"></i>
     </button>
   </div>
